@@ -5,8 +5,8 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 public class PlayerController : NetworkBehaviour {
-	[SerializeField] private float xVel = 0.05f;
-	[SerializeField] private float yVel = 0.05f;
+	[SerializeField] private float xVel = 5f;
+	[SerializeField] private float yVel = 5f;
 
 	// Use this for initialization
 	void Start () {
@@ -17,8 +17,8 @@ public class PlayerController : NetworkBehaviour {
 	void Update () {
 		if (!isLocalPlayer) return;
 
-		float dx = Input.GetAxis("Horizontal") * xVel;
-		float dy = Input.GetAxis("Vertical") * yVel;
+		float dx = Input.GetAxis("Horizontal") * xVel * Time.deltaTime;
+		float dy = Input.GetAxis("Vertical") * yVel * Time.deltaTime;
 
 		transform.Translate(dx, dy, 0);
 	}
