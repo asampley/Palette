@@ -49,5 +49,29 @@ public class PaletteColor {
 		System.Random rand = new System.Random ();
 		return new PaletteColor(rand.Next (8));
 	}
+
+	public override string ToString ()
+	{
+		switch (color) {
+		case 0:
+			return "Black";
+		case 1:
+			return "Red";
+		case 2:
+			return "Green";
+		case 3:
+			return "Yellow";
+		case 4:
+			return "Blue";
+		case 5:
+			return "Magenta";
+		case 6:
+			return "Cyan";
+		case 7:
+			return "White";
+		default:
+			return "Unknown Color";
+		}
+	}
 }
 
