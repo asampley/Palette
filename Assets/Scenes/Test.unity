@@ -393,7 +393,7 @@ BoxCollider2D:
 --- !u!114 &624029048
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114399146487248404, guid: 36743a63301bd491ea7b0fc2b2a3a9c9,
+  m_PrefabParentObject: {fileID: 114639011430353456, guid: 36743a63301bd491ea7b0fc2b2a3a9c9,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 624029043}
@@ -402,7 +402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beb251e6fb98648c19e2c372cf4ede85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseColorID: 1
+  baseColorID: 7
 --- !u!114 &624029049
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114903388586889396}
   - component: {fileID: 61703729251116344}
   - component: {fileID: 114975109218413484}
-  - component: {fileID: 114399146487248404}
+  - component: {fileID: 114639011430353456}
   m_Layer: 0
   m_Name: Platform
   m_TagString: Untagged
@@ -58,7 +58,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.16}
---- !u!114 &114399146487248404
+--- !u!114 &114639011430353456
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -69,8 +69,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beb251e6fb98648c19e2c372cf4ede85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseColorID: 2
-  currentColorID: 0
+  baseColorID: 7
 --- !u!114 &114903388586889396
 MonoBehaviour:
   m_ObjectHideFlags: 1
