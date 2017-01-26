@@ -20,7 +20,7 @@ public class NetworkPlayerManager : NetworkManager {
 
 		var player = Instantiate (playerPrefab, Vector3.zero, Quaternion.identity);
 		Player pScript = player.GetComponent<Player> ();
-		pScript.colorID = playerColor.ToInt();
+		pScript.colorID = playerColor.ToID();
 
 		//Debug.Log ("Created player with color " + playerColor.ToInt());
 

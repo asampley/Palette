@@ -13,8 +13,12 @@ public class PaletteColor {
 
 	private int color;
 
-	public PaletteColor(int color) {
+	private PaletteColor(int color) {
 		this.color = color;
+	}
+
+	public PaletteColor(PaletteColorID id) {
+		this.color = (int)id;
 	}
 
 	public static PaletteColor operator & (PaletteColor first, PaletteColor second) {
@@ -27,6 +31,10 @@ public class PaletteColor {
 
 	public int ToInt() {
 		return this.color;
+	}
+
+	public PaletteColorID ToID() {
+		return (PaletteColorID)(this.color);
 	}
 
 	public static PaletteColor FromInt(int i) {
@@ -47,6 +55,10 @@ public class PaletteColor {
 
 	public int ToLayer() {
 		return LayerMask.NameToLayer (this.ToString());
+	}
+
+	public int ToEntityLayer() {
+		return LayerMask.NameToLayer (this.ToString () + " Entity");
 	}
 
 	public static PaletteColor RandomColor() {
@@ -77,5 +89,16 @@ public class PaletteColor {
 			return "Unknown Color";
 		}
 	}
+}
+
+public enum PaletteColorID {
+	BLACK = 0,
+	RED = 1,
+	GREEN = 2,
+	BLUE = 4,
+	YELLOW = 3,
+	CYAN = 6,
+	MAGENTA = 5,
+	WHITE = 7
 }
 
