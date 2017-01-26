@@ -21,7 +21,12 @@ public class Player : NetworkBehaviour {
 	 * Called when the variable colorID is changed.
 	 */
 	void OnColorChange(int colorID) {
-		this.GetComponent<SpriteRenderer> ().color = PaletteColor.FromInt (colorID).ToColor ();
-		Debug.Log("Changed player " + this + " to have color " + PaletteColor.FromInt(colorID));
+		PaletteColor color = PaletteColor.FromInt (colorID);
+
+		this.GetComponent<SpriteRenderer> ().color = color.ToColor ();
+		Debug.Log("Set player " + this + " to have color " + color);
+
+		this.gameObject.layer = color.ToLayer ();
+		Debug.Log("Set player " + this + " to be in layer " + color.ToLayer() + "(" + LayerMask.LayerToName(color.ToLayer()) + ")");
 	}
 }

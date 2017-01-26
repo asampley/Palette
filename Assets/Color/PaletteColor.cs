@@ -45,6 +45,10 @@ public class PaletteColor {
 		}
 	}
 
+	public int ToLayer() {
+		return LayerMask.NameToLayer (this.ToString());
+	}
+
 	public static PaletteColor RandomColor() {
 		System.Random rand = new System.Random ();
 		return new PaletteColor(rand.Next (8));

@@ -22,7 +22,7 @@ public class NetworkPlayerManager : NetworkManager {
 		Player pScript = player.GetComponent<Player> ();
 		pScript.colorID = playerColor.ToInt();
 
-		Debug.Log ("Created player with color " + playerColor.ToInt());
+		//Debug.Log ("Created player with color " + playerColor.ToInt());
 
 		NetworkServer.AddPlayerForConnection (conn, player, playerControllerID);
 	}
