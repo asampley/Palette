@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4064854431160446}
   - component: {fileID: 212453726062043126}
-  - component: {fileID: 114903388586889396}
   - component: {fileID: 61703729251116344}
   - component: {fileID: 114975109218413484}
   - component: {fileID: 114639011430353456}
@@ -70,17 +69,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColorID: 7
---- !u!114 &114903388586889396
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1929891916013418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114975109218413484
 MonoBehaviour:
   m_ObjectHideFlags: 1
