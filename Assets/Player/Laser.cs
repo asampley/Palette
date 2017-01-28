@@ -8,6 +8,9 @@ public class Laser : NetworkBehaviour {
 	[SyncVar (hook="OnDirChange")]
 	private Vector2 laserDir;
 
+	[SyncVar (hook="OnDirChange")]
+	private Vector2 laserStart;
+
 	[SyncVar (hook="OnLaserToggle")]
 	private bool laserOn = true;
 	
@@ -41,9 +44,20 @@ public class Laser : NetworkBehaviour {
 		CmdSetLaserDir (laserDir);
 	}
 
+	public void SetLaserStart(Vector2 laserStart) {
+		this.laserStart = laserStart;
+		UpdateLaserDir ();
+		CmdSetLaserStart (laserStart);
+	}
+
 	[Command]
 	void CmdSetLaserDir(Vector2 laserDir) {
 		this.laserDir = laserDir;
+	}
+
+	[Command]
+	void CmdSetLaserStart(Vector2 laserStart) {
+		this.laserStart = laserStart;
 	}
 
 	void OnDirChange(Vector2 laserDir) {
@@ -61,6 +75,7 @@ public class Laser : NetworkBehaviour {
 
 		float rotZ = Mathf.Atan2 (laserDir.y, laserDir.x) * Mathf.Rad2Deg;
 		transform.rotation = Quaternion.Euler (0f, 0f, rotZ);
+		transform.position = laserStart;
 	}
 
 	public void Toggle() {

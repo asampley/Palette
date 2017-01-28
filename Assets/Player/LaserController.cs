@@ -76,6 +76,7 @@ public class LaserController : NetworkBehaviour {
 		difference.Normalize(); // Normalize the vector. this means that all the sum of vector will be equal to 1.
 
 		laser.SetLaserDir(difference);
+		laser.SetLaserStart (transform.position);
 	}
 
 }
