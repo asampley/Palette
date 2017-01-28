@@ -8,7 +8,7 @@ public class Laser : NetworkBehaviour {
 	[SyncVar (hook="OnDirChange")]
 	private Vector2 laserDir;
 
-	[SyncVar (hook="OnDirChange")]
+	[SyncVar (hook="OnStartChange")]
 	private Vector2 laserStart;
 
 	[SyncVar (hook="OnLaserToggle")]
@@ -75,6 +75,13 @@ public class Laser : NetworkBehaviour {
 	void OnDirChange(Vector2 laserDir) {
 		if (!hasAuthority) {
 			this.laserDir = laserDir;
+			UpdateLaserDir ();
+		}
+	}
+
+	void OnStartChange(Vector2 laserStart) {
+		if (!hasAuthority) {
+			this.laserStart = laserStart;
 			UpdateLaserDir ();
 		}
 	}
