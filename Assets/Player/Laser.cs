@@ -50,6 +50,12 @@ public class Laser : NetworkBehaviour {
 		CmdSetLaserStart (laserStart);
 	}
 
+	public void SetLaserOn(bool isOn) {
+		this.laserOn = isOn;
+		UpdateLaserOn ();
+		CmdSetLaserOn (isOn);
+	}
+
 	[Command]
 	void CmdSetLaserDir(Vector2 laserDir) {
 		this.laserDir = laserDir;
@@ -60,37 +66,15 @@ public class Laser : NetworkBehaviour {
 		this.laserStart = laserStart;
 	}
 
+	[Command]
+	void CmdSetLaserOn(bool laserDir) {
+		this.laserOn = laserOn;
+	}
+
 	void OnDirChange(Vector2 laserDir) {
 		if (!hasAuthority) {
 			UpdateLaserDir ();
 		}
-	}
-
-	void UpdateLaserDir() {
-		laserDir.Normalize ();
-
-		//Debug.Log ("Here");
-
-		RaycastHit2D raycastHit = Physics2D.Raycast (transform.position, laserDir, Mathf.Infinity, layersToHit);
-
-		float rotZ = Mathf.Atan2 (laserDir.y, laserDir.x) * Mathf.Rad2Deg;
-		transform.rotation = Quaternion.Euler (0f, 0f, rotZ);
-		transform.position = laserStart;
-	}
-
-	public void Toggle() {
-		this.SetLaserOn (!laserOn);
-	}
-
-	public void SetLaserOn(bool isOn) {
-		this.laserOn = isOn;
-		UpdateLaserOn ();
-		CmdSetLaserOn (isOn);
-	}
-
-	[Command]
-	void CmdSetLaserOn(bool laserDir) {
-		this.laserOn = laserOn;
 	}
 
 	void OnLaserToggle(bool laserOn) {
@@ -99,12 +83,28 @@ public class Laser : NetworkBehaviour {
 		}
 	}
 
-	void UpdateLaserOn() {
-		this.GetComponent<SpriteRenderer> ().enabled = laserOn;
-	}
-
 	void OnColorChange(PaletteColorID colorID) {
 		Debug.Log ("Set laser color to " + new PaletteColor(colorID));
 		this.GetComponent<SpriteRenderer>().color = new PaletteColor(colorID).ToColor();
+	}
+
+	void UpdateLaserDir() {
+		laserDir.Normalize ();
+
+		RaycastHit2D raycastHit = Physics2D.Raycast (transform.position, laserDir, Mathf.Infinity, layersToHit);
+
+		float rotZ = Mathf.Atan2 (laserDir.y, laserDir.x) * Mathf.Rad2Deg;
+		transform.rotation = Quaternion.Euler (0f, 0f, rotZ);
+		transform.position = laserStart;
+	}
+
+	void UpdateLaserOn() {
+		Debug.Log ("Turned " + (laserOn ? "on" : "off") + " laser " + netId);
+
+		this.GetComponent<SpriteRenderer> ().enabled = laserOn;
+	}
+
+	public void Toggle() {
+		this.SetLaserOn (!laserOn);
 	}
 }
