@@ -13,12 +13,14 @@ public class NetworkPlayerManager : NetworkManager {
 			playerColorID = playerColors[this.numPlayers];
 		}
 
-		var player = Instantiate (playerPrefab, Vector3.zero, Quaternion.identity);
+		//NetworkServer.SpawnWithClientAuthority (playerPrefab, conn);
+		GameObject player = Instantiate (playerPrefab, Vector3.zero, Quaternion.identity);
+
 		player.name = "Player " + this.numPlayers; // starts with 0
 		Player pScript = player.GetComponent<Player> ();
 		pScript.colorID = playerColorID;
 
-		//Debug.Log ("Created player with color " + playerColorID);
+		Debug.Log ("Created player with color " + playerColorID);
 
 		NetworkServer.AddPlayerForConnection (conn, player, playerControllerID);
 	}
