@@ -57,6 +57,12 @@ public class Laser : NetworkBehaviour {
 		CmdSetLaserOn (isOn);
 	}
 
+	public void SetLaserColor(PaletteColorID colorID) {
+		this.colorID = colorID;
+		UpdateLaserColor ();
+		CmdSetLaserColor (colorID);
+	}
+
 	[Command]
 	void CmdSetLaserDir(Vector2 laserDir) {
 		this.laserDir = laserDir;
@@ -70,6 +76,11 @@ public class Laser : NetworkBehaviour {
 	[Command]
 	void CmdSetLaserOn(bool laserOn) {
 		this.laserOn = laserOn;
+	}
+
+	[Command]
+	void CmdSetLaserColor(PaletteColorID colorID) {
+		this.colorID = colorID;
 	}
 
 	void OnDirChange(Vector2 laserDir) {
@@ -94,8 +105,9 @@ public class Laser : NetworkBehaviour {
 	}
 
 	void OnColorChange(PaletteColorID colorID) {
-		Debug.Log ("Set laser color to " + new PaletteColor(colorID));
-		this.GetComponent<SpriteRenderer>().color = new PaletteColor(colorID).ToColor();
+		if (!hasAuthority) {
+			UpdateLaserColor ();
+		}
 	}
 
 	void UpdateLaserDir() {
@@ -112,6 +124,11 @@ public class Laser : NetworkBehaviour {
 		Debug.Log ("Turned " + (laserOn ? "on" : "off") + " laser " + netId);
 
 		this.GetComponent<SpriteRenderer> ().enabled = laserOn;
+	}
+
+	void UpdateLaserColor() {
+		Debug.Log ("Set laser color to " + new PaletteColor(colorID));
+		this.GetComponent<SpriteRenderer>().color = new PaletteColor(colorID).ToColor();
 	}
 
 	public void Toggle() {

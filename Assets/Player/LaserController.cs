@@ -64,6 +64,9 @@ public class LaserController : NetworkBehaviour {
 		GameObject laserObj = Instantiate<GameObject>(laserPrefab);
 		laserObj.name = gameObject.name + " Laser";
 
+		// set the color to match the player
+		laserObj.GetComponent<Laser> ().SetLaserColor (this.GetComponent<Player> ().colorID);
+
 		NetworkServer.SpawnWithClientAuthority (laserObj, this.gameObject);
 
 		this.laserObjID = laserObj.GetComponent<NetworkIdentity>().netId;
