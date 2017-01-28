@@ -67,7 +67,7 @@ public class Laser : NetworkBehaviour {
 	}
 
 	[Command]
-	void CmdSetLaserOn(bool laserDir) {
+	void CmdSetLaserOn(bool laserOn) {
 		this.laserOn = laserOn;
 	}
 
