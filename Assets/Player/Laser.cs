@@ -74,12 +74,14 @@ public class Laser : NetworkBehaviour {
 
 	void OnDirChange(Vector2 laserDir) {
 		if (!hasAuthority) {
+			this.laserDir = laserDir;
 			UpdateLaserDir ();
 		}
 	}
 
 	void OnLaserToggle(bool laserOn) {
 		if (!hasAuthority) {
+			this.laserOn = laserOn;
 			UpdateLaserOn ();
 		}
 	}
