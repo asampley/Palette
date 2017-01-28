@@ -55,7 +55,7 @@ public class Laser : NetworkBehaviour {
 	void UpdateLaserDir() {
 		laserDir.Normalize ();
 
-		Debug.Log ("Here");
+		//Debug.Log ("Here");
 
 		RaycastHit2D raycastHit = Physics2D.Raycast (transform.position, laserDir, Mathf.Infinity, layersToHit);
 
@@ -63,8 +63,13 @@ public class Laser : NetworkBehaviour {
 		transform.rotation = Quaternion.Euler (0f, 0f, rotZ);
 	}
 
+	public void Toggle() {
+		this.SetLaserOn (!laserOn);
+	}
+
 	public void SetLaserOn(bool isOn) {
 		this.laserOn = isOn;
+		UpdateLaserOn ();
 		CmdSetLaserOn (isOn);
 	}
 

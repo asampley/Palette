@@ -19,8 +19,10 @@ public class LaserController : NetworkBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		// Check that this controller is on the local player.
 		if (!isLocalPlayer) return;
 
+		// make sure the laser has been found in the scene.
 		if (laser == null) {
 			laser = ClientScene.FindLocalObject (laserObjID).GetComponent<Laser>();
 
@@ -30,6 +32,7 @@ public class LaserController : NetworkBehaviour {
 			}
 		}
 
+		// make sure that the player has authority to modify the laser.
 		if (!laser.hasAuthority) {
 			Debug.LogError ("Laser " + laserObjID + " is not under player authority: Authority is " + laser.gameObject.GetComponent<NetworkIdentity>().clientAuthorityOwner);
 			return;
@@ -37,13 +40,22 @@ public class LaserController : NetworkBehaviour {
 
 		//Debug.Log ("Controlling laser " + laserObjID);
 
+		// Toggle the laser if the user presses the toggle button.
+		if (Input.GetButtonDown ("Laser Toggle")) {
+			laser.Toggle ();
+		}
+
+		// Rotate the laser based on the mouse and player position.
 		rotate();
 	}
 
+	/**
+	 * Spawn the laser on the local player client only.
+	 */
 	public override void OnStartLocalPlayer ()
 	{
 		base.OnStartLocalPlayer ();
-
+	
 		CmdSpawnLaser ();
 	}
 
