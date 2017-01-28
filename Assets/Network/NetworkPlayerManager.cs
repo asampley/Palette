@@ -7,6 +7,13 @@ using UnityEngine.Networking.NetworkSystem;
 public class NetworkPlayerManager : NetworkManager {
 	public PaletteColorID[] playerColors = { PaletteColorID.RED, PaletteColorID.BLUE, PaletteColorID.GREEN };
 
+	public override void OnStartClient (NetworkClient client)
+	{
+		base.OnStartClient (client);
+
+		//TODO: Register prefabs
+	}
+
 	public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerID) {
 		PaletteColorID playerColorID = PaletteColorID.WHITE;
 		if (this.numPlayers < playerColors.Length) {
@@ -20,7 +27,7 @@ public class NetworkPlayerManager : NetworkManager {
 		Player pScript = player.GetComponent<Player> ();
 		pScript.colorID = playerColorID;
 
-		Debug.Log ("Created player with color " + playerColorID);
+		//Debug.Log ("Created player with color " + playerColorID);
 
 		NetworkServer.AddPlayerForConnection (conn, player, playerControllerID);
 	}

@@ -6,7 +6,7 @@ using UnityEngine.Networking;
 
 public class Laser : NetworkBehaviour {
 	[SyncVar (hook="OnDirChange")]
-	public Vector2 laserDir;
+	private Vector2 laserDir;
 
 	[SyncVar (hook="OnLaserToggle")]
 	public bool laserOn;
@@ -18,7 +18,7 @@ public class Laser : NetworkBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+		Debug.Log ("ID: " + this.netId);
 	}
 
 	void InitLayers() {
@@ -33,15 +33,32 @@ public class Laser : NetworkBehaviour {
 		Debug.Log (layersToHit.ToString());
 	}
 
-	void OnDirChange(Vector2 laserDir) {
+	public void SetLaserDir(Vector2 laserDir) {
+		this.laserDir = laserDir;
+		UpdateLaser ();
+		CmdSetLaserDir (laserDir);
+	}
+
+	[Command]
+	void CmdSetLaserDir(Vector2 laserDir) {
+		this.laserDir = laserDir;
+	}
+
+	void UpdateLaser() {
 		laserDir.Normalize ();
 
 		Debug.Log ("Here");
 
 		RaycastHit2D raycastHit = Physics2D.Raycast (transform.position, laserDir, Mathf.Infinity, layersToHit);
 
-		float rotZ = Mathf.Atan2(laserDir.y,laserDir.x) * Mathf.Rad2Deg;
-		transform.rotation = Quaternion.Euler(0f,0f,rotZ);
+		float rotZ = Mathf.Atan2 (laserDir.y, laserDir.x) * Mathf.Rad2Deg;
+		transform.rotation = Quaternion.Euler (0f, 0f, rotZ);
+	}
+
+	void OnDirChange(Vector2 laserDir) {
+		if (!hasAuthority) {
+			UpdateLaser ();
+		}
 	}
 
 	void OnLaserToggle(bool laserOn) {

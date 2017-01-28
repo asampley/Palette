@@ -28,6 +28,6 @@ public class Player : NetworkBehaviour {
 		Debug.Log("Set player " + this + " to have color " + color);
 
 		this.gameObject.layer = layer;
-		Debug.Log("Set player " + this + " to be in layer " + layer + "(" + LayerMask.LayerToName(layer) + ")");
+		//Debug.Log("Set player " + this + " to be in layer " + layer + "(" + LayerMask.LayerToName(layer) + ")");
 	}
 }

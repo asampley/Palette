@@ -5,6 +5,12 @@ using UnityEngine.Networking;
 
 public class LaserController : NetworkBehaviour {
     //public int rotationOffset = 0; // degrees
+	public GameObject laserPrefab;
+
+	[SyncVar]
+	private NetworkInstanceId laserObjID;
+
+	private Laser laser;
 
     // Use this for initialization
 	void Start () {
@@ -13,17 +19,52 @@ public class LaserController : NetworkBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (!hasAuthority) {
+		if (!isLocalPlayer) return;
+
+
+		if (laser == null) {
+			laser = ClientScene.FindLocalObject (laserObjID).GetComponent<Laser>();
+
+			if (laser == null) {
+				Debug.LogError ("No associated laser object");
+				return;
+			}
+		}
+
+		if (!laser.hasAuthority) {
+			Debug.LogError ("Laser " + laserObjID + " is not under player authority: Authority is " + laser.gameObject.GetComponent<NetworkIdentity>().clientAuthorityOwner);
 			return;
 		}
+
+		Debug.Log ("Controlling laser " + laserObjID);
+
 		rotate();
+	}
+
+	public override void OnStartLocalPlayer ()
+	{
+		base.OnStartLocalPlayer ();
+
+		CmdSpawnLaser ();
+	}
+
+	[Command]
+	void CmdSpawnLaser() {
+		GameObject laserObj = Instantiate<GameObject>(laserPrefab);
+		laserObj.name = gameObject.name + " Laser";
+
+		NetworkServer.SpawnWithClientAuthority (laserObj, this.gameObject);
+
+		this.laserObjID = laserObj.GetComponent<NetworkIdentity>().netId;
+
+		Debug.Log ("Spawned laser with authority: " + connectionToClient);
 	}
 
 	void rotate() {
 		Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;	// subtract pos of player from mouse pos
 		difference.Normalize(); // Normalize the vector. this means that all the sum of vector will be equal to 1.
-		this.GetComponent<Laser> ().laserDir = difference;
-			
+
+		laser.SetLaserDir(difference);
 	}
 
 }
