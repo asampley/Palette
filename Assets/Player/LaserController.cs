@@ -21,7 +21,6 @@ public class LaserController : NetworkBehaviour {
 	void Update () {
 		if (!isLocalPlayer) return;
 
-
 		if (laser == null) {
 			laser = ClientScene.FindLocalObject (laserObjID).GetComponent<Laser>();
 
@@ -36,7 +35,7 @@ public class LaserController : NetworkBehaviour {
 			return;
 		}
 
-		Debug.Log ("Controlling laser " + laserObjID);
+		//Debug.Log ("Controlling laser " + laserObjID);
 
 		rotate();
 	}

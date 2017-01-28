@@ -9,16 +9,18 @@ public class Laser : NetworkBehaviour {
 	private Vector2 laserDir;
 
 	[SyncVar (hook="OnLaserToggle")]
-	public bool laserOn;
+	private bool laserOn = true;
 	
 	[SyncVar (hook="OnColorChange")]
-	public PaletteColorID colorID = PaletteColorID.BLACK;
+	private PaletteColorID colorID = PaletteColorID.WHITE;
 
 	private LayerMask layersToHit;
 
 	// Use this for initialization
 	void Start () {
-		Debug.Log ("ID: " + this.netId);
+		OnColorChange (colorID);
+		OnLaserToggle (laserOn);
+		OnDirChange (laserDir);
 	}
 
 	void InitLayers() {
@@ -35,7 +37,7 @@ public class Laser : NetworkBehaviour {
 
 	public void SetLaserDir(Vector2 laserDir) {
 		this.laserDir = laserDir;
-		UpdateLaser ();
+		UpdateLaserDir ();
 		CmdSetLaserDir (laserDir);
 	}
 
@@ -44,7 +46,13 @@ public class Laser : NetworkBehaviour {
 		this.laserDir = laserDir;
 	}
 
-	void UpdateLaser() {
+	void OnDirChange(Vector2 laserDir) {
+		if (!hasAuthority) {
+			UpdateLaserDir ();
+		}
+	}
+
+	void UpdateLaserDir() {
 		laserDir.Normalize ();
 
 		Debug.Log ("Here");
@@ -55,17 +63,28 @@ public class Laser : NetworkBehaviour {
 		transform.rotation = Quaternion.Euler (0f, 0f, rotZ);
 	}
 
-	void OnDirChange(Vector2 laserDir) {
-		if (!hasAuthority) {
-			UpdateLaser ();
-		}
+	public void SetLaserOn(bool isOn) {
+		this.laserOn = isOn;
+		CmdSetLaserOn (isOn);
+	}
+
+	[Command]
+	void CmdSetLaserOn(bool laserDir) {
+		this.laserOn = laserOn;
 	}
 
 	void OnLaserToggle(bool laserOn) {
+		if (!hasAuthority) {
+			UpdateLaserOn ();
+		}
+	}
 
+	void UpdateLaserOn() {
+		this.GetComponent<SpriteRenderer> ().enabled = laserOn;
 	}
 
 	void OnColorChange(PaletteColorID colorID) {
+		Debug.Log ("Set laser color to " + new PaletteColor(colorID));
 		this.GetComponent<SpriteRenderer>().color = new PaletteColor(colorID).ToColor();
 	}
 }
