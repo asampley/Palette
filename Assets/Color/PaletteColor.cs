@@ -54,11 +54,19 @@ public class PaletteColor {
 	}
 
 	public int ToLayer() {
-		return LayerMask.NameToLayer (this.ToString());
+		return LayerMask.NameToLayer (ToLayerName());
+	}
+
+	public string ToLayerName() {
+		return this.ToString ();
 	}
 
 	public int ToEntityLayer() {
-		return LayerMask.NameToLayer (this.ToString () + " Entity");
+		return LayerMask.NameToLayer (ToEntityLayerName());
+	}
+
+	public string ToEntityLayerName() {
+		return this.ToString () + " Entity";
 	}
 
 	public static PaletteColor RandomColor() {
