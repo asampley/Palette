@@ -89,6 +89,19 @@ public class PaletteColor {
 			return "Unknown Color";
 		}
 	}
+
+	public override bool Equals (object obj)
+	{
+		if (obj is PaletteColor) {
+			return ((PaletteColor)obj).color == this.color;
+		}
+		return false;
+	}
+
+	public override int GetHashCode ()
+	{
+		return color;
+	}
 }
 
 public enum PaletteColorID {

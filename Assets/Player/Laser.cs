@@ -21,9 +21,9 @@ public class Laser : NetworkBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		OnColorChange (colorID);
-		OnLaserToggle (laserOn);
-		OnDirChange (laserDir);
+		SetLaserColor (colorID);
+		SetLaserOn (laserOn);
+		SetLaserDir (laserDir);
 		SetLaserOn (laserOn);
 	}
 

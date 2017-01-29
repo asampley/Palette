@@ -301,6 +301,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114114812468600128, guid: 36743a63301bd491ea7b0fc2b2a3a9c9,
+        type: 2}
+      propertyPath: colorChangeEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4064854431160446, guid: 36743a63301bd491ea7b0fc2b2a3a9c9, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -342,6 +347,52 @@ Prefab:
       propertyPath: baseColorID
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114114812468600128, guid: 36743a63301bd491ea7b0fc2b2a3a9c9,
+        type: 2}
+      propertyPath: baseColor
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114114812468600128, guid: 36743a63301bd491ea7b0fc2b2a3a9c9,
+        type: 2}
+      propertyPath: baseColorID
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114975109218413484, guid: 36743a63301bd491ea7b0fc2b2a3a9c9,
+        type: 2}
+      propertyPath: m_ServerOnly
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114114812468600128, guid: 36743a63301bd491ea7b0fc2b2a3a9c9,
+        type: 2}
+      propertyPath: colorChangeEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114114812468600128, guid: 36743a63301bd491ea7b0fc2b2a3a9c9,
+        type: 2}
+      propertyPath: colorChangeEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 824187110}
+    - target: {fileID: 114114812468600128, guid: 36743a63301bd491ea7b0fc2b2a3a9c9,
+        type: 2}
+      propertyPath: colorChangeEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 114114812468600128, guid: 36743a63301bd491ea7b0fc2b2a3a9c9,
+        type: 2}
+      propertyPath: colorChangeEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114114812468600128, guid: 36743a63301bd491ea7b0fc2b2a3a9c9,
+        type: 2}
+      propertyPath: colorChangeEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 36743a63301bd491ea7b0fc2b2a3a9c9, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &824187110 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114639011430353456, guid: 36743a63301bd491ea7b0fc2b2a3a9c9,
+    type: 2}
+  m_PrefabInternal: {fileID: 424761487}
+  m_Script: {fileID: 11500000, guid: beb251e6fb98648c19e2c372cf4ede85, type: 3}
