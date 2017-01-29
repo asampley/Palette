@@ -20,6 +20,8 @@ public class Laser : NetworkBehaviour {
 	private LayerMask layersColors;
 	private LayerMask layersToHit;
 
+	private ColorAdder affectedObject;
+
 	// Use this for initialization
 	void Start () {
 		InitLayers ();
@@ -56,8 +58,7 @@ public class Laser : NetworkBehaviour {
 	}
 
 	public void SetLaserColor(PaletteColorID colorID) {
-		this.colorID = colorID;
-		UpdateLaserColor ();
+		UpdateLaserColor (colorID);
 		CmdSetLaserColor (colorID);
 	}
 
@@ -104,7 +105,7 @@ public class Laser : NetworkBehaviour {
 
 	void OnColorChange(PaletteColorID colorID) {
 		if (!hasAuthority) {
-			UpdateLaserColor ();
+			UpdateLaserColor (colorID);
 		}
 	}
 
@@ -112,12 +113,26 @@ public class Laser : NetworkBehaviour {
 		laserDir.Normalize ();
 
 		RaycastHit2D raycastHit = Physics2D.Raycast (transform.position, laserDir, Mathf.Infinity, layersToHit);
-		if (raycastHit.collider != null) {
-			Debug.Log ("Laser hit " + raycastHit.collider.gameObject.name);
-			ColorAdder colorAdder = raycastHit.collider.GetComponent<ColorAdder> ();
-			if (colorAdder != null) {
+		try {
+			ColorAdder colorAdder = raycastHit.collider.GetComponent<ColorAdder>();
+			if (affectedObject == null || affectedObject != colorAdder) {
 				colorAdder.AddColor (new PaletteColor(colorID));
 			}
+
+			Debug.Log ("Laser hit " + raycastHit.collider.gameObject.name);
+
+			if (this.affectedObject != colorAdder && this.affectedObject != null) {
+				this.affectedObject.RemoveColor(new PaletteColor(colorID));
+				Debug.Log("Laser stopped hitting " + this.affectedObject);
+			}
+
+			this.affectedObject = colorAdder;
+		} catch (NullReferenceException e) {
+			Debug.Log("Laser stopped hitting " + this.affectedObject);
+			if (this.affectedObject != null) {
+				this.affectedObject.RemoveColor (new PaletteColor (colorID));
+			}
+			this.affectedObject = null;
 		}
 
 		float rotZ = Mathf.Atan2 (laserDir.y, laserDir.x) * Mathf.Rad2Deg;
@@ -131,7 +146,14 @@ public class Laser : NetworkBehaviour {
 		this.GetComponent<SpriteRenderer> ().enabled = laserOn;
 	}
 
-	void UpdateLaserColor() {
+	void UpdateLaserColor(PaletteColorID newColorID) {
+		if (this.affectedObject != null) {
+			this.affectedObject.RemoveColor (new PaletteColor (colorID));
+			Debug.Log("Laser stopped hitting " + this.affectedObject);
+		}
+
+		this.colorID = newColorID;
+
 		Debug.Log ("Set laser color to " + new PaletteColor(colorID));
 		this.GetComponent<SpriteRenderer>().color = new PaletteColor(colorID).ToColor();
 		layersToHit = layersColors ^ LayerMask.GetMask (new PaletteColor (colorID).ToLayerName ());

@@ -38,7 +38,7 @@ public class ColorAdder : NetworkBehaviour {
 
 	public void RemoveColor(PaletteColor color) {
 		additiveColors.Remove (color);
-		cachedColor = PaletteColor.BLACK;
+		cachedColor = new PaletteColor(baseColorID);
 		foreach (PaletteColor c in additiveColors) {
 			cachedColor |= c;
 		}
@@ -58,6 +58,12 @@ public class ColorAdder : NetworkBehaviour {
 	*/
 
 	private void NotifyColorChange() {
+		string s = "";
+		foreach (PaletteColor c in additiveColors) {
+			s += c + " ";
+		}
+		Debug.Log ("List of colors: " + s);
+
 		colorChangeEvent.Invoke ();
 	}
 }
