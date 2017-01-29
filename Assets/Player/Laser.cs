@@ -112,7 +112,8 @@ public class Laser : NetworkBehaviour {
 	void UpdateLaserDir() {
 		laserDir.Normalize ();
 
-		RaycastHit2D raycastHit = Physics2D.Raycast (transform.position, laserDir, Mathf.Infinity, layersToHit);
+		// Handle colisions and color
+		RaycastHit2D raycastHit = Physics2D.Raycast (laserStart, laserDir, Mathf.Infinity, layersToHit);
 		try {
 			ColorAdder colorAdder = raycastHit.collider.GetComponent<ColorAdder>();
 			if (affectedObject == null || affectedObject != colorAdder) {
@@ -135,9 +136,22 @@ public class Laser : NetworkBehaviour {
 			this.affectedObject = null;
 		}
 
+
+		// handle drawing of sprite
 		float rotZ = Mathf.Atan2 (laserDir.y, laserDir.x) * Mathf.Rad2Deg;
-		transform.rotation = Quaternion.Euler (0f, 0f, rotZ);
-		transform.position = laserStart;
+		transform.rotation = Quaternion.Euler (0f, 0f, rotZ); // set rotation
+
+		float length = 1 * raycastHit.distance;
+		Debug.Log (raycastHit.distance);
+		if (length == 0) {
+			length = 1000;
+		}
+
+		Vector3 newScale = transform.localScale;
+		newScale.x = length; // IMPORTANT: assumes sprite unit size of 1 in x coords
+		transform.localScale = newScale; // set length
+
+		transform.position = laserStart + length / 2 * laserDir;
 	}
 
 	void UpdateLaserOn() {
