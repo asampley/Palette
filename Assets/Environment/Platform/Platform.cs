@@ -22,7 +22,7 @@ public class Platform : NetworkBehaviour {
 
 	public void UpdateColor() {
 		PaletteColor color = GetComponent<ColorAdder> ().ToPaletteColor ();
-		Debug.Log ("Set platform to " + color);
+		//Debug.Log ("Set platform to " + color);
 
 		currentColorID = color.ToID ();
 

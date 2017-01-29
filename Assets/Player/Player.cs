@@ -25,7 +25,7 @@ public class Player : NetworkBehaviour {
 		int layer = color.ToEntityLayer ();
 
 		this.GetComponent<SpriteRenderer> ().color = color.ToColor ();
-		Debug.Log("Set player " + this + " to have color " + color);
+		//Debug.Log("Set player " + this + " to have color " + color);
 
 		this.gameObject.layer = layer;
 		//Debug.Log("Set player " + this + " to be in layer " + layer + "(" + LayerMask.LayerToName(layer) + ")");

@@ -58,11 +58,13 @@ public class ColorAdder : NetworkBehaviour {
 	*/
 
 	private void NotifyColorChange() {
+		/*
 		string s = "";
 		foreach (PaletteColor c in additiveColors) {
 			s += c + " ";
 		}
 		Debug.Log ("List of colors: " + s);
+		*/
 
 		colorChangeEvent.Invoke ();
 	}

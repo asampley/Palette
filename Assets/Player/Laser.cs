@@ -119,16 +119,16 @@ public class Laser : NetworkBehaviour {
 				colorAdder.AddColor (new PaletteColor(colorID));
 			}
 
-			Debug.Log ("Laser hit " + raycastHit.collider.gameObject.name);
+			//Debug.Log ("Laser hit " + raycastHit.collider.gameObject.name);
 
 			if (this.affectedObject != colorAdder && this.affectedObject != null) {
 				this.affectedObject.RemoveColor(new PaletteColor(colorID));
-				Debug.Log("Laser stopped hitting " + this.affectedObject);
+				//Debug.Log("Laser stopped hitting " + this.affectedObject);
 			}
 
 			this.affectedObject = colorAdder;
 		} catch (NullReferenceException e) {
-			Debug.Log("Laser stopped hitting " + this.affectedObject);
+			//Debug.Log("Laser stopped hitting " + this.affectedObject);
 			if (this.affectedObject != null) {
 				this.affectedObject.RemoveColor (new PaletteColor (colorID));
 			}
@@ -149,7 +149,7 @@ public class Laser : NetworkBehaviour {
 	void UpdateLaserColor(PaletteColorID newColorID) {
 		if (this.affectedObject != null) {
 			this.affectedObject.RemoveColor (new PaletteColor (colorID));
-			Debug.Log("Laser stopped hitting " + this.affectedObject);
+			//Debug.Log("Laser stopped hitting " + this.affectedObject);
 		}
 
 		this.colorID = newColorID;
@@ -157,7 +157,7 @@ public class Laser : NetworkBehaviour {
 		Debug.Log ("Set laser color to " + new PaletteColor(colorID));
 		this.GetComponent<SpriteRenderer>().color = new PaletteColor(colorID).ToColor();
 		layersToHit = layersColors ^ LayerMask.GetMask (new PaletteColor (colorID).ToLayerName ());
-		Debug.Log ("Laser raycast set to hit " + string.Format("{0:X}", (int)layersToHit));
+		//Debug.Log ("Laser raycast set to hit " + string.Format("{0:X}", (int)layersToHit));
 	}
 
 	public void Toggle() {

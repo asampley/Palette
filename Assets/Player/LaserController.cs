@@ -71,7 +71,7 @@ public class LaserController : NetworkBehaviour {
 
 		this.laserObjID = laserObj.GetComponent<NetworkIdentity>().netId;
 
-		Debug.Log ("Spawned laser with authority: " + connectionToClient);
+		//Debug.Log ("Spawned laser with authority: " + connectionToClient);
 	}
 
 	void rotate() {
