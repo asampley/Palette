@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 50902641149359468}
   - component: {fileID: 61661360854668700}
   - component: {fileID: 114940421796480942}
+  - component: {fileID: 114498617042446274}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -81,6 +82,23 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.16}
+--- !u!114 &114498617042446274
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1063252532832406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99124d4fefdf69845b348634fdd16de4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothTimeY: 0.05
+  smoothTimeX: 0.05
+  player: {fileID: 1063252532832406}
+  bounds: 1
+  minCameraPos: {x: -50, y: -50, z: 0}
+  maxCameraPos: {x: 100, y: 100, z: 0}
 --- !u!114 &114623953724032276
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -171,7 +189,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserPrefab: {fileID: 1398345980712940, guid: 822928afd2b0245c2b8827a7026d37ce,
     type: 2}
-  laser: {fileID: 114296421836457446, guid: 822928afd2b0245c2b8827a7026d37ce, type: 2}
 --- !u!212 &212851525784188600
 SpriteRenderer:
   m_ObjectHideFlags: 1
