@@ -69,7 +69,3 @@ public class ColorAdder : NetworkBehaviour {
 		colorChangeEvent.Invoke ();
 	}
 }
-
-public interface ColorAdderListener {
-	void OnColorChange(PaletteColor color);
-}

@@ -3,20 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class Platform : NetworkBehaviour {
+public class Platform : NetworkBehaviour, PlayerColorListener {
 	private PaletteColorID currentColorID ;
 
 	public override void OnStartClient ()
 	{
 		base.OnStartClient ();
 
-		UpdateColor ();
-	}
-	
-	public override void OnStartServer ()
-	{
-		base.OnStartServer (); 
-
+		GameObject.Find ("Client Data").GetComponent<PlayerColor> ().AddListener (this);
 		UpdateColor ();
 	}
 
@@ -28,5 +22,12 @@ public class Platform : NetworkBehaviour {
 
 		this.GetComponent<SpriteRenderer> ().color = color.ToColor();
 		this.gameObject.layer = color.ToLayer ();
+
+		// set to be invisible if it matches the player color
+		this.GetComponent<SpriteRenderer> ().enabled = GameObject.Find ("Client Data").GetComponent<PlayerColor> ().GetPlayerColor() != currentColorID;
+	}
+
+	public void OnPlayerColorChange() {
+		UpdateColor ();
 	}
 }
