@@ -17,6 +17,20 @@ public class Player : NetworkBehaviour {
 		
 	}
 
+	public override void OnStartLocalPlayer ()
+	{
+		base.OnStartLocalPlayer ();
+
+		GameObject.Find ("Main Camera").GetComponent<CameraFollow> ().player = this.gameObject;
+	}
+
+	public override void OnStartClient ()
+	{
+		base.OnStartClient ();
+
+		// TODO: add all players to the main camera for more fancy movement.
+	}
+
 	/**
 	 * Called when the variable colorID is changed.
 	 */
