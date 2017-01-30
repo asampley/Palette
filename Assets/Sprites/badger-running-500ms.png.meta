@@ -1,0 +1,344 @@
+fileFormatVersion: 2
+guid: b0ac4d04fa781b8469e3316c1d1c3290
+timeCreated: 1485736730
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: badger-running-500ms_0
+    21300002: badger-running-500ms_1
+    21300004: badger-running-500ms_2
+    21300006: badger-running-500ms_3
+    21300008: badger-running-500ms_4
+    21300010: badger-running-500ms_5
+    21300012: badger-running-500ms_6
+    21300014: badger-running-500ms_7
+    21300016: badger-running-500ms_8
+    21300018: badger-running-500ms_9
+    21300020: badger-running-500ms_10
+    21300022: badger-running-500ms_11
+    21300024: badger-running-500ms_12
+    21300026: badger-running-500ms_13
+    21300028: badger-running-500ms_14
+    21300030: badger-running-500ms_15
+    21300032: badger-running-500ms_16
+    21300034: badger-running-500ms_17
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: badger-running-500ms_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1026
+        width: 1075
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: badger-running-500ms_1
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 1026
+        width: 1075
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: badger-running-500ms_2
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 1026
+        width: 1075
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: badger-running-500ms_3
+      rect:
+        serializedVersion: 2
+        x: 3225
+        y: 1026
+        width: 1075
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: badger-running-500ms_4
+      rect:
+        serializedVersion: 2
+        x: 4300
+        y: 1026
+        width: 1075
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: badger-running-500ms_5
+      rect:
+        serializedVersion: 2
+        x: 5375
+        y: 1026
+        width: 1075
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: badger-running-500ms_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 513
+        width: 1075
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: badger-running-500ms_7
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 513
+        width: 1075
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: badger-running-500ms_8
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 513
+        width: 1075
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: badger-running-500ms_9
+      rect:
+        serializedVersion: 2
+        x: 3225
+        y: 513
+        width: 1075
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: badger-running-500ms_10
+      rect:
+        serializedVersion: 2
+        x: 4300
+        y: 513
+        width: 1075
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: badger-running-500ms_11
+      rect:
+        serializedVersion: 2
+        x: 5375
+        y: 513
+        width: 1075
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: badger-running-500ms_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1075
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: badger-running-500ms_13
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 0
+        width: 1075
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: badger-running-500ms_14
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 0
+        width: 1075
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: badger-running-500ms_15
+      rect:
+        serializedVersion: 2
+        x: 3225
+        y: 0
+        width: 1075
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: badger-running-500ms_16
+      rect:
+        serializedVersion: 2
+        x: 4300
+        y: 0
+        width: 1075
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: badger-running-500ms_17
+      rect:
+        serializedVersion: 2
+        x: 5375
+        y: 0
+        width: 1075
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
