@@ -27,6 +27,9 @@ public class Laser : NetworkBehaviour {
 
 	private ColorAdder affectedObject;
 
+	public Sprite laserAdd;
+	public Sprite laserSub;
+
 	// Use this for initialization
 	void Start () {
 		InitLayers ();
@@ -232,6 +235,16 @@ public class Laser : NetworkBehaviour {
 			}
 		}
 		this.mode = mode;
+
+		switch (mode) {
+		case LaserMode.ADD:
+			this.GetComponent<SpriteRenderer> ().sprite = laserAdd;
+			break;
+		case LaserMode.SUBTRACT:
+			this.GetComponent<SpriteRenderer> ().sprite = laserSub;
+			break;
+		}
+
 	}
 
 	public void ToggleOn() {
