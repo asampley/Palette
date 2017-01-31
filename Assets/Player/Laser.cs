@@ -137,66 +137,81 @@ public class Laser : NetworkBehaviour {
 		laserDir.Normalize ();
 
 		// Handle colisions and color
-		//RaycastHit2D raycastHit = Physics2D.Raycast (laserStart, laserDir, Mathf.Infinity, layersToHit);
-		RaycastHit2D raycastHit = Physics2D.Raycast (laserStart, laserDir, Mathf.Infinity, layersColors);
+		if (laserOn) {
+			RaycastHit2D raycastHit = Physics2D.Raycast (laserStart, laserDir, Mathf.Infinity, layersColors);
 
-		ColorAdder newAffectedObject = null;
-		try {
-			newAffectedObject = raycastHit.collider.GetComponent<ColorAdder>();
-		} catch (NullReferenceException e) {
-			// It's fine, the new affected object is just null
-		}
+			ColorAdder newAffectedObject = null;
+			try {
+				newAffectedObject = raycastHit.collider.GetComponent<ColorAdder> ();
+			} catch (NullReferenceException e) {
+				// It's fine, the new affected object is just null
+			}
 
-		if (this.affectedObject == newAffectedObject) { // if new and old are the same, do nothing
+			if (this.affectedObject == newAffectedObject) { // if new and old are the same, do nothing
 
-		} else {
-			if (this.affectedObject != null) { // if they are different, and old is an object, subtract
-				switch (mode) {
-				case LaserMode.ADD:
-					this.affectedObject.RemoveAdditiveColor (new PaletteColor (colorID));
-					break;
-				case LaserMode.SUBTRACT:
-					this.affectedObject.RemoveSubtractiveColor (new PaletteColor (colorID));
-					break;
+			} else {
+				if (this.affectedObject != null) { // if they are different, and old is an object, subtract
+					switch (mode) {
+					case LaserMode.ADD:
+						this.affectedObject.RemoveAdditiveColor (new PaletteColor (colorID));
+						break;
+					case LaserMode.SUBTRACT:
+						this.affectedObject.RemoveSubtractiveColor (new PaletteColor (colorID));
+						break;
+					}
+				}
+
+				if (newAffectedObject != null) { // if they are different, and the new is an object, add
+					switch (mode) {
+					case LaserMode.ADD:
+						newAffectedObject.AddAdditiveColor (new PaletteColor (colorID));
+						break;
+					case LaserMode.SUBTRACT:
+						newAffectedObject.AddSubtractiveColor (new PaletteColor (colorID));
+						break;
+					}
 				}
 			}
 
-			if (newAffectedObject != null) { // if they are different, and the new is an object, add
-				switch (mode) {
-				case LaserMode.ADD:
-					newAffectedObject.AddAdditiveColor (new PaletteColor (colorID));
-					break;
-				case LaserMode.SUBTRACT:
-					newAffectedObject.AddSubtractiveColor (new PaletteColor (colorID));
-					break;
-				}
+			// update affected object
+			this.affectedObject = newAffectedObject;
+
+			// handle drawing of sprite
+			float rotZ = Mathf.Atan2 (laserDir.y, laserDir.x) * Mathf.Rad2Deg;
+			transform.rotation = Quaternion.Euler (0f, 0f, rotZ); // set rotation
+
+			float length = 1 * raycastHit.distance;
+			//Debug.Log (raycastHit.distance);
+			if (length == 0) {
+				length = 1000;
 			}
+
+			Vector3 newScale = transform.localScale;
+			newScale.x = length; // IMPORTANT: assumes sprite unit size of 1 in x coords
+			transform.localScale = newScale; // set length
+
+			transform.position = laserStart + length / 2 * laserDir;
+		} else if (this.affectedObject != null) { // remove self from object when off
+			switch (mode) {
+				case LaserMode.ADD:
+				this.affectedObject.RemoveAdditiveColor (new PaletteColor (colorID));
+				break;
+				case LaserMode.SUBTRACT:
+				this.affectedObject.RemoveSubtractiveColor (new PaletteColor (colorID));
+				break;
+			}
+
+			this.affectedObject = null;
 		}
-
-		// update affected object
-		this.affectedObject = newAffectedObject;
-
-		// handle drawing of sprite
-		float rotZ = Mathf.Atan2 (laserDir.y, laserDir.x) * Mathf.Rad2Deg;
-		transform.rotation = Quaternion.Euler (0f, 0f, rotZ); // set rotation
-
-		float length = 1 * raycastHit.distance;
-		//Debug.Log (raycastHit.distance);
-		if (length == 0) {
-			length = 1000;
-		}
-
-		Vector3 newScale = transform.localScale;
-		newScale.x = length; // IMPORTANT: assumes sprite unit size of 1 in x coords
-		transform.localScale = newScale; // set length
-
-		transform.position = laserStart + length / 2 * laserDir;
 	}
 
 	void UpdateLaserOn() {
 		Debug.Log ("Turned " + (laserOn ? "on" : "off") + " laser " + netId);
 
 		this.GetComponent<SpriteRenderer> ().enabled = laserOn;
+
+		// Refresh laser calculations
+		UpdateLaserDir ();
 	}
 
 	void UpdateLaserColor(PaletteColorID newColorID) {
@@ -234,6 +249,7 @@ public class Laser : NetworkBehaviour {
 				break;
 			}
 		}
+
 		this.mode = mode;
 
 		switch (mode) {
