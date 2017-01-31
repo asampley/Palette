@@ -10,6 +10,7 @@ public class ColorAdder : NetworkBehaviour {
 	public PaletteColorID baseColorID;
 
 	private List<PaletteColor> additiveColors = new List<PaletteColor>();
+	private List<PaletteColor> subtractiveColors = new List<PaletteColor> ();
 	private PaletteColor cachedColor;
 
 	public UnityEvent colorChangeEvent;
@@ -29,43 +30,47 @@ public class ColorAdder : NetworkBehaviour {
 		return cachedColor;
 	}
 
-	public void AddColor(PaletteColor color) {
+	public void AddAdditiveColor(PaletteColor color) {
 		additiveColors.Add (color);
-		cachedColor |= color;
+		RecalculateCachedColor ();
 
 		NotifyColorChange ();
 	}
 
-	public void RemoveColor(PaletteColor color) {
+	public void RemoveAdditiveColor(PaletteColor color) {
 		additiveColors.Remove (color);
+		cachedColor = new PaletteColor(baseColorID);
+		RecalculateCachedColor ();
+
+		NotifyColorChange ();
+	}
+
+	public void AddSubtractiveColor(PaletteColor color) {
+		subtractiveColors.Add (color);
+		RecalculateCachedColor ();
+
+		NotifyColorChange ();
+	}
+
+	public void RemoveSubtractiveColor(PaletteColor color) {
+		subtractiveColors.Remove (color);
+		cachedColor = new PaletteColor(baseColorID);
+		RecalculateCachedColor ();
+
+		NotifyColorChange ();
+	}
+
+	private void RecalculateCachedColor() {
 		cachedColor = new PaletteColor(baseColorID);
 		foreach (PaletteColor c in additiveColors) {
 			cachedColor |= c;
 		}
-
-		NotifyColorChange ();
-	}
-	/*
-	public void SetListener(NetworkBehaviour listener) {
-		this.listener = listener.netId;
-		NotifyColorChange ();
-	}
-
-	private void NotifyColorChange() {
-		Debug.Log ("Notifying " + ClientScene.FindLocalObject (listener) + " of color change to " + this.ToPaletteColor());
-		ClientScene.FindLocalObject(listener).GetComponent<ColorAdderListener>().OnColorChange(ToPaletteColor());
-	}
-	*/
-
-	private void NotifyColorChange() {
-		/*
-		string s = "";
-		foreach (PaletteColor c in additiveColors) {
-			s += c + " ";
+		foreach (PaletteColor c in subtractiveColors) {
+			cachedColor &= ~c;
 		}
-		Debug.Log ("List of colors: " + s);
-		*/
+	}
 
+	private void NotifyColorChange() {
 		colorChangeEvent.Invoke ();
 	}
 }

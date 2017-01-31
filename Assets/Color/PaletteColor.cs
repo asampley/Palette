@@ -14,7 +14,7 @@ public class PaletteColor {
 	private int color;
 
 	private PaletteColor(int color) {
-		this.color = color;
+		this.color = color & 0x7;
 	}
 
 	public PaletteColor(PaletteColorID id) {
@@ -29,6 +29,10 @@ public class PaletteColor {
 		return new PaletteColor(first.color | second.color);
 	}
 
+	public static PaletteColor operator ~ (PaletteColor col) {
+		return new PaletteColor (~col.color);
+	}
+
 	public int ToInt() {
 		return this.color;
 	}
@@ -38,7 +42,7 @@ public class PaletteColor {
 	}
 
 	public static PaletteColor FromInt(int i) {
-		return new PaletteColor (i & 0x7);
+		return new PaletteColor (i);
 	}
 
 	public Color ToColor() {

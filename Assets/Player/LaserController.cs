@@ -42,7 +42,12 @@ public class LaserController : NetworkBehaviour {
 
 		// Toggle the laser if the user presses the toggle button.
 		if (Input.GetButtonDown ("Laser Toggle")) {
-			laser.Toggle ();
+			laser.ToggleOn ();
+		}
+
+		// Change mode if the user presses the change mode button.
+		if (Input.GetButtonDown ("Laser Mode Toggle")) {
+			laser.ToggleMode ();
 		}
 
 		// Rotate the laser based on the mouse and player position.

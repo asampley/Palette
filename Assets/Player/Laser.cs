@@ -4,6 +4,8 @@ using System;
 using UnityEngine;
 using UnityEngine.Networking;
 
+public enum LaserMode { ADD, SUBTRACT }
+
 public class Laser : NetworkBehaviour {
 	[SyncVar (hook="OnDirChange")]
 	private Vector2 laserDir;
@@ -13,7 +15,10 @@ public class Laser : NetworkBehaviour {
 
 	[SyncVar (hook="OnLaserToggle")]
 	private bool laserOn = true;
-	
+
+	[SyncVar (hook="OnLaserMode")]
+	private LaserMode mode;
+
 	[SyncVar (hook="OnColorChange")]
 	private PaletteColorID colorID = PaletteColorID.WHITE;
 
@@ -62,6 +67,11 @@ public class Laser : NetworkBehaviour {
 		CmdSetLaserColor (colorID);
 	}
 
+	public void SetLaserMode(LaserMode mode) {
+		UpdateLaserMode (mode);
+		CmdSetLaserMode (mode);
+	}
+
 	[Command]
 	void CmdSetLaserDir(Vector2 laserDir) {
 		this.laserDir = laserDir;
@@ -80,6 +90,11 @@ public class Laser : NetworkBehaviour {
 	[Command]
 	void CmdSetLaserColor(PaletteColorID colorID) {
 		this.colorID = colorID;
+	}
+
+	[Command]
+	void CmdSetLaserMode(LaserMode mode) {
+		this.mode = mode;
 	}
 
 	void OnDirChange(Vector2 laserDir) {
@@ -109,34 +124,54 @@ public class Laser : NetworkBehaviour {
 		}
 	}
 
+	void OnLaserMode(LaserMode mode) {
+		if (!hasAuthority) {
+			UpdateLaserMode (mode);
+		}
+	}
+
 	void UpdateLaserDir() {
 		laserDir.Normalize ();
 
 		// Handle colisions and color
 		//RaycastHit2D raycastHit = Physics2D.Raycast (laserStart, laserDir, Mathf.Infinity, layersToHit);
 		RaycastHit2D raycastHit = Physics2D.Raycast (laserStart, laserDir, Mathf.Infinity, layersColors);
+
+		ColorAdder newAffectedObject = null;
 		try {
-			ColorAdder colorAdder = raycastHit.collider.GetComponent<ColorAdder>();
-			if (affectedObject == null || affectedObject != colorAdder) {
-				colorAdder.AddColor (new PaletteColor(colorID));
-			}
-
-			//Debug.Log ("Laser hit " + raycastHit.collider.gameObject.name);
-
-			if (this.affectedObject != colorAdder && this.affectedObject != null) {
-				this.affectedObject.RemoveColor(new PaletteColor(colorID));
-				//Debug.Log("Laser stopped hitting " + this.affectedObject);
-			}
-
-			this.affectedObject = colorAdder;
+			newAffectedObject = raycastHit.collider.GetComponent<ColorAdder>();
 		} catch (NullReferenceException e) {
-			//Debug.Log("Laser stopped hitting " + this.affectedObject);
-			if (this.affectedObject != null) {
-				this.affectedObject.RemoveColor (new PaletteColor (colorID));
-			}
-			this.affectedObject = null;
+			// It's fine, the new affected object is just null
 		}
 
+		if (this.affectedObject == newAffectedObject) { // if new and old are the same, do nothing
+
+		} else {
+			if (this.affectedObject != null) { // if they are different, and old is an object, subtract
+				switch (mode) {
+				case LaserMode.ADD:
+					this.affectedObject.RemoveAdditiveColor (new PaletteColor (colorID));
+					break;
+				case LaserMode.SUBTRACT:
+					this.affectedObject.RemoveSubtractiveColor (new PaletteColor (colorID));
+					break;
+				}
+			}
+
+			if (newAffectedObject != null) { // if they are different, and the new is an object, add
+				switch (mode) {
+				case LaserMode.ADD:
+					newAffectedObject.AddAdditiveColor (new PaletteColor (colorID));
+					break;
+				case LaserMode.SUBTRACT:
+					newAffectedObject.AddSubtractiveColor (new PaletteColor (colorID));
+					break;
+				}
+			}
+		}
+
+		// update affected object
+		this.affectedObject = newAffectedObject;
 
 		// handle drawing of sprite
 		float rotZ = Mathf.Atan2 (laserDir.y, laserDir.x) * Mathf.Rad2Deg;
@@ -163,8 +198,14 @@ public class Laser : NetworkBehaviour {
 
 	void UpdateLaserColor(PaletteColorID newColorID) {
 		if (this.affectedObject != null) {
-			this.affectedObject.RemoveColor (new PaletteColor (colorID));
-			//Debug.Log("Laser stopped hitting " + this.affectedObject);
+			switch (this.mode) {
+				case LaserMode.ADD:
+					this.affectedObject.RemoveAdditiveColor (new PaletteColor (colorID));
+				break;
+				case LaserMode.SUBTRACT:
+					this.affectedObject.RemoveSubtractiveColor (new PaletteColor (colorID));
+				break;
+			}
 		}
 
 		this.colorID = newColorID;
@@ -175,7 +216,34 @@ public class Laser : NetworkBehaviour {
 		//Debug.Log ("Laser raycast set to hit " + string.Format("{0:X}", (int)layersToHit));
 	}
 
-	public void Toggle() {
+	void UpdateLaserMode(LaserMode mode) {
+		if (mode == this.mode) return;
+		
+		if (this.affectedObject != null) {
+			switch (this.mode) {
+			case LaserMode.ADD:
+				this.affectedObject.RemoveAdditiveColor (new PaletteColor (colorID));
+				break;
+			case LaserMode.SUBTRACT:
+				this.affectedObject.RemoveSubtractiveColor (new PaletteColor (colorID));
+				break;
+			}
+		}
+		this.mode = mode;
+	}
+
+	public void ToggleOn() {
 		this.SetLaserOn (!laserOn);
+	}
+
+	public void ToggleMode() {
+		switch (mode) {
+		case LaserMode.ADD:
+			this.SetLaserMode (LaserMode.SUBTRACT);
+			break;
+		case LaserMode.SUBTRACT:
+			this.SetLaserMode (LaserMode.ADD);
+			break;
+		}
 	}
 }
