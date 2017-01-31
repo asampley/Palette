@@ -223,9 +223,11 @@ public class Laser : NetworkBehaviour {
 			switch (this.mode) {
 			case LaserMode.ADD:
 				this.affectedObject.RemoveAdditiveColor (new PaletteColor (colorID));
+				this.affectedObject.AddSubtractiveColor (new PaletteColor (colorID));
 				break;
 			case LaserMode.SUBTRACT:
 				this.affectedObject.RemoveSubtractiveColor (new PaletteColor (colorID));
+				this.affectedObject.AddAdditiveColor (new PaletteColor (colorID));
 				break;
 			}
 		}
