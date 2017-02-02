@@ -6,7 +6,7 @@ using UnityEngine.Networking;
 
 public class PlayerController : NetworkBehaviour {
 	[SerializeField] private float xVel = 5f;
-	[SerializeField] private float yVel = 5f;
+	[SerializeField] private float jumpImpulse = 1f;
 
     //used for jumping animations and flipping
     public bool grounded;
@@ -27,9 +27,10 @@ public class PlayerController : NetworkBehaviour {
 	void Update () {
 		if (!isLocalPlayer) return;
 
-		float dx = Input.GetAxis("Horizontal") * xVel * Time.deltaTime;
-		float dy = Input.GetAxis("Vertical") * yVel * Time.deltaTime;
+		float wXVel = Input.GetAxis("Horizontal") * xVel;
+		float impulse = Input.GetAxis("Vertical") * jumpImpulse;
 
-		transform.Translate(dx, dy, 0);
+		rb2d.velocity = new Vector2 (wXVel, rb2d.velocity.y);
+		rb2d.AddForce (new Vector2 (0, impulse), ForceMode2D.Impulse);
 	}
 }
