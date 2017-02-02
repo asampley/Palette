@@ -6,6 +6,7 @@ using UnityEngine.Networking;
 public class Player : NetworkBehaviour {
 	[SyncVar (hook="OnColorChange")]
 	public PaletteColorID colorID;
+	public GameObject head;
 
 	// Use this for initialization
 	void Start () {
@@ -40,6 +41,7 @@ public class Player : NetworkBehaviour {
 
 		this.GetComponent<SpriteRenderer> ().color = color.ToColor ();
 		//Debug.Log("Set player " + this + " to have color " + color);
+		head.GetComponent<SpriteRenderer> ().color=color.ToColor ();
 
 		this.gameObject.layer = layer;
 		//Debug.Log("Set player " + this + " to be in layer " + layer + "(" + LayerMask.LayerToName(layer) + ")");
