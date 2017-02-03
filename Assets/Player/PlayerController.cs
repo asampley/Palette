@@ -9,6 +9,8 @@ public class PlayerController : NetworkBehaviour {
 	[SerializeField] private float yVel = 5f;
     [SerializeField] private float maxspeed = 10f;
 
+	[SerializeField] private float jumpImpulse = 1f;
+
     //used for jumping animations and flipping
     public bool grounded;
     public bool isLeft;
@@ -91,5 +93,10 @@ public class PlayerController : NetworkBehaviour {
         {
             rb2d.velocity = new Vector2(-maxspeed, rb2d.velocity.y);
         }
+        float wXVel = Input.GetAxis("Horizontal") * xVel;
+        float impulse = Input.GetAxis("Vertical") * jumpImpulse;
+
+        rb2d.velocity = new Vector2(wXVel, rb2d.velocity.y);
+        rb2d.AddForce(new Vector2(0, impulse), ForceMode2D.Impulse);
     }
 }

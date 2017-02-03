@@ -23,7 +23,7 @@ public class Laser : NetworkBehaviour {
 	private PaletteColorID colorID = PaletteColorID.WHITE;
 
 	private LayerMask layersColors;
-	//private LayerMask layersToHit;
+	private LayerMask layersToHit;
 
 	private ColorAdder affectedObject;
 
@@ -45,6 +45,8 @@ public class Laser : NetworkBehaviour {
 		foreach (PaletteColorID id in Enum.GetValues(typeof(PaletteColorID))) {
 			layersColors |= LayerMask.GetMask(new PaletteColor(id).ToLayerName());
 		}
+
+		layersToHit = layersColors ^ LayerMask.GetMask (new PaletteColor (colorID).ToLayerName ());
 	}
 
 	public void SetLaserDir(Vector2 laserDir) {
@@ -138,7 +140,7 @@ public class Laser : NetworkBehaviour {
 
 		// Handle colisions and color
 		if (laserOn) {
-			RaycastHit2D raycastHit = Physics2D.Raycast (laserStart, laserDir, Mathf.Infinity, layersColors);
+			RaycastHit2D raycastHit = Physics2D.Raycast (laserStart, laserDir, Mathf.Infinity, layersToHit);
 
 			ColorAdder newAffectedObject = null;
 			try {
@@ -230,7 +232,9 @@ public class Laser : NetworkBehaviour {
 
 		Debug.Log ("Set laser color to " + new PaletteColor(colorID));
 		this.GetComponent<SpriteRenderer>().color = new PaletteColor(colorID).ToColor();
-		//layersToHit = layersColors ^ LayerMask.GetMask (new PaletteColor (colorID).ToLayerName ());
+
+		// Do not hit own color
+		layersToHit = layersColors ^ LayerMask.GetMask (new PaletteColor (colorID).ToLayerName ());
 		//Debug.Log ("Laser raycast set to hit " + string.Format("{0:X}", (int)layersToHit));
 	}
 
