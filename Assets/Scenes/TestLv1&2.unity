@@ -206,7 +206,6 @@ MonoBehaviour:
   matchSize: 4
   isNetworkActive: 0
   matchMaker: {fileID: 0}
-  playerColors: 0100000002000000
 --- !u!114 &164508596 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114639011430353456, guid: 36743a63301bd491ea7b0fc2b2a3a9c9,
@@ -445,6 +444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70e514e333c674945b04e5b585327720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelPlayerColors: 0100000004000000
 --- !u!4 &647311082
 Transform:
   m_ObjectHideFlags: 0
