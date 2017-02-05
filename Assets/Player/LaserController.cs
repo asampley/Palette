@@ -12,6 +12,10 @@ public class LaserController : NetworkBehaviour {
 
 	private Laser laser;
 
+	private bool isAddDown = false;
+	private bool isSubDown = false;
+	private bool lockLaserOn = false;
+
     // Use this for initialization
 	void Start () {
         
@@ -40,14 +44,38 @@ public class LaserController : NetworkBehaviour {
 
 		//Debug.Log ("Controlling laser " + laserObjID);
 
-		// Toggle the laser if the user presses the toggle button.
-		if (Input.GetButtonDown ("Laser Toggle")) {
-			laser.ToggleOn ();
+		// TODO: Get rid of laser lock once testing is done
+		if (Input.GetButtonDown("Laser Lock")) {
+			lockLaserOn = !lockLaserOn;
 		}
 
-		// Change mode if the user presses the change mode button.
-		if (Input.GetButtonDown ("Laser Mode Toggle")) {
-			laser.ToggleMode ();
+		// Toggle the laser if the user presses the toggle button.
+		if (Input.GetButtonDown ("Laser Add")) {
+			isAddDown = true;
+		}
+		if (Input.GetButtonUp ("Laser Add")) {
+			isAddDown = false;
+		}
+
+		// Turn laser on with subtract mode if user presses button.
+		if (Input.GetButtonDown ("Laser Subtract")) {
+			isSubDown = true;
+		}
+		if (Input.GetButtonUp ("Laser Subtract")) {
+			isSubDown = false;
+		}
+
+		// change laser if needs changing
+		if (isAddDown) {
+			laser.SetLaserOn (true);
+			laser.SetLaserMode (LaserMode.ADD);
+		} else if (isSubDown) {
+			laser.SetLaserOn (true);
+			laser.SetLaserMode (LaserMode.SUBTRACT);
+		} else if (lockLaserOn) {
+			laser.SetLaserOn (true);
+		} else {
+			laser.SetLaserOn (false);
 		}
 
 		// Rotate the laser based on the mouse and player position.

@@ -279,7 +279,7 @@ Prefab:
     - target: {fileID: 114114812468600128, guid: 36743a63301bd491ea7b0fc2b2a3a9c9,
         type: 2}
       propertyPath: baseColorID
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114975109218413484, guid: 36743a63301bd491ea7b0fc2b2a3a9c9,
         type: 2}
@@ -709,7 +709,7 @@ Prefab:
     - target: {fileID: 114114812468600128, guid: 36743a63301bd491ea7b0fc2b2a3a9c9,
         type: 2}
       propertyPath: baseColorID
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114975109218413484, guid: 36743a63301bd491ea7b0fc2b2a3a9c9,
         type: 2}

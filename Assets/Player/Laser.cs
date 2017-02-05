@@ -50,29 +50,39 @@ public class Laser : NetworkBehaviour {
 	}
 
 	public void SetLaserDir(Vector2 laserDir) {
+		if (this.laserDir == laserDir) return;
+
 		this.laserDir = laserDir;
 		UpdateLaserDir ();
 		CmdSetLaserDir (laserDir);
 	}
 
 	public void SetLaserStart(Vector2 laserStart) {
+		if (this.laserStart == laserStart) return;
+
 		this.laserStart = laserStart;
 		UpdateLaserDir ();
 		CmdSetLaserStart (laserStart);
 	}
 
 	public void SetLaserOn(bool isOn) {
+		if (this.laserOn == isOn) return;
+
 		this.laserOn = isOn;
 		UpdateLaserOn ();
 		CmdSetLaserOn (isOn);
 	}
 
 	public void SetLaserColor(PaletteColorID colorID) {
+		if (this.colorID == colorID) return;
+
 		UpdateLaserColor (colorID);
 		CmdSetLaserColor (colorID);
 	}
 
 	public void SetLaserMode(LaserMode mode) {
+		if (this.mode == mode) return;
+
 		UpdateLaserMode (mode);
 		CmdSetLaserMode (mode);
 	}
