@@ -35,7 +35,7 @@ public class PlayerController : NetworkBehaviour {
         {
             GetComponent<SpriteRenderer>().flipX = true;
         }
-        else
+        else if (Input.GetAxis("Horizontal") < 0) 
         {
             GetComponent<SpriteRenderer>().flipX = false;
         }
