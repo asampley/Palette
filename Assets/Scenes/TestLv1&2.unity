@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 647311082}
   - component: {fileID: 647311081}
   m_Layer: 0
-  m_Name: Client Data
+  m_Name: __Scene Data__
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
