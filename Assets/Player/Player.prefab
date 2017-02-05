@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4399818672118334}
   - component: {fileID: 212851525784188600}
   - component: {fileID: 114727990782073940}
-  - component: {fileID: 114623953724032276}
   - component: {fileID: 114772780141719184}
+  - component: {fileID: 114623953724032276}
   - component: {fileID: 114820879974677552}
   - component: {fileID: 50902641149359468}
   - component: {fileID: 61661360854668700}
@@ -58,7 +58,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1063252532832406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.77, y: -1.31, z: 0}
+  m_LocalPosition: {x: -5.0686593, y: 8.406224, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4816143600693344}
@@ -109,9 +109,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -0.15422916, y: 0}
+  m_Offset: {x: -0.15422964, y: 0}
   serializedVersion: 2
-  m_Size: {x: 3.7684584, y: 1.76}
+  m_Size: {x: 2.1452713, y: 1.76}
 --- !u!95 &95192236064809396
 Animator:
   serializedVersion: 3
@@ -140,8 +140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 105e3c52468fd45afaf5ea37ce0d6487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xVel: 20
-  yVel: 20
+  xVel: 5
+  yVel: 5
   maxspeed: 10
   grounded: 0
   isLeft: 0

@@ -10,10 +10,8 @@ using UnityEngine.Networking;
 [RequireComponent (typeof(Player))]
 public class PlayerController : NetworkBehaviour {
 	[SerializeField] private float xVel = 5f;
-	[SerializeField] private float yVel = 5f;
+	[SerializeField] private float yVel = 10f;
     [SerializeField] private float maxspeed = 10f;
-
-	[SerializeField] private float jumpImpulse = 1f;
 
     //used for jumping animations and flipping
     public bool grounded;
@@ -49,9 +47,10 @@ public class PlayerController : NetworkBehaviour {
         }
 
 		// check if grounded
-		Vector2 castOrigin = coll.bounds.min; // same shape as collider
-		Vector2 castSize = coll.bounds.size; // same size as collider
-		Vector2 castDir = new Vector2 (0f, 1f); // vertical cast
+		float percentXSize = 0.5f;
+		Vector2 castOrigin = new Vector2 (coll.bounds.min.x + (1.0f - percentXSize) / 2.0f * coll.bounds.size.x, coll.bounds.min.y); // same shape as collider
+		Vector2 castSize = new Vector2 (coll.bounds.size.x * percentXSize, 0.01f); // almost same size as collider
+		Vector2 castDir = new Vector2 (0f, -1f); // vertical cast
 		float maxGroundDist = 0.1f;
 		RaycastHit2D hit = Physics2D.BoxCast (castOrigin, castSize, 0f, castDir, maxGroundDist, player.GroundLayerMask ());
 
@@ -106,9 +105,8 @@ public class PlayerController : NetworkBehaviour {
 		float wXVel = Input.GetAxis("Horizontal") * xVel;
 		rb2d.velocity = new Vector2(wXVel, rb2d.velocity.y);
 		
-		if (grounded) {
-			float impulse = Input.GetAxis ("Vertical") * jumpImpulse;
-			rb2d.AddForce(new Vector2(0, impulse), ForceMode2D.Impulse);
+		if (grounded && Input.GetAxis("Vertical") > 0) {
+			rb2d.velocity = new Vector2 (rb2d.velocity.x, yVel);
 		}
     }
 }
