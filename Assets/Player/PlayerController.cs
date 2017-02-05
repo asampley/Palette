@@ -18,12 +18,14 @@ public class PlayerController : NetworkBehaviour {
 
     //private references
     private Rigidbody2D rb2d;
+	private Collider2D collider;
     private Animator anim;
 
     // Use this for initialization
     void Start () {
         rb2d = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
+		collider = gameObject.GetComponent<Collider2D> ();
     }
 	
 	// Update is called once per frame
@@ -39,17 +41,6 @@ public class PlayerController : NetworkBehaviour {
         {
             GetComponent<SpriteRenderer>().flipX = false;
         }
-        if (Input.GetButtonDown("Jump")){
-            if (grounded)
-            {
-                rb2d.AddForce(Vector2.up * yVel);
-            }
-        }
-
-        //float dx = Input.GetAxis("Horizontal") * xVel * Time.deltaTime;
-        //float dy = Input.GetAxis("Vertical") * yVel * Time.deltaTime;
-
-            //transform.Translate(dx, dy, 0);
     }
 
     void FixedUpdate()
@@ -93,10 +84,12 @@ public class PlayerController : NetworkBehaviour {
         {
             rb2d.velocity = new Vector2(-maxspeed, rb2d.velocity.y);
         }
-        float wXVel = Input.GetAxis("Horizontal") * xVel;
-        float impulse = Input.GetAxis("Vertical") * jumpImpulse;
-
-        rb2d.velocity = new Vector2(wXVel, rb2d.velocity.y);
-        rb2d.AddForce(new Vector2(0, impulse), ForceMode2D.Impulse);
+		float wXVel = Input.GetAxis("Horizontal") * xVel;
+		rb2d.velocity = new Vector2(wXVel, rb2d.velocity.y);
+		
+		if (grounded) {
+			float impulse = Input.GetAxis ("Vertical") * jumpImpulse;
+			rb2d.AddForce(new Vector2(0, impulse), ForceMode2D.Impulse);
+		}
     }
 }
