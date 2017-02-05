@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -8,9 +9,28 @@ public class Player : NetworkBehaviour {
 	public PaletteColorID colorID;
 	public GameObject head;
 
+	private static LayerMask groundLayerMask;
+
+	static Player() {
+		InitGroundLayerMask();
+	}
+
+	static void InitGroundLayerMask() {
+		groundLayerMask = 0x0;
+
+		foreach (PaletteColorID id in Enum.GetValues(typeof(PaletteColorID))) {
+			groundLayerMask |= LayerMask.GetMask(new PaletteColor (id).ToLayerName ());
+		}
+	}
+
 	// Use this for initialization
 	void Start () {
+		InitGroundLayerMask ();
 		OnColorChange (colorID);
+	}
+
+	public LayerMask GroundLayerMask() {
+		return groundLayerMask ^ LayerMask.GetMask(new PaletteColor(this.colorID).ToLayerName());
 	}
 	
 	// Update is called once per frame

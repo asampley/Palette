@@ -4,6 +4,10 @@ using UnityEngine;
 
 using UnityEngine.Networking;
 
+[RequireComponent (typeof(Rigidbody2D))]
+[RequireComponent (typeof(Collider2D))]
+[RequireComponent (typeof(Animator))]
+[RequireComponent (typeof(Player))]
 public class PlayerController : NetworkBehaviour {
 	[SerializeField] private float xVel = 5f;
 	[SerializeField] private float yVel = 5f;
@@ -18,14 +22,16 @@ public class PlayerController : NetworkBehaviour {
 
     //private references
     private Rigidbody2D rb2d;
-	private Collider2D collider;
+	private Collider2D coll;
     private Animator anim;
+	private Player player;
 
     // Use this for initialization
     void Start () {
         rb2d = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
-		collider = gameObject.GetComponent<Collider2D> ();
+		coll = gameObject.GetComponent<Collider2D> ();
+		player = gameObject.GetComponent<Player> ();
     }
 	
 	// Update is called once per frame
@@ -41,6 +47,19 @@ public class PlayerController : NetworkBehaviour {
         {
             GetComponent<SpriteRenderer>().flipX = false;
         }
+
+		// check if grounded
+		Vector2 castOrigin = coll.bounds.min; // same shape as collider
+		Vector2 castSize = coll.bounds.size; // same size as collider
+		Vector2 castDir = new Vector2 (0f, 1f); // vertical cast
+		float maxGroundDist = 0.1f;
+		RaycastHit2D hit = Physics2D.BoxCast (castOrigin, castSize, 0f, castDir, maxGroundDist, player.GroundLayerMask ());
+
+		if (hit.collider != null) {
+			grounded = true;
+		} else {
+			grounded = false;
+		}
     }
 
     void FixedUpdate()
