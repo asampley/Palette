@@ -1,23 +1,19 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.Networking.NetworkSystem;
 
 public class NetworkPlayerManager : NetworkManager {
-	public PaletteColorID[] playerColors = { PaletteColorID.RED, PaletteColorID.BLUE, PaletteColorID.GREEN };
-
-	public override void OnStartClient (NetworkClient client)
-	{
-		base.OnStartClient (client);
-
-		//TODO: Register prefabs
-	}
 
 	public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerID) {
 		PaletteColorID playerColorID = PaletteColorID.WHITE;
-		if (this.numPlayers < playerColors.Length) {
-			playerColorID = playerColors[this.numPlayers];
+
+		try {
+			playerColorID = GameObject.Find ("Client Data").GetComponent<PlayerColor> ().GetPlayerColor (this.numPlayers);
+		} catch (IndexOutOfRangeException e) {
+			// It's cool, the color will just be white (which may not be cool).
 		}
 
 		//NetworkServer.SpawnWithClientAuthority (playerPrefab, conn);

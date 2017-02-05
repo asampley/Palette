@@ -4,18 +4,26 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerColor : MonoBehaviour, Listenable<PlayerColorListener> {
-	private PaletteColorID playerColor; // updated by the Player script
+	[SerializeField] private PaletteColorID[] levelPlayerColors;
+
+	private PaletteColorID localPlayerColor; // updated by the Player script
 	private List<PlayerColorListener> listeners = new List<PlayerColorListener>();
 
-	// Sets local player color, does not change player.
-	public void SetPlayerColor(PaletteColorID id) {
-		this.playerColor = id;
-
-		ForEachListener ((x) => x.OnPlayerColorChange ());
+	/// Get the color for player x.
+	/// <exception cref="IndexOutOfRangeException">No such player is defined.</exception>
+	public PaletteColorID GetPlayerColor(int x) {
+		return levelPlayerColors [x];
 	}
 
-	public PaletteColorID GetPlayerColor() {
-		return playerColor;
+	// Sets local player color, does not change player.
+	public void SetLocalPlayerColor(PaletteColorID id) {
+		this.localPlayerColor = id;
+
+		ForEachListener ((x) => x.OnLocalPlayerColorChange ());
+	}
+
+	public PaletteColorID GetLocalPlayerColor() {
+		return localPlayerColor;
 	}
 
 	public void AddListener (PlayerColorListener listener) {
@@ -33,5 +41,5 @@ public class PlayerColor : MonoBehaviour, Listenable<PlayerColorListener> {
 }
 
 public interface PlayerColorListener : Listener {
-	void OnPlayerColorChange();
+	void OnLocalPlayerColorChange();
 }
