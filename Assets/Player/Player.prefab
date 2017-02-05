@@ -140,8 +140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 105e3c52468fd45afaf5ea37ce0d6487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xVel: 5
-  yVel: 5
+  xVel: 10
+  yVel: 10
   maxspeed: 10
   grounded: 0
   isLeft: 0

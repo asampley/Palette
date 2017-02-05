@@ -9,7 +9,7 @@ using UnityEngine.Networking;
 [RequireComponent (typeof(Animator))]
 [RequireComponent (typeof(Player))]
 public class PlayerController : NetworkBehaviour {
-	[SerializeField] private float xVel = 5f;
+	[SerializeField] private float xVel = 10f;
 	[SerializeField] private float yVel = 10f;
     [SerializeField] private float maxspeed = 10f;
 
