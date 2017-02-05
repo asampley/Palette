@@ -39,12 +39,6 @@ public class Laser : NetworkBehaviour {
 		UpdateLaserMode (mode);
 	}
 
-	public override void OnStartServer ()
-	{
-		base.OnStartServer ();
-		this.Start ();
-	}
-
 	// Use this for initialization
 	void Start () {
 		InitLayers ();
