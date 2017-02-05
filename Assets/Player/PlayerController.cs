@@ -31,7 +31,7 @@ public class PlayerController : NetworkBehaviour {
 		if (!isLocalPlayer) return;
 
         //flips player
-        if (Input.GetKeyDown("d") || Input.GetKeyDown("right"))
+        if (Input.GetAxis("Horizontal") > 0)
         {
             GetComponent<SpriteRenderer>().flipX = true;
         }
