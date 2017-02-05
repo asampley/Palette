@@ -11,10 +11,6 @@ public class Player : NetworkBehaviour {
 
 	private static LayerMask groundLayerMask;
 
-	static Player() {
-		InitGroundLayerMask();
-	}
-
 	static void InitGroundLayerMask() {
 		groundLayerMask = 0x0;
 
@@ -30,6 +26,9 @@ public class Player : NetworkBehaviour {
 	}
 
 	public LayerMask GroundLayerMask() {
+		if (groundLayerMask == null) {
+			Player.InitGroundLayerMask ();
+		}
 		return groundLayerMask ^ LayerMask.GetMask(new PaletteColor(this.colorID).ToLayerName());
 	}
 	
