@@ -16,6 +16,7 @@ public class PlayerController : NetworkBehaviour {
     //used for jumping animations and flipping
     public bool grounded;
     public bool isLeft;
+	[SyncVar (hook="OnChangeFacingRight")]
     public bool facingRight = true;
 
     //private references
@@ -39,11 +40,11 @@ public class PlayerController : NetworkBehaviour {
         //flips player
         if (Input.GetAxis("Horizontal") > 0)
         {
-            GetComponent<SpriteRenderer>().flipX = true;
+			SetFacingRight (true);
         }
         else if (Input.GetAxis("Horizontal") < 0) 
         {
-            GetComponent<SpriteRenderer>().flipX = false;
+			SetFacingRight (false);
         }
 
 		// check if grounded
@@ -60,6 +61,28 @@ public class PlayerController : NetworkBehaviour {
 			grounded = false;
 		}
     }
+
+	public void SetFacingRight(bool facingRight) {
+		CmdSetFacingRight (facingRight);
+		UpdateFacingRight (facingRight);
+	}
+
+	[Command]
+	void CmdSetFacingRight(bool facingRight) {
+		this.facingRight = facingRight;
+	}
+
+	void OnChangeFacingRight(bool facingRight) {
+		if (!hasAuthority) {
+			UpdateFacingRight (facingRight);
+		}
+	}
+
+	void UpdateFacingRight(bool facingRight) {
+		GetComponent<SpriteRenderer>().flipX = facingRight;
+
+		this.facingRight = facingRight;
+	}
 
     void FixedUpdate()
     {
