@@ -47,7 +47,7 @@ public class Player : NetworkBehaviour {
 		//Debug.Log("Set player " + this + " to be in layer " + layer + "(" + LayerMask.LayerToName(layer) + ")");
 
 		if (isLocalPlayer) {
-			GameObject.Find ("Client Data").GetComponent<PlayerColor> ().SetLocalPlayerColor(colorID);
+			SceneData.gameObject.GetComponent<PlayerColor> ().SetLocalPlayerColor(colorID);
 		}
 	}
 }

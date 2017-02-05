@@ -10,7 +10,7 @@ public class Platform : NetworkBehaviour, PlayerColorListener {
 	{
 		base.OnStartClient ();
 
-		GameObject.Find ("Client Data").GetComponent<PlayerColor> ().AddListener (this);
+		SceneData.gameObject.GetComponent<PlayerColor> ().AddListener (this);
 		UpdateColor ();
 	}
 
@@ -24,7 +24,7 @@ public class Platform : NetworkBehaviour, PlayerColorListener {
 		this.gameObject.layer = color.ToLayer ();
 
 		// set to be invisible if it matches the player color
-		this.GetComponent<SpriteRenderer> ().enabled = GameObject.Find ("Client Data").GetComponent<PlayerColor> ().GetLocalPlayerColor() != currentColorID;
+		this.GetComponent<SpriteRenderer> ().enabled = SceneData.gameObject.GetComponent<PlayerColor> ().GetLocalPlayerColor() != currentColorID;
 	}
 
 	public void OnLocalPlayerColorChange() {

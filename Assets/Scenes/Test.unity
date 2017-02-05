@@ -206,7 +206,6 @@ MonoBehaviour:
   matchSize: 4
   isNetworkActive: 0
   matchMaker: {fileID: 0}
-  playerColors: 0100000002000000
 --- !u!1 &194284996
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,7 +535,7 @@ GameObject:
   - component: {fileID: 647311082}
   - component: {fileID: 647311081}
   m_Layer: 0
-  m_Name: Client Data
+  m_Name: __Scene Data__
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
