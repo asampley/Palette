@@ -63,6 +63,8 @@ public class PlayerController : NetworkBehaviour {
 
     void FixedUpdate()
     {
+		if (!isLocalPlayer) return;
+
         Vector3 easeVelocity = rb2d.velocity;
         //doesnt affect y
         easeVelocity.y = rb2d.velocity.y;
