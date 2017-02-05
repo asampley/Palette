@@ -57,6 +57,18 @@ public class PaletteColor {
 		}
 	}
 
+	public Color ToColorDark() {
+		if (this.color == 0) {
+			return new Color (0f, 0f, 0f);
+		} else {
+			return new Color (
+				(RED & this).color != 0 ? 0.2f : 0f,
+				(GREEN & this).color != 0 ? 0.2f : 0f,
+				(BLUE & this).color != 0 ? 0.2f : 0f
+				);
+		}
+	}
+
 	public int ToLayer() {
 		return LayerMask.NameToLayer (ToLayerName());
 	}

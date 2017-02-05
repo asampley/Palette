@@ -21,12 +21,14 @@ public class Platform : NetworkBehaviour, PlayerColorListener {
 		//Debug.Log ("Set platform to " + color);
 
 		currentColorID = color.ToID ();
-
-		this.GetComponent<SpriteRenderer> ().color = color.ToColor();
 		this.gameObject.layer = color.ToLayer ();
-
-		// set to be invisible if it matches the player color
-		this.GetComponent<SpriteRenderer> ().enabled = SceneData.gameObject.GetComponent<PlayerColor> ().GetLocalPlayerColor() != currentColorID;
+		
+		// set to be dark if it matches the player color
+		if (SceneData.gameObject.GetComponent<PlayerColor> ().GetLocalPlayerColor () == currentColorID) {
+			this.GetComponent<SpriteRenderer> ().color = color.ToColorDark ();
+		} else {
+			this.GetComponent<SpriteRenderer> ().color = color.ToColor ();
+		}
 	}
 
 	public void OnLocalPlayerColorChange() {
