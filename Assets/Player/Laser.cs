@@ -30,13 +30,29 @@ public class Laser : NetworkBehaviour {
 	public Sprite laserAdd;
 	public Sprite laserSub;
 
+	public override void OnStartClient ()
+	{
+		base.OnStartClient ();
+		UpdateLaserColor (colorID);
+		UpdateLaserDir ();
+		UpdateLaserOn ();
+		UpdateLaserMode (mode);
+	}
+
+	public override void OnStartServer ()
+	{
+		base.OnStartServer ();
+		this.Start ();
+	}
+
 	// Use this for initialization
 	void Start () {
 		InitLayers ();
+		SetLaserStart (laserStart);
 		SetLaserColor (colorID);
 		SetLaserOn (laserOn);
 		SetLaserDir (laserDir);
-		SetLaserOn (laserOn);
+		SetLaserMode (mode);
 	}
 
 	void InitLayers() {
