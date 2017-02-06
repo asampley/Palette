@@ -19,6 +19,12 @@ public class NetworkPlayerManager : NetworkManager {
 		//NetworkServer.SpawnWithClientAuthority (playerPrefab, conn);
 		GameObject player = Instantiate (playerPrefab, Vector3.zero, Quaternion.identity);
 
+		try {
+			player.transform.position = SceneData.gameObject.GetComponent<PlayerSpawn> ().GetPlayerSpawn(this.numPlayers).position;
+		} catch (IndexOutOfRangeException e) {
+
+		}
+
 		player.name = "Player " + this.numPlayers; // starts with 0
 		Player pScript = player.GetComponent<Player> ();
 		pScript.colorID = playerColorID;
