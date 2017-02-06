@@ -1643,7 +1643,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1215334881}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78e460da400e14198851c6f1c7b97392, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e153898a6b604acab454375b60e8ac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   networkManager: {fileID: 4752979}
@@ -1697,7 +1697,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1215334885}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1215334883}
+        m_MethodName: AttemptConnection
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1215334885
@@ -2492,7 +2503,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1974438147}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1974438149}
+        m_MethodName: AttemptConnection
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1974438147
@@ -2536,7 +2558,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1974438144}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78e460da400e14198851c6f1c7b97392, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e153898a6b604acab454375b60e8ac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   networkManager: {fileID: 4752979}

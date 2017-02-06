@@ -49,6 +49,10 @@ public class Laser : NetworkBehaviour {
 		SetLaserMode (mode);
 	}
 
+	void Update() {
+		UpdateLaserDir ();
+	}
+
 	void InitLayers() {
 		layersColors = 0;
 
