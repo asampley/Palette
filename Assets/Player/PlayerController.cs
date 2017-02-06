@@ -36,6 +36,8 @@ public class PlayerController : NetworkBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (!isLocalPlayer) return;
+        anim.SetBool("Grounded", grounded);
+        anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
 
         //flips player
         if (Input.GetAxis("Horizontal") > 0)
