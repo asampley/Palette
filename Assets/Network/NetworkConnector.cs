@@ -6,7 +6,7 @@ using UnityEngine.Networking;
 using UnityEngine.Events;
 
 public class NetworkConnector : MonoBehaviour {
-	public NetworkManager networkManager;
+	private NetworkPlayerManager networkManager;
 
 	public enum Mode { HOST, CLIENT, SERVER };
 	public Mode mode;
@@ -15,6 +15,10 @@ public class NetworkConnector : MonoBehaviour {
 
 	public UnityEvent onSuccess;
 	public UnityEvent onFailure;
+
+	void Start() {
+		networkManager = NetworkPlayerManager.sceneObject.GetComponent<NetworkPlayerManager>();
+	}
 
 	public void AttemptConnection() {
 		bool success = false;

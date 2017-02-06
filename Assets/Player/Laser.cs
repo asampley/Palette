@@ -59,6 +59,7 @@ public class Laser : NetworkBehaviour {
 		foreach (PaletteColorID id in Enum.GetValues(typeof(PaletteColorID))) {
 			layersColors |= LayerMask.GetMask(new PaletteColor(id).ToLayerName());
 		}
+		layersColors ^= LayerMask.GetMask (PaletteColor.BLACK.ToLayerName ());
 
 		layersToHit = layersColors ^ LayerMask.GetMask (new PaletteColor (colorID).ToLayerName ());
 	}

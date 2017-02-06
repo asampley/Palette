@@ -27,10 +27,10 @@ public class PlayerController : NetworkBehaviour {
 
     // Use this for initialization
     void Start () {
-        rb2d = gameObject.GetComponent<Rigidbody2D>();
-        anim = gameObject.GetComponent<Animator>();
-		coll = gameObject.GetComponent<Collider2D> ();
-		player = gameObject.GetComponent<Player> ();
+        rb2d = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+		coll = GetComponent<Collider2D> ();
+		player = GetComponent<Player> ();
     }
 	
 	// Update is called once per frame

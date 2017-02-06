@@ -6,6 +6,19 @@ using UnityEngine.Networking;
 using UnityEngine.Networking.NetworkSystem;
 
 public class NetworkPlayerManager : NetworkManager {
+	public const string NAME = "__Network Manager__";
+
+	public static GameObject sceneObject {
+		get {
+			return GameObject.Find (NAME);
+		}
+	}
+
+	void Start() {
+		if (this.gameObject.name != NAME) {
+			Debug.LogError ("Name of object " + this.gameObject.name + " is not " + NAME);
+		}
+	}
 
 	public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerID) {
 		PaletteColorID playerColorID = PaletteColorID.WHITE;

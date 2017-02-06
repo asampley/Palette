@@ -38,7 +38,7 @@ public class LaserController : NetworkBehaviour {
 
 		// make sure that the player has authority to modify the laser.
 		if (!laser.hasAuthority) {
-			Debug.LogError ("Laser " + laserObjID + " is not under player authority: Authority is " + laser.gameObject.GetComponent<NetworkIdentity>().clientAuthorityOwner);
+			Debug.LogError ("Laser " + laserObjID + " is not under player authority: Authority is " + laser.GetComponent<NetworkIdentity>().clientAuthorityOwner);
 			return;
 		}
 

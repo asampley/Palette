@@ -22,7 +22,7 @@ public class Platform : NetworkBehaviour, PlayerColorListener {
 
 		currentColorID = color.ToID ();
 		this.gameObject.layer = color.ToLayer ();
-		
+
 		// set to be dark if it matches the player color
 		if (SceneData.gameObject.GetComponent<PlayerColor> ().GetLocalPlayerColor () == currentColorID) {
 			this.GetComponent<SpriteRenderer> ().color = color.ToColorDark ();

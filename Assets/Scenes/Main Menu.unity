@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 4752978}
   - component: {fileID: 4752979}
   m_Layer: 0
-  m_Name: NetworkManager
+  m_Name: __Network Manager__
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -118,7 +118,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4752979
 MonoBehaviour:
@@ -2358,7 +2358,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4388068201026446, guid: bceada499ddd24392ad159f1fc5cce01, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bceada499ddd24392ad159f1fc5cce01, type: 2}
