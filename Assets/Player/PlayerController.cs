@@ -15,7 +15,6 @@ public class PlayerController : NetworkBehaviour {
 
     //used for jumping animations and flipping
     public bool grounded;
-    public bool isLeft;
 	[SyncVar (hook="OnChangeFacingRight")]
     public bool facingRight = true;
 
@@ -37,7 +36,8 @@ public class PlayerController : NetworkBehaviour {
 	void Update () {
 		if (!isLocalPlayer) return;
         anim.SetBool("Grounded", grounded);
-        anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
+        anim.SetFloat("Horizontal Speed", Mathf.Abs(rb2d.velocity.x));
+		anim.SetFloat ("Vertical Speed", Mathf.Abs(rb2d.velocity.y));
 
         //flips player
         if (Input.GetAxis("Horizontal") > 0)
@@ -81,8 +81,12 @@ public class PlayerController : NetworkBehaviour {
 	}
 
 	void UpdateFacingRight(bool facingRight) {
-		GetComponent<SpriteRenderer>().flipX = facingRight;
-
+		Vector3 newScale = transform.localScale;
+		if (facingRight) {
+			newScale.x = -Mathf.Abs (newScale.x);
+		} else {
+			newScale = transform.localScale;
+		}
 		this.facingRight = facingRight;
 	}
 
