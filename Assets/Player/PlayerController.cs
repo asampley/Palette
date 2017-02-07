@@ -85,8 +85,10 @@ public class PlayerController : NetworkBehaviour {
 		if (facingRight) {
 			newScale.x = -Mathf.Abs (newScale.x);
 		} else {
-			newScale = transform.localScale;
+			newScale.x = Mathf.Abs (newScale.x);
 		}
+
+		transform.localScale = newScale;
 		this.facingRight = facingRight;
 	}
 
