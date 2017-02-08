@@ -34,20 +34,9 @@ public class PlayerController : NetworkBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (!isLocalPlayer) return;
-        anim.SetBool("Grounded", grounded);
-        anim.SetFloat("Horizontal Speed", Mathf.Abs(rb2d.velocity.x));
+		anim.SetBool("Grounded", grounded);
+		anim.SetFloat("Horizontal Speed", Mathf.Abs(rb2d.velocity.x));
 		anim.SetFloat ("Vertical Speed", Mathf.Abs(rb2d.velocity.y));
-
-        //flips player
-        if (Input.GetAxis("Horizontal") > 0)
-        {
-			SetFacingRight (true);
-        }
-        else if (Input.GetAxis("Horizontal") < 0) 
-        {
-			SetFacingRight (false);
-        }
 
 		// check if grounded
 		float percentXSize = 0.5f;
@@ -62,6 +51,19 @@ public class PlayerController : NetworkBehaviour {
 		} else {
 			grounded = false;
 		}
+
+		// LOCAL PLAYER ONLY PAST HERE.
+		if (!isLocalPlayer) return;
+
+        //flips player
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+			SetFacingRight (true);
+        }
+        else if (Input.GetAxis("Horizontal") < 0) 
+        {
+			SetFacingRight (false);
+        }
     }
 
 	public void SetFacingRight(bool facingRight) {
