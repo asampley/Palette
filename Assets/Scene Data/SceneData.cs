@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public static class SceneData {
-	public const string NAME = "__Scene Data__";
+	public const string TAG = "Scene Data";
 	public static GameObject gameObject {
 		get {
-			return GameObject.Find (NAME);
+			return GameObject.FindWithTag (TAG);
 		}
 	}
 }
