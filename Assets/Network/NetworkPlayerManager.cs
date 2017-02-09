@@ -23,6 +23,8 @@ public class NetworkPlayerManager : NetworkManager {
 	public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerID) {
 		PaletteColorID playerColorID = PaletteColorID.WHITE;
 
+		Debug.Log (playerControllerID);
+
 		try {
 			playerColorID = SceneData.gameObject.GetComponent<PlayerColor> ().GetPlayerColor (this.numPlayers);
 		} catch (IndexOutOfRangeException e) {
