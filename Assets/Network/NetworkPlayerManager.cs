@@ -6,17 +6,17 @@ using UnityEngine.Networking;
 using UnityEngine.Networking.NetworkSystem;
 
 public class NetworkPlayerManager : NetworkManager {
-	public const string NAME = "__Network Manager__";
+	private const string TAG = "Network Manager";
 
 	public static GameObject sceneObject {
 		get {
-			return GameObject.Find (NAME);
+			return GameObject.FindWithTag (TAG);
 		}
 	}
 
 	void Start() {
-		if (this.gameObject.name != NAME) {
-			Debug.LogError ("Name of object " + this.gameObject.name + " is not " + NAME);
+		if (!this.gameObject.CompareTag(TAG)) {
+			Debug.LogError ("Tag of object " + this.gameObject.name + " is not " + TAG);
 		}
 	}
 
