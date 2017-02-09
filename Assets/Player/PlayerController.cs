@@ -21,23 +21,17 @@ public class PlayerController : NetworkBehaviour {
     //private references
     private Rigidbody2D rb2d;
 	private Collider2D coll;
-    private Animator anim;
 	private Player player;
 
     // Use this for initialization
     void Start () {
         rb2d = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
 		coll = GetComponent<Collider2D> ();
 		player = GetComponent<Player> ();
     }
 	
 	// Update is called once per frame
 	void Update () {
-		anim.SetBool("Grounded", grounded);
-		anim.SetFloat("Horizontal Speed", Mathf.Abs(rb2d.velocity.x));
-		anim.SetFloat ("Vertical Speed", Mathf.Abs(rb2d.velocity.y));
-
 		// check if grounded
 		float percentXSize = 0.5f;
 		Vector2 castOrigin = new Vector2 (coll.bounds.min.x + (1.0f - percentXSize) / 2.0f * coll.bounds.size.x, coll.bounds.min.y); // same shape as collider
