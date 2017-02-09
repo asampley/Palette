@@ -776,20 +776,40 @@ Prefab:
         type: 2}
       propertyPath: playerSpawns.Array.data[0]
       value: 
-      objectReference: {fileID: 1111706076}
+      objectReference: {fileID: 0}
     - target: {fileID: 114854220329449448, guid: b9db256457b114f90bc0e2530a134026,
         type: 2}
       propertyPath: playerSpawns.Array.data[1]
       value: 
-      objectReference: {fileID: 1111706076}
+      objectReference: {fileID: 0}
     - target: {fileID: 114854220329449448, guid: b9db256457b114f90bc0e2530a134026,
         type: 2}
       propertyPath: numPlayers
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114897994935784122, guid: b9db256457b114f90bc0e2530a134026,
         type: 2}
       propertyPath: levelPlayerColors.Array.data[1]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114854220329449448, guid: b9db256457b114f90bc0e2530a134026,
+        type: 2}
+      propertyPath: playerSpawns.Array.data[0].spawn
+      value: 
+      objectReference: {fileID: 1111706076}
+    - target: {fileID: 114854220329449448, guid: b9db256457b114f90bc0e2530a134026,
+        type: 2}
+      propertyPath: playerSpawns.Array.data[1].spawn
+      value: 
+      objectReference: {fileID: 1111706076}
+    - target: {fileID: 114854220329449448, guid: b9db256457b114f90bc0e2530a134026,
+        type: 2}
+      propertyPath: playerSpawns.Array.data[0].colorID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114854220329449448, guid: b9db256457b114f90bc0e2530a134026,
+        type: 2}
+      propertyPath: playerSpawns.Array.data[1].colorID
       value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []

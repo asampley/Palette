@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerSpawn : MonoBehaviour {
-	public int numPlayers = 0;
+	public int numPlayers { get { return playerSpawns.Length; } }
 
-	[SerializeField] private Transform[] playerSpawns;
-
+	[SerializeField] private SpawnInfo[] playerSpawns;
+	
 	public Transform GetPlayerSpawn(int x) {
-		return playerSpawns [x];
+		return playerSpawns [x].spawn;
+	}
+
+	public PaletteColorID GetPlayerColorID(int x) {
+		return playerSpawns [x].colorID;
 	}
 }

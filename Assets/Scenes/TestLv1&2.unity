@@ -1495,6 +1495,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114854220329449448, guid: b9db256457b114f90bc0e2530a134026,
+        type: 2}
+      propertyPath: playerSpawns.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4619088286227436, guid: b9db256457b114f90bc0e2530a134026, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1531,12 +1536,32 @@ Prefab:
         type: 2}
       propertyPath: playerSpawns.Array.data[0]
       value: 
-      objectReference: {fileID: 1982577939}
+      objectReference: {fileID: 0}
     - target: {fileID: 114854220329449448, guid: b9db256457b114f90bc0e2530a134026,
         type: 2}
       propertyPath: playerSpawns.Array.data[1]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114854220329449448, guid: b9db256457b114f90bc0e2530a134026,
+        type: 2}
+      propertyPath: playerSpawns.Array.data[0].spawn
+      value: 
+      objectReference: {fileID: 1982577939}
+    - target: {fileID: 114854220329449448, guid: b9db256457b114f90bc0e2530a134026,
+        type: 2}
+      propertyPath: playerSpawns.Array.data[1].spawn
+      value: 
       objectReference: {fileID: 512135602}
+    - target: {fileID: 114854220329449448, guid: b9db256457b114f90bc0e2530a134026,
+        type: 2}
+      propertyPath: playerSpawns.Array.data[0].colorID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114854220329449448, guid: b9db256457b114f90bc0e2530a134026,
+        type: 2}
+      propertyPath: playerSpawns.Array.data[1].colorID
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9db256457b114f90bc0e2530a134026, type: 2}
   m_IsPrefabParent: 0

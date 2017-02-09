@@ -26,7 +26,7 @@ public class NetworkPlayerManager : NetworkManager {
 		Debug.Log (playerControllerID);
 
 		try {
-			playerColorID = SceneData.gameObject.GetComponent<PlayerColor> ().GetPlayerColor (this.numPlayers);
+			playerColorID = SceneData.gameObject.GetComponent<PlayerSpawn> ().GetPlayerColorID (this.numPlayers);
 		} catch (IndexOutOfRangeException e) {
 			// It's cool, the color will just be white (which may not be cool).
 		}

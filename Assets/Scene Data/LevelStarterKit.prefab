@@ -180,10 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6129b81dff59d49ffacb7297253ed0f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numPlayers: 2
-  playerSpawns:
-  - {fileID: 0}
-  - {fileID: 0}
+  playerSpawns: []
 --- !u!114 &114897994935784122
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -195,7 +192,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70e514e333c674945b04e5b585327720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelPlayerColors: 0100000004000000
 --- !u!124 &124746076823084090
 Behaviour:
   m_ObjectHideFlags: 1
