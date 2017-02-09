@@ -20,32 +20,40 @@ public class NetworkPlayerManager : NetworkManager {
 		}
 	}
 
-	public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerID) {
-		PaletteColorID playerColorID = PaletteColorID.WHITE;
-
-		Debug.Log (playerControllerID);
-
-		try {
-			playerColorID = SceneData.gameObject.GetComponent<PlayerSpawn> ().GetPlayerColorID (this.numPlayers);
-		} catch (IndexOutOfRangeException e) {
-			// It's cool, the color will just be white (which may not be cool).
-		}
+	/// <summary>
+	/// Use this function to create the player objects, rather than the default method.
+	/// </summary>
+	/// <param name="conn">Conn.</param>
+	/// <param name="colorID">Color.</param>
+	public void SpawnPlayer (NetworkConnection conn, short playerControllerID, int playerNum) {
 
 		//NetworkServer.SpawnWithClientAuthority (playerPrefab, conn);
 		GameObject player = Instantiate (playerPrefab, Vector3.zero, Quaternion.identity);
 
 		try {
-			player.transform.position = SceneData.gameObject.GetComponent<PlayerSpawn> ().GetPlayerSpawn(this.numPlayers).position;
+			PlayerSpawn info = SceneData.gameObject.GetComponent<PlayerSpawn>();
+			player.transform.position = info.GetPlayerSpawn(playerNum).position;
+			Player pScript = player.GetComponent<Player> ();
+			pScript.colorID = info.GetPlayerColorID(playerNum);
 		} catch (IndexOutOfRangeException e) {
-
+			Debug.LogError (e.ToString());
 		}
 
-		player.name = "Player " + this.numPlayers; // starts with 0
-		Player pScript = player.GetComponent<Player> ();
-		pScript.colorID = playerColorID;
+		player.name = "Player " + playerNum; // starts with 0
 
 		//Debug.Log ("Created player with color " + playerColorID);
 
 		NetworkServer.AddPlayerForConnection (conn, player, playerControllerID);
+	}
+
+	public override void OnServerAddPlayer (NetworkConnection conn, short playerControllerId)
+	{
+		this.SpawnPlayer(conn, playerControllerId, 0);
+	}
+
+	public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerID, NetworkReader extraMessage) {
+		int playerNum = extraMessage.ReadInt32 ();
+
+		this.SpawnPlayer (conn, playerControllerID, playerNum);
 	}
 }
