@@ -14,7 +14,7 @@ public class Exit : NetworkBehaviour {
 			playersInExit.Add (other.GetComponent<Player> ());
 		}
 
-		if (SceneData.gameObject.GetComponent<PlayerSpawn> ().numPlayers == playersInExit.Count) {
+		if (SceneData.sceneObject.GetComponent<PlayerSpawn> ().numPlayers == playersInExit.Count) {
 			NetworkPlayerManager.singleton.ServerChangeScene (nextSceneName);
 		}
 	}

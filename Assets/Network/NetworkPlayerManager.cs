@@ -31,7 +31,7 @@ public class NetworkPlayerManager : NetworkManager {
 		GameObject player = Instantiate (playerPrefab, Vector3.zero, Quaternion.identity);
 
 		try {
-			PlayerSpawn info = SceneData.gameObject.GetComponent<PlayerSpawn>();
+			PlayerSpawn info = SceneData.sceneObject.GetComponent<PlayerSpawn>();
 			player.transform.position = info.GetPlayerSpawn(playerNum).position;
 			Player pScript = player.GetComponent<Player> ();
 			pScript.colorID = info.GetPlayerColorID(playerNum);

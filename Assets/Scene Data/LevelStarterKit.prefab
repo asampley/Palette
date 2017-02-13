@@ -287,6 +287,7 @@ GameObject:
   - component: {fileID: 4619493871458578}
   - component: {fileID: 114897994935784122}
   - component: {fileID: 114854220329449448}
+  - component: {fileID: 114489582964787174}
   m_Layer: 0
   m_Name: __Scene Data__
   m_TagString: Scene Data
@@ -505,7 +506,7 @@ MonoBehaviour:
     i14: 64
     i15: 38
   m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
+  m_LocalPlayerAuthority: 0
 --- !u!114 &114119888525429638
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -626,7 +627,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114897632482485512}
-        m_MethodName: OnStartLocalPlayer
+        m_MethodName: SelectPlayer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -732,7 +733,7 @@ MonoBehaviour:
     i14: 64
     i15: 38
   m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
+  m_LocalPlayerAuthority: 0
 --- !u!114 &114489222662679950
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -747,6 +748,17 @@ MonoBehaviour:
   playerName: {fileID: 114823052348382266}
   playerID: 
   button: {fileID: 114784558535978550}
+--- !u!114 &114489582964787174
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1821901963758548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 755a0ee80a9604cdf8aa0cd30837f8d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114493976487549896
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -946,7 +958,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114489222662679950}
-        m_MethodName: OnStartLocalPlayer
+        m_MethodName: SelectPlayer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

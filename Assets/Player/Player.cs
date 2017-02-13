@@ -42,6 +42,7 @@ public class Player : NetworkBehaviour {
 		base.OnStartLocalPlayer ();
 
 		GameObject.Find ("Main Camera").GetComponent<CameraFollow> ().player = this.gameObject;
+		SceneData.sceneObject.GetComponent<LocalPlayer> ().localPlayer = this.gameObject;
 	}
 
 	public override void OnStartClient ()
@@ -66,7 +67,7 @@ public class Player : NetworkBehaviour {
 		//Debug.Log("Set player " + this + " to be in layer " + layer + "(" + LayerMask.LayerToName(layer) + ")");
 
 		if (isLocalPlayer) {
-			SceneData.gameObject.GetComponent<PlayerColor> ().SetLocalPlayerColor(colorID);
+			SceneData.sceneObject.GetComponent<PlayerColor> ().SetLocalPlayerColor(colorID);
 		}
 	}
 }

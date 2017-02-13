@@ -12,7 +12,7 @@ public class Platform : NetworkBehaviour, PlayerColorListener {
 	{
 		base.OnStartClient ();
 
-		SceneData.gameObject.GetComponent<PlayerColor> ().AddListener (this);
+		SceneData.sceneObject.GetComponent<PlayerColor> ().AddListener (this);
 		UpdateColor ();
 	}
 
@@ -24,7 +24,7 @@ public class Platform : NetworkBehaviour, PlayerColorListener {
 		this.gameObject.layer = color.ToLayer ();
 
 		// set to be dark if it matches the player color
-		if (SceneData.gameObject.GetComponent<PlayerColor> ().GetLocalPlayerColor () == currentColorID) {
+		if (SceneData.sceneObject.GetComponent<PlayerColor> ().GetLocalPlayerColor () == currentColorID) {
 			this.GetComponent<SpriteRenderer> ().color = color.ToColorDark ();
 		} else {
 			this.GetComponent<SpriteRenderer> ().color = color.ToColor ();

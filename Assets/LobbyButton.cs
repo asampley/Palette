@@ -20,7 +20,7 @@ public class LobbyButton : NetworkBehaviour {
         playerID = newID;
     }
     
-    public override void OnStartLocalPlayer ()
+    public void SelectPlayer ()
     {
         // string myPlayerID = string.Format("Player {0}", netId.Value);
         string myPlayerID = string.Format("Player {0}", nm.numPlayers);        
