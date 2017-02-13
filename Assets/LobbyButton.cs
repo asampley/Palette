@@ -5,10 +5,14 @@ using UnityEngine.UI;
 using UnityEngine;
 
 public class LobbyButton : NetworkBehaviour {
-    public NetworkManager nm;
+    NetworkManager nm;
 	public Text playerName;
 	[SyncVar(hook = "OnPlayerIDChanged")] public string playerID;
     public Button button;
+
+	void Start() {
+		nm = NetworkPlayerManager.sceneObject.GetComponent<NetworkPlayerManager> ();
+	}
 
     [Command]
     void CmdSetPlayerID(string newID)
