@@ -28,7 +28,10 @@ public class Player : NetworkBehaviour {
 		OnColorChange (colorID);
 
 		// disable until a number is picked
-		this.gameObject.SetActive(false);
+		if (number == -1) {
+			//this.gameObject.SetActive (false);
+			Activate (false);
+		}
 	}
 
 	public LayerMask GroundLayerMask() {
@@ -53,13 +56,31 @@ public class Player : NetworkBehaviour {
 		// TODO: add all players to the main camera for more fancy movement.
 	}
 
+	public void Activate(bool active) {
+		foreach (SpriteRenderer sr in GetComponents<SpriteRenderer>()) {
+			sr.enabled = active;
+		}
+		foreach (SpriteRenderer sr in GetComponentsInChildren<SpriteRenderer>()) {
+			sr.enabled = active;
+		}
+		Rigidbody2D rb = GetComponent<Rigidbody2D> ();
+		if (active) { 
+			rb.WakeUp ();
+		} else {
+			rb.Sleep ();
+		}
+	}
+
 	public int GetNumber() {
 		return this.number;
 	}
 
 	public void SetNumber(int number) {
-		if (hasAuthority) {
+		if (hasAuthority 
+		    && !(SceneData.sceneObject.GetComponent<PlayerSpawn>().GetPlayerSpawned(number))) {
+			Debug.Log ("Spawning player " + number);
 			CmdSetNumber (number);
+			UpdateNumber (number);
 		}
 	}
 
@@ -70,16 +91,9 @@ public class Player : NetworkBehaviour {
 	}
 
 	void OnNumberChange(int number) {
-		if (number == -1) {
-			this.gameObject.SetActive(false);
-		} else {
-			if (hasAuthority) {
-				PlayerSpawn info = SceneData.sceneObject.GetComponent<PlayerSpawn> ();
-				this.transform.position = SceneData.sceneObject.GetComponent<PlayerSpawn> ().GetPlayerSpawn (number).position;
-			}
-			this.gameObject.SetActive(true);
+		if (!hasAuthority) {
+			UpdateNumber (number);
 		}
-
 	}
 
 
@@ -87,6 +101,30 @@ public class Player : NetworkBehaviour {
 	 * Called when the variable colorID is changed.
 	 */
 	void OnColorChange(PaletteColorID colorID) {
+		UpdateColor (colorID);
+	}
+
+	void UpdateNumber(int number) {
+		if (number == -1) {
+			//this.gameObject.SetActive(false);
+			Activate (false);
+		} else {
+			this.gameObject.SetActive(true);
+			Activate (true);
+			PlayerSpawn info = SceneData.sceneObject.GetComponent<PlayerSpawn> ();
+			info.SetPlayerSpawned (number, false);
+			if (hasAuthority) {
+				this.transform.position = info.GetPlayerSpawn (number).position;
+			}
+			info.SetPlayerSpawned (number, true);
+		}
+
+		Debug.Log ("Changed " + this.name + " to number " + number);
+
+		this.number = number;
+	}
+
+	void UpdateColor(PaletteColorID colorID) {
 		PaletteColor color = new PaletteColor(colorID);
 		int layer = color.ToEntityLayer ();
 
@@ -100,5 +138,6 @@ public class Player : NetworkBehaviour {
 		if (isLocalPlayer) {
 			SceneData.sceneObject.GetComponent<PlayerColor> ().SetLocalPlayerColor(colorID);
 		}
+
 	}
 }

@@ -9,4 +9,8 @@ public class LocalPlayer : MonoBehaviour {
 	public void SetNumber(int number) {
 		localPlayer.GetComponent<Player>().SetNumber (number);
 	}
+
+	public int GetNumber() {
+		return localPlayer.GetComponent<Player> ().GetNumber ();
+	}
 }
