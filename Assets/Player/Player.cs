@@ -53,6 +53,10 @@ public class Player : NetworkBehaviour {
 		// TODO: add all players to the main camera for more fancy movement.
 	}
 
+	public int GetNumber() {
+		return this.number;
+	}
+
 	public void SetNumber(int number) {
 		if (hasAuthority) {
 			CmdSetNumber (number);

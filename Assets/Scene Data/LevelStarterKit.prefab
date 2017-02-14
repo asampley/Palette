@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 114531562723334088}
   - component: {fileID: 114392460517288654}
   - component: {fileID: 114469212381985726}
-  - component: {fileID: 114897632482485512}
   m_Layer: 0
   m_Name: LobbyButton
   m_TagString: Untagged
@@ -153,7 +152,6 @@ GameObject:
   - component: {fileID: 114903599223894738}
   - component: {fileID: 114784558535978550}
   - component: {fileID: 114089381649451652}
-  - component: {fileID: 114489222662679950}
   m_Layer: 0
   m_Name: LobbyButton (1)
   m_TagString: Untagged
@@ -236,6 +234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224919728545821920}
   - component: {fileID: 222295234189751372}
+  - component: {fileID: 114849916162750244}
   m_Layer: 0
   m_Name: Panel Main
   m_TagString: Untagged
@@ -637,6 +636,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 114849916162750244}
+        m_MethodName: Refresh
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114447409085630440
@@ -734,20 +744,6 @@ MonoBehaviour:
     i15: 38
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
---- !u!114 &114489222662679950
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1388912756030588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a43313fa5183d463ea064e799f0daac5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerName: {fileID: 114823052348382266}
-  playerID: 
-  button: {fileID: 114784558535978550}
 --- !u!114 &114489582964787174
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -968,6 +964,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 114849916162750244}
+        m_MethodName: Refresh
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114823052348382266
@@ -1068,6 +1075,17 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Sean
+--- !u!114 &114849916162750244
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1616241216949580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d83111e6947f4e49927f0f5a0960dab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114854220329449448
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1148,20 +1166,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &114897632482485512
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1073167057883500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a43313fa5183d463ea064e799f0daac5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerName: {fileID: 114597759085124476}
-  playerID: 
-  button: {fileID: 114392460517288654}
 --- !u!114 &114897994935784122
 MonoBehaviour:
   m_ObjectHideFlags: 1
