@@ -25,21 +25,17 @@ public class NetworkPlayerManager : NetworkManager {
 	/// </summary>
 	/// <param name="conn">Conn.</param>
 	/// <param name="colorID">Color.</param>
-	public void SpawnPlayer (NetworkConnection conn, short playerControllerID, int playerNum) {
+	public void SpawnPlayer (NetworkConnection conn, short playerControllerID) {
 
 		//NetworkServer.SpawnWithClientAuthority (playerPrefab, conn);
 		GameObject player = Instantiate (playerPrefab, Vector3.zero, Quaternion.identity);
 
 		try {
-			PlayerSpawn info = SceneData.sceneObject.GetComponent<PlayerSpawn>();
-			player.transform.position = info.GetPlayerSpawn(playerNum).position;
-			Player pScript = player.GetComponent<Player> ();
-			pScript.colorID = info.GetPlayerColorID(playerNum);
 		} catch (IndexOutOfRangeException e) {
 			Debug.LogError (e.ToString());
 		}
 
-		this.name = "Player " + playerNum;
+		player.name = "Player " + this.numPlayers;
 
 		//Debug.Log ("Created player with color " + playerColorID);
 
@@ -48,12 +44,12 @@ public class NetworkPlayerManager : NetworkManager {
 
 	public override void OnServerAddPlayer (NetworkConnection conn, short playerControllerId)
 	{
-		this.SpawnPlayer(conn, playerControllerId, this.numPlayers);
+		this.SpawnPlayer(conn, playerControllerId);
 	}
 
 	public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerID, NetworkReader extraMessage) {
 		int playerNum = extraMessage.ReadInt32 ();
 
-		this.SpawnPlayer (conn, playerControllerID, playerNum);
+		this.SpawnPlayer (conn, playerControllerID);
 	}
 }

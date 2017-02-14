@@ -28,9 +28,7 @@ public class Player : NetworkBehaviour {
 		OnColorChange (colorID);
 
 		// disable until a number is picked
-		if (number == -1) {
-			this.enabled = false;
-		}
+		this.gameObject.SetActive(false);
 	}
 
 	public LayerMask GroundLayerMask() {
@@ -69,13 +67,13 @@ public class Player : NetworkBehaviour {
 
 	void OnNumberChange(int number) {
 		if (number == -1) {
-			this.enabled = false;
+			this.gameObject.SetActive(false);
 		} else {
 			if (hasAuthority) {
 				PlayerSpawn info = SceneData.sceneObject.GetComponent<PlayerSpawn> ();
 				this.transform.position = SceneData.sceneObject.GetComponent<PlayerSpawn> ().GetPlayerSpawn (number).position;
 			}
-			this.enabled = true;
+			this.gameObject.SetActive(true);
 		}
 
 	}
