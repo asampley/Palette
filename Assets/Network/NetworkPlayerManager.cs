@@ -39,7 +39,7 @@ public class NetworkPlayerManager : NetworkManager {
 			Debug.LogError (e.ToString());
 		}
 
-		player.name = "Player " + playerNum; // starts with 0
+		this.name = "Player " + playerNum;
 
 		//Debug.Log ("Created player with color " + playerColorID);
 
@@ -48,7 +48,7 @@ public class NetworkPlayerManager : NetworkManager {
 
 	public override void OnServerAddPlayer (NetworkConnection conn, short playerControllerId)
 	{
-		this.SpawnPlayer(conn, playerControllerId, 0);
+		this.SpawnPlayer(conn, playerControllerId, this.numPlayers);
 	}
 
 	public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerID, NetworkReader extraMessage) {

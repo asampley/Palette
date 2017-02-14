@@ -9,6 +9,9 @@ public class Player : NetworkBehaviour {
 	public PaletteColorID colorID;
 	public GameObject head;
 
+	[SyncVar (hook="OnNumberChange")]
+	private int number = -1;
+
 	private static LayerMask groundLayerMask;
 
 	static void InitGroundLayerMask() {
@@ -23,6 +26,11 @@ public class Player : NetworkBehaviour {
 	void Start () {
 		InitGroundLayerMask ();
 		OnColorChange (colorID);
+
+		// disable until a number is picked
+		if (number == -1) {
+			this.enabled = false;
+		}
 	}
 
 	public LayerMask GroundLayerMask() {
@@ -30,11 +38,6 @@ public class Player : NetworkBehaviour {
 			Player.InitGroundLayerMask ();
 		}
 		return groundLayerMask ^ LayerMask.GetMask(new PaletteColor(this.colorID).ToLayerName());
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 
 	public override void OnStartLocalPlayer ()
@@ -51,6 +54,32 @@ public class Player : NetworkBehaviour {
 
 		// TODO: add all players to the main camera for more fancy movement.
 	}
+
+	public void SetNumber(int number) {
+		if (hasAuthority) {
+			CmdSetNumber (number);
+		}
+	}
+
+	[Command]
+	void CmdSetNumber(int number) {
+		this.number = number;
+		this.colorID = SceneData.sceneObject.GetComponent<PlayerSpawn> ().GetPlayerColorID (number);
+	}
+
+	void OnNumberChange(int number) {
+		if (number == -1) {
+			this.enabled = false;
+		} else {
+			if (hasAuthority) {
+				PlayerSpawn info = SceneData.sceneObject.GetComponent<PlayerSpawn> ();
+				this.transform.position = SceneData.sceneObject.GetComponent<PlayerSpawn> ().GetPlayerSpawn (number).position;
+			}
+			this.enabled = true;
+		}
+
+	}
+
 
 	/**
 	 * Called when the variable colorID is changed.

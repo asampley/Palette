@@ -506,7 +506,7 @@ MonoBehaviour:
     i14: 64
     i15: 38
   m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0
+  m_LocalPlayerAuthority: 1
 --- !u!114 &114119888525429638
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -626,9 +626,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114897632482485512}
-        m_MethodName: SelectPlayer
-        m_Mode: 1
+      - m_Target: {fileID: 114489582964787174}
+        m_MethodName: SetNumber
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -733,7 +733,7 @@ MonoBehaviour:
     i14: 64
     i15: 38
   m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0
+  m_LocalPlayerAuthority: 1
 --- !u!114 &114489222662679950
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -957,13 +957,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114489222662679950}
-        m_MethodName: SelectPlayer
-        m_Mode: 1
+      - m_Target: {fileID: 114489582964787174}
+        m_MethodName: SetNumber
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
