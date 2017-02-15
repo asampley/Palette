@@ -63,12 +63,8 @@ public class Player : NetworkBehaviour {
 		foreach (SpriteRenderer sr in GetComponentsInChildren<SpriteRenderer>()) {
 			sr.enabled = active;
 		}
-		Rigidbody2D rb = GetComponent<Rigidbody2D> ();
-		if (active) { 
-			rb.WakeUp ();
-		} else {
-			rb.Sleep ();
-		}
+		PlayerController control = GetComponent<PlayerController> ();
+		control.enabled = active;
 	}
 
 	public int GetNumber() {
