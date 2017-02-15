@@ -97,14 +97,26 @@ public class LaserController : NetworkBehaviour {
 		GameObject laserObj = Instantiate<GameObject>(laserPrefab);
 		laserObj.name = gameObject.name + " Laser";
 
-		// set the color to match the player
-		laserObj.GetComponent<Laser> ().SetLaserColor (this.GetComponent<Player> ().colorID);
-
 		NetworkServer.SpawnWithClientAuthority (laserObj, this.gameObject);
 
 		this.laserObjID = laserObj.GetComponent<NetworkIdentity>().netId;
 
+		UpdateLaserColor ();
+
 		//Debug.Log ("Spawned laser with authority: " + connectionToClient);
+	}
+
+	public void UpdateLaserColor() {
+		if (laser == null) {
+			laser = ClientScene.FindLocalObject (laserObjID).GetComponent<Laser>();
+
+			if (laser == null) {
+				Debug.LogError ("No associated laser object");
+				return;
+			}
+		}
+		// set the color to match the player
+		laser.SetLaserColor (this.GetComponent<Player> ().colorID);
 	}
 
 	void rotate() {

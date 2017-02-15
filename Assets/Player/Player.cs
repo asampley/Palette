@@ -121,12 +121,14 @@ public class Player : NetworkBehaviour {
 	}
 
 	void UpdateColor(PaletteColorID colorID) {
+		this.colorID = colorID;
+
 		PaletteColor color = new PaletteColor(colorID);
 		int layer = color.ToEntityLayer ();
 
 		this.GetComponent<SpriteRenderer> ().color = color.ToColor ();
-		//Debug.Log("Set player " + this + " to have color " + color);
-		head.GetComponent<SpriteRenderer> ().color=color.ToColor ();
+		Debug.Log("Set player " + this + " to have color " + color);
+		head.GetComponent<SpriteRenderer> ().color = color.ToColor ();
 
 		this.gameObject.layer = layer;
 		//Debug.Log("Set player " + this + " to be in layer " + layer + "(" + LayerMask.LayerToName(layer) + ")");
@@ -134,6 +136,8 @@ public class Player : NetworkBehaviour {
 		if (isLocalPlayer) {
 			SceneData.sceneObject.GetComponent<PlayerColor> ().SetLocalPlayerColor(colorID);
 		}
+
+		this.GetComponent<LaserController> ().UpdateLaserColor ();
 
 	}
 }
