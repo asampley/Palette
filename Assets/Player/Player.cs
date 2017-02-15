@@ -77,6 +77,8 @@ public class Player : NetworkBehaviour {
 			Debug.Log ("Spawning player " + number);
 			CmdSetNumber (number);
 			UpdateNumber (number);
+			this.colorID = SceneData.sceneObject.GetComponent<PlayerSpawn> ().GetPlayerColorID (number);
+			UpdateColor (colorID);
 		}
 	}
 
@@ -84,6 +86,9 @@ public class Player : NetworkBehaviour {
 	void CmdSetNumber(int number) {
 		this.number = number;
 		this.colorID = SceneData.sceneObject.GetComponent<PlayerSpawn> ().GetPlayerColorID (number);
+
+		UpdateNumber (number);
+		UpdateColor (colorID);
 	}
 
 	void OnNumberChange(int number) {
