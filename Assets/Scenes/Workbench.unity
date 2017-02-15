@@ -91,7 +91,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &32626132
+--- !u!1001 &372611698
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -129,6 +129,14 @@ Prefab:
     - target: {fileID: 4619088286227436, guid: b9db256457b114f90bc0e2530a134026, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073167057883500, guid: b9db256457b114f90bc0e2530a134026, type: 2}
+      propertyPath: m_Name
+      value: LobbyButton Shine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388912756030588, guid: b9db256457b114f90bc0e2530a134026, type: 2}
+      propertyPath: m_Name
+      value: LobbyButton Sean
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9db256457b114f90bc0e2530a134026, type: 2}
