@@ -72,7 +72,7 @@ public class Player : NetworkBehaviour {
 	}
 
 	public void SetNumber(int number) {
-		if (hasAuthority 
+		if (isLocalPlayer
 		    && !(SceneData.sceneObject.GetComponent<PlayerSpawn>().GetPlayerSpawned(number))) {
 			Debug.Log ("Spawning player " + number);
 			CmdSetNumber (number);
@@ -87,7 +87,7 @@ public class Player : NetworkBehaviour {
 	}
 
 	void OnNumberChange(int number) {
-		if (!hasAuthority) {
+		if (!isLocalPlayer) {
 			UpdateNumber (number);
 		}
 	}
@@ -109,7 +109,7 @@ public class Player : NetworkBehaviour {
 			Activate (true);
 			PlayerSpawn info = SceneData.sceneObject.GetComponent<PlayerSpawn> ();
 			info.SetPlayerSpawned (number, false);
-			if (hasAuthority) {
+			if (isLocalPlayer) {
 				this.transform.position = info.GetPlayerSpawn (number).position;
 			}
 			info.SetPlayerSpawned (number, true);
