@@ -38,7 +38,7 @@ Transform:
   m_GameObject: {fileID: 1840161452892430}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 43.7, y: 19.8, z: 0}
-  m_LocalScale: {x: 2.5, y: 5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -56,7 +56,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 3.07, y: 1.38}
+  m_Size: {x: 4, y: 4}
 --- !u!114 &114606190000882586
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fabfb3cf677cc4b589405e1c4f40475b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: Test
+  nextSceneName: Winner
 --- !u!114 &114969828181082416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -132,7 +132,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0b270931f126b5840a3b1bf7b25fe452, type: 3}
-  m_Color: {r: 0.9882353, g: 0.30980393, b: 0.17254902, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 322bf5975d1584cbd9da9a913ffe955d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
