@@ -26,6 +26,7 @@ public class Player : NetworkBehaviour {
 	void Start () {
 		InitGroundLayerMask ();
 		OnColorChange (colorID);
+		UpdateNumber (number);
 
 		// disable until a number is picked
 		if (number == -1) {
