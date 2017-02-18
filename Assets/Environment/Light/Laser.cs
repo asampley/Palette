@@ -7,11 +7,8 @@ using UnityEngine.Networking;
 public enum LaserMode { ADD, SUBTRACT }
 
 public class Laser : NetworkBehaviour {
-	[SyncVar (hook="OnDirChange")]
-	private Vector2 laserDir;
-
-	[SyncVar (hook="OnStartChange")]
-	private Vector2 laserStart;
+	public Rigidbody2D rb2d;
+	public SpriteRenderer sr;
 
 	[SyncVar (hook="OnLaserToggle")]
 	private bool laserOn = true;
@@ -19,8 +16,9 @@ public class Laser : NetworkBehaviour {
 	[SyncVar (hook="OnLaserMode")]
 	private LaserMode mode;
 
+	public PaletteColorID initColor;
 	[SyncVar (hook="OnColorChange")]
-	private PaletteColorID colorID = PaletteColorID.WHITE;
+	private PaletteColorID colorID;
 
 	private LayerMask layersColors;
 	private LayerMask layersToHit;
@@ -42,10 +40,8 @@ public class Laser : NetworkBehaviour {
 	// Use this for initialization
 	void Start () {
 		InitLayers ();
-		SetLaserStart (laserStart);
-		SetLaserColor (colorID);
+		SetLaserColor (initColor);
 		SetLaserOn (laserOn);
-		SetLaserDir (laserDir);
 		SetLaserMode (mode);
 	}
 
@@ -62,22 +58,6 @@ public class Laser : NetworkBehaviour {
 		layersColors ^= LayerMask.GetMask (PaletteColor.BLACK.ToLayerName ());
 
 		layersToHit = layersColors ^ LayerMask.GetMask (new PaletteColor (colorID).ToLayerName ());
-	}
-
-	public void SetLaserDir(Vector2 laserDir) {
-		if (this.laserDir == laserDir) return;
-
-		this.laserDir = laserDir;
-		UpdateLaserDir ();
-		CmdSetLaserDir (laserDir);
-	}
-
-	public void SetLaserStart(Vector2 laserStart) {
-		if (this.laserStart == laserStart) return;
-
-		this.laserStart = laserStart;
-		UpdateLaserDir ();
-		CmdSetLaserStart (laserStart);
 	}
 
 	public void SetLaserOn(bool isOn) {
@@ -105,16 +85,6 @@ public class Laser : NetworkBehaviour {
 	}
 
 	[Command]
-	void CmdSetLaserDir(Vector2 laserDir) {
-		this.laserDir = laserDir;
-	}
-
-	[Command]
-	void CmdSetLaserStart(Vector2 laserStart) {
-		this.laserStart = laserStart;
-	}
-
-	[Command]
 	void CmdSetLaserOn(bool laserOn) {
 		this.laserOn = laserOn;
 	}
@@ -127,20 +97,6 @@ public class Laser : NetworkBehaviour {
 	[Command]
 	void CmdSetLaserMode(LaserMode mode) {
 		this.mode = mode;
-	}
-
-	void OnDirChange(Vector2 laserDir) {
-		if (!hasAuthority) {
-			this.laserDir = laserDir;
-			UpdateLaserDir ();
-		}
-	}
-
-	void OnStartChange(Vector2 laserStart) {
-		if (!hasAuthority) {
-			this.laserStart = laserStart;
-			UpdateLaserDir ();
-		}
 	}
 
 	void OnLaserToggle(bool laserOn) {
@@ -163,7 +119,9 @@ public class Laser : NetworkBehaviour {
 	}
 
 	void UpdateLaserDir() {
-		laserDir.Normalize ();
+		Vector2 laserStart = rb2d.position;
+		float rotZ = rb2d.rotation;
+		Vector2 laserDir = new Vector2(Mathf.Cos(Mathf.Deg2Rad * rotZ), Mathf.Sin(Mathf.Deg2Rad * rotZ));
 
 		// Handle colisions and color
 		if (laserOn) {
@@ -181,23 +139,23 @@ public class Laser : NetworkBehaviour {
 			} else {
 				if (this.affectedObject != null) { // if they are different, and old is an object, subtract
 					switch (mode) {
-					case LaserMode.ADD:
-						this.affectedObject.RemoveAdditiveColor (new PaletteColor (colorID));
-						break;
-					case LaserMode.SUBTRACT:
-						this.affectedObject.RemoveSubtractiveColor (new PaletteColor (colorID));
-						break;
+						case LaserMode.ADD:
+							this.affectedObject.RemoveAdditiveColor (new PaletteColor (colorID));
+							break;
+						case LaserMode.SUBTRACT:
+							this.affectedObject.RemoveSubtractiveColor (new PaletteColor (colorID));
+							break;
 					}
 				}
 
 				if (newAffectedObject != null) { // if they are different, and the new is an object, add
 					switch (mode) {
-					case LaserMode.ADD:
-						newAffectedObject.AddAdditiveColor (new PaletteColor (colorID));
-						break;
-					case LaserMode.SUBTRACT:
-						newAffectedObject.AddSubtractiveColor (new PaletteColor (colorID));
-						break;
+						case LaserMode.ADD:
+							newAffectedObject.AddAdditiveColor (new PaletteColor (colorID));
+							break;
+						case LaserMode.SUBTRACT:
+							newAffectedObject.AddSubtractiveColor (new PaletteColor (colorID));
+							break;
 					}
 				}
 			}
@@ -206,8 +164,7 @@ public class Laser : NetworkBehaviour {
 			this.affectedObject = newAffectedObject;
 
 			// handle drawing of sprite
-			float rotZ = Mathf.Atan2 (laserDir.y, laserDir.x) * Mathf.Rad2Deg;
-			transform.rotation = Quaternion.Euler (0f, 0f, rotZ); // set rotation
+			rb2d.transform.rotation = Quaternion.Euler (0f, 0f, rotZ); // set rotation to fix any rounding errors (apparently)
 
 			float length = 1 * raycastHit.distance;
 			//Debug.Log (raycastHit.distance);
@@ -215,19 +172,19 @@ public class Laser : NetworkBehaviour {
 				length = 1000;
 			}
 
-			Vector3 newScale = transform.localScale;
+			Vector3 newScale = sr.transform.localScale;
 			newScale.x = length; // IMPORTANT: assumes sprite unit size of 1 in x coords
-			transform.localScale = newScale; // set length
+			sr.transform.localScale = newScale; // set length
 
-			transform.position = laserStart + length / 2 * laserDir;
+			sr.transform.position = laserStart + length / 2 * laserDir;
 		} else if (this.affectedObject != null) { // remove self from object when off
 			switch (mode) {
 				case LaserMode.ADD:
-				this.affectedObject.RemoveAdditiveColor (new PaletteColor (colorID));
-				break;
+					this.affectedObject.RemoveAdditiveColor (new PaletteColor (colorID));
+					break;
 				case LaserMode.SUBTRACT:
-				this.affectedObject.RemoveSubtractiveColor (new PaletteColor (colorID));
-				break;
+					this.affectedObject.RemoveSubtractiveColor (new PaletteColor (colorID));
+					break;
 			}
 
 			this.affectedObject = null;
@@ -237,7 +194,7 @@ public class Laser : NetworkBehaviour {
 	void UpdateLaserOn() {
 		Debug.Log ("Turned " + (laserOn ? "on" : "off") + " laser " + netId);
 
-		this.GetComponent<SpriteRenderer> ().enabled = laserOn;
+		this.sr.enabled = laserOn;
 
 		// Refresh laser calculations
 		UpdateLaserDir ();
@@ -248,17 +205,17 @@ public class Laser : NetworkBehaviour {
 			switch (this.mode) {
 				case LaserMode.ADD:
 					this.affectedObject.RemoveAdditiveColor (new PaletteColor (colorID));
-				break;
+					break;
 				case LaserMode.SUBTRACT:
 					this.affectedObject.RemoveSubtractiveColor (new PaletteColor (colorID));
-				break;
+					break;
 			}
 		}
 
 		this.colorID = newColorID;
 
 		Debug.Log ("Set laser color to " + new PaletteColor(colorID));
-		this.GetComponent<SpriteRenderer>().color = new PaletteColor(colorID).ToColor();
+		sr.color = new PaletteColor(colorID).ToColor();
 
 		// Do not hit own color
 		layersToHit = layersColors ^ LayerMask.GetMask (new PaletteColor (colorID).ToLayerName ());
@@ -266,32 +223,29 @@ public class Laser : NetworkBehaviour {
 	}
 
 	void UpdateLaserMode(LaserMode mode) {
-		if (mode == this.mode) return;
-		
 		if (this.affectedObject != null) {
 			switch (this.mode) {
-			case LaserMode.ADD:
-				this.affectedObject.RemoveAdditiveColor (new PaletteColor (colorID));
-				this.affectedObject.AddSubtractiveColor (new PaletteColor (colorID));
-				break;
-			case LaserMode.SUBTRACT:
-				this.affectedObject.RemoveSubtractiveColor (new PaletteColor (colorID));
-				this.affectedObject.AddAdditiveColor (new PaletteColor (colorID));
-				break;
+				case LaserMode.ADD:
+					this.affectedObject.RemoveAdditiveColor (new PaletteColor (colorID));
+					this.affectedObject.AddSubtractiveColor (new PaletteColor (colorID));
+					break;
+				case LaserMode.SUBTRACT:
+					this.affectedObject.RemoveSubtractiveColor (new PaletteColor (colorID));
+					this.affectedObject.AddAdditiveColor (new PaletteColor (colorID));
+					break;
 			}
 		}
 
 		this.mode = mode;
 
 		switch (mode) {
-		case LaserMode.ADD:
-			this.GetComponent<SpriteRenderer> ().sprite = laserAdd;
-			break;
-		case LaserMode.SUBTRACT:
-			this.GetComponent<SpriteRenderer> ().sprite = laserSub;
-			break;
+			case LaserMode.ADD:
+				sr.sprite = laserAdd;
+				break;
+			case LaserMode.SUBTRACT:
+				sr.sprite = laserSub;
+				break;
 		}
-
 	}
 
 	public void ToggleOn() {
@@ -300,12 +254,12 @@ public class Laser : NetworkBehaviour {
 
 	public void ToggleMode() {
 		switch (mode) {
-		case LaserMode.ADD:
-			this.SetLaserMode (LaserMode.SUBTRACT);
-			break;
-		case LaserMode.SUBTRACT:
-			this.SetLaserMode (LaserMode.ADD);
-			break;
+			case LaserMode.ADD:
+				this.SetLaserMode (LaserMode.SUBTRACT);
+				break;
+			case LaserMode.SUBTRACT:
+				this.SetLaserMode (LaserMode.ADD);
+				break;
 		}
 	}
 }

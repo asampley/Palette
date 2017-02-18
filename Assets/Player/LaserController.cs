@@ -5,12 +5,12 @@ using UnityEngine.Networking;
 
 public class LaserController : NetworkBehaviour {
     //public int rotationOffset = 0; // degrees
-	public GameObject laserPrefab;
+//	public GameObject laserPrefab;
 
-	[SyncVar]
-	private NetworkInstanceId laserObjID;
+//	[SyncVar]
+//	private NetworkInstanceId laserObjID;
 
-	private Laser laser;
+	public Laser laser;
 
 	private bool isAddDown = false;
 	private bool isSubDown = false;
@@ -27,18 +27,18 @@ public class LaserController : NetworkBehaviour {
 		if (!isLocalPlayer) return;
 
 		// make sure the laser has been found in the scene.
-		if (laser == null) {
-			laser = ClientScene.FindLocalObject (laserObjID).GetComponent<Laser>();
-
-			if (laser == null) {
-				Debug.LogError ("No associated laser object");
-				return;
-			}
-		}
+//		if (laser == null) {
+//			laser = ClientScene.FindLocalObject (laserObjID).GetComponent<Laser>();
+//
+//			if (laser == null) {
+//				Debug.LogError ("No associated laser object");
+//				return;
+//			}
+//		}
 
 		// make sure that the player has authority to modify the laser.
 		if (!laser.hasAuthority) {
-			Debug.LogError ("Laser " + laserObjID + " is not under player authority: Authority is " + laser.GetComponent<NetworkIdentity>().clientAuthorityOwner);
+			Debug.LogError ("Laser " + laser + " is not under player authority. Authority is: " + laser.GetComponent<NetworkIdentity>().clientAuthorityOwner);
 			return;
 		}
 
@@ -85,36 +85,36 @@ public class LaserController : NetworkBehaviour {
 	/**
 	 * Spawn the laser on the local player client only.
 	 */
-	public override void OnStartLocalPlayer ()
-	{
-		base.OnStartLocalPlayer ();
-	
-		CmdSpawnLaser ();
-	}
+//	public override void OnStartLocalPlayer ()
+//	{
+//		base.OnStartLocalPlayer ();
+//	
+//		CmdSpawnLaser ();
+//	}
 
-	[Command]
-	void CmdSpawnLaser() {
-		GameObject laserObj = Instantiate<GameObject>(laserPrefab);
-		laserObj.name = gameObject.name + " Laser";
-
-		NetworkServer.SpawnWithClientAuthority (laserObj, this.gameObject);
-
-		this.laserObjID = laserObj.GetComponent<NetworkIdentity>().netId;
-
-		UpdateLaserColor ();
-
-		//Debug.Log ("Spawned laser with authority: " + connectionToClient);
-	}
+//	[Command]
+//	void CmdSpawnLaser() {
+//		GameObject laserObj = Instantiate<GameObject>(laserPrefab);
+//		laserObj.name = gameObject.name + " Laser";
+//
+//		NetworkServer.SpawnWithClientAuthority (laserObj, this.gameObject);
+//
+//		this.laserObjID = laserObj.GetComponent<NetworkIdentity>().netId;
+//
+//		UpdateLaserColor ();
+//
+//		//Debug.Log ("Spawned laser with authority: " + connectionToClient);
+//	}
 
 	public void UpdateLaserColor() {
-		if (laser == null) {
-			laser = ClientScene.FindLocalObject (laserObjID).GetComponent<Laser>();
-
-			if (laser == null) {
-				Debug.LogError ("No associated laser object");
-				return;
-			}
-		}
+//		if (laser == null) {
+//			laser = ClientScene.FindLocalObject (laserObjID).GetComponent<Laser>();
+//
+//			if (laser == null) {
+//				Debug.LogError ("No associated laser object");
+//				return;
+//			}
+//		}
 		// set the color to match the player
 		laser.SetLaserColor (this.GetComponent<Player> ().colorID);
 	}
@@ -123,8 +123,7 @@ public class LaserController : NetworkBehaviour {
 		Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;	// subtract pos of player from mouse pos
 		difference.Normalize(); // Normalize the vector. this means that all the sum of vector will be equal to 1.
 
-		laser.SetLaserDir(difference);
-		laser.SetLaserStart (transform.position);
+		laser.rb2d.rotation = Mathf.Rad2Deg * Mathf.Atan2(difference.y, difference.x);
 	}
 
 }
