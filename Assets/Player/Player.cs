@@ -65,7 +65,9 @@ public class Player : NetworkBehaviour {
 			sr.enabled = active;
 		}
 		PlayerController control = GetComponent<PlayerController> ();
+		LaserController lControl = GetComponent<LaserController> ();
 		control.enabled = active;
+		lControl.enabled = active;
 	}
 
 	public int GetNumber() {
