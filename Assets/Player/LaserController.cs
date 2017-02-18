@@ -12,8 +12,6 @@ public class LaserController : NetworkBehaviour {
 
 	public Laser laser;
 
-	public AudioSource laserOnSource;
-
 	private bool isAddDown = false;
 	private bool isSubDown = false;
 	private bool lockLaserOn = false;
@@ -54,7 +52,7 @@ public class LaserController : NetworkBehaviour {
 		// Toggle the laser if the user presses the toggle button.
 		if (Input.GetButtonDown ("Laser Add")) {
 			isAddDown = true;
-			laserOnSource.Play ();
+			GetComponent<PlayerAudio>().laserOnSource.Play ();
 		}
 		if (Input.GetButtonUp ("Laser Add")) {
 			isAddDown = false;
@@ -63,7 +61,7 @@ public class LaserController : NetworkBehaviour {
 		// Turn laser on with subtract mode if user presses button.
 		if (Input.GetButtonDown ("Laser Subtract")) {
 			isSubDown = true;
-			laserOnSource.Play ();
+			GetComponent<PlayerAudio>().laserOnSource.Play ();
 		}
 		if (Input.GetButtonUp ("Laser Subtract")) {
 			isSubDown = false;

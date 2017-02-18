@@ -30,6 +30,7 @@ GameObject:
   - component: {fileID: 95192236064809396}
   - component: {fileID: 114634638621994482}
   - component: {fileID: 114527368692505688}
+  - component: {fileID: 114031269796104624}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -462,6 +463,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114031269796104624
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1063252532832406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12119a7fa149a4ee2bcb89800cc8122b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  landSource: {fileID: 0}
+  jumpSource: {fileID: 82936944793637544}
+  laserOnSource: {fileID: 82142597704255378}
 --- !u!114 &114527368692505688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -492,7 +507,6 @@ MonoBehaviour:
   xVel: 10
   yVel: 10
   maxspeed: 10
-  jumpSource: {fileID: 82936944793637544}
   grounded: 0
   facingRight: 1
 --- !u!114 &114634638621994482
@@ -583,7 +597,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laser: {fileID: 114527368692505688}
-  laserOnSource: {fileID: 82142597704255378}
 --- !u!212 &212298229051769962
 SpriteRenderer:
   m_ObjectHideFlags: 1
