@@ -12,6 +12,8 @@ public class PlayerController : NetworkBehaviour {
 	[SerializeField] private float yVel = 10f;
     [SerializeField] private float maxspeed = 10f;
 
+	public AudioSource jumpSource;
+
     //used for jumping animations and flipping
     public bool grounded;
 	[SyncVar (hook="OnChangeFacingRight")]
@@ -135,6 +137,7 @@ public class PlayerController : NetworkBehaviour {
 		
 		if (grounded && Input.GetAxis("Vertical") > 0) {
 			rb2d.velocity = new Vector2 (rb2d.velocity.x, yVel);
+			jumpSource.Play ();
 		}
     }
 }
