@@ -1,0 +1,932 @@
+fileFormatVersion: 2
+guid: 130d9d286099349468f3a70e270865b0
+timeCreated: 1487459892
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: mole_idle_0
+    21300002: mole_idle_1
+    21300004: mole_idle_2
+    21300006: mole_idle_3
+    21300008: mole_idle_4
+    21300010: mole_idle_5
+    21300012: mole_idle_6
+    21300014: mole_idle_7
+    21300016: mole_idle_8
+    21300018: mole_idle_9
+    21300020: mole_idle_10
+    21300022: mole_idle_11
+    21300024: mole_idle_12
+    21300026: mole_idle_13
+    21300028: mole_idle_14
+    21300030: mole_idle_15
+    21300032: mole_idle_16
+    21300034: mole_idle_17
+    21300036: mole_idle_18
+    21300038: mole_idle_19
+    21300040: mole_idle_20
+    21300042: mole_idle_21
+    21300044: mole_idle_22
+    21300046: mole_idle_23
+    21300048: mole_idle_24
+    21300050: mole_idle_25
+    21300052: mole_idle_26
+    21300054: mole_idle_27
+    21300056: mole_idle_28
+    21300058: mole_idle_29
+    21300060: mole_idle_30
+    21300062: mole_idle_31
+    21300064: mole_idle_32
+    21300066: mole_idle_33
+    21300068: mole_idle_34
+    21300070: mole_idle_35
+    21300072: mole_idle_36
+    21300074: mole_idle_37
+    21300076: mole_idle_38
+    21300078: mole_idle_39
+    21300080: mole_idle_40
+    21300082: mole_idle_41
+    21300084: mole_idle_42
+    21300086: mole_idle_43
+    21300088: mole_idle_44
+    21300090: mole_idle_45
+    21300092: mole_idle_46
+    21300094: mole_idle_47
+    21300096: mole_idle_48
+    21300098: mole_idle_49
+    21300100: mole_idle_50
+    21300102: mole_idle_51
+    21300104: mole_idle_52
+    21300106: mole_idle_53
+    21300108: mole_idle_54
+    21300110: mole_idle_55
+    21300112: mole_idle_56
+    21300114: mole_idle_57
+    21300116: mole_idle_58
+    21300118: mole_idle_59
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 250
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mole_idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6197
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_1
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 6197
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_2
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 6197
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_3
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 6197
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_4
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 6197
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_5
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 6197
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5509
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_7
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 5509
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_8
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 5509
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_9
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 5509
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_10
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 5509
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_11
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 5509
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4821
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_13
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 4821
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_14
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 4821
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_15
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 4821
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_16
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 4821
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_17
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 4821
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4133
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_19
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 4133
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_20
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 4133
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_21
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 4133
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_22
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 4133
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_23
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 4133
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3445
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_25
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 3445
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_26
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 3445
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_27
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 3445
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_28
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 3445
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_29
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 3445
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2757
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_31
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 2757
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_32
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 2757
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_33
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 2757
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_34
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 2757
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_35
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 2757
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2069
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_37
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 2069
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_38
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 2069
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_39
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 2069
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_40
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 2069
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_41
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 2069
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1381
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_43
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1381
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_44
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1381
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_45
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 1381
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_46
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 1381
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_47
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 1381
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 693
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_49
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 693
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_50
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 693
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_51
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 693
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_52
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 693
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_53
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 693
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_55
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 5
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_56
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 5
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_57
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 5
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_58
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 5
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mole_idle_59
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 5
+        width: 383
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
