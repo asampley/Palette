@@ -53,7 +53,6 @@ public class PlatformEditor : Editor {
 			Undo.RecordObject (gen.gameObject, "Recolored platform");
 
 			gen.GetComponent<ColorAdder> ().SetBaseColorID(colorID);
-			gen.GetComponent<Platform> ().UpdateColor ();
 
 			oldColorID = colorID;
 		}
