@@ -523,7 +523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xVel: 10
-  yVel: 10
+  yVel: 14
   maxspeed: 10
   grounded: 0
   facingRight: 1

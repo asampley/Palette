@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
-[RequireComponent (typeof(SpriteRenderer))]
 [RequireComponent (typeof(ColorAdder))]
 public class Platform : NetworkBehaviour, PlayerColorListener {
-	private PaletteColorID currentColorID ;
+	private PaletteColorID currentColorID;
 
 	public override void OnStartClient ()
 	{
@@ -24,10 +23,15 @@ public class Platform : NetworkBehaviour, PlayerColorListener {
 		this.gameObject.layer = color.ToLayer ();
 
 		// set to be dark if it matches the player color
+		Color rgbColor;
 		if (SceneData.sceneObject.GetComponent<PlayerColor> ().GetLocalPlayerColor () == currentColorID) {
-			this.GetComponent<SpriteRenderer> ().color = color.ToColorDark ();
+			rgbColor = color.ToColorDark ();
 		} else {
-			this.GetComponent<SpriteRenderer> ().color = color.ToColor ();
+			rgbColor = color.ToColor ();
+		}
+
+		foreach (GameObject platformBit in this.GetComponent<PlatformGenerator>().GetPlatformBits()) {
+			platformBit.GetComponent<SpriteRenderer> ().color = rgbColor;
 		}
 	}
 
