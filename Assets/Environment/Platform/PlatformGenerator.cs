@@ -7,6 +7,7 @@ public class PlatformGenerator : MonoBehaviour {
 	[SerializeField] private BoxCollider2D bc2d;
 	public int width;
 	[SerializeField] private List<GameObject> platformBits = new List<GameObject>();
+	[SerializeField] private PaletteColorID initialColor;
 
 	public void Generate() {
 		if (width < 2) return;

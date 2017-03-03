@@ -16,10 +16,16 @@ public class Platform : NetworkBehaviour, PlayerColorListener {
 	}
 
 	public void UpdateColor() {
+		PaletteColorID previousColorID = currentColorID;
+
 		PaletteColor color = GetComponent<ColorAdder> ().ToPaletteColor ();
 		//Debug.Log ("Set platform to " + color);
 
 		currentColorID = color.ToID ();
+
+		if (currentColorID == previousColorID) return;
+		// only continue past this point if the color has changed
+
 		this.gameObject.layer = color.ToLayer ();
 
 		// set to be dark if it matches the player color

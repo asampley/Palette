@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.Events;
 
-public class ColorAdder : NetworkBehaviour {
+[ExecuteInEditMode]
+public class ColorAdder : MonoBehaviour {
 
-	[SyncVar]
-	public PaletteColorID baseColorID;
+	[SerializeField] private PaletteColorID baseColorID;
 
 	private List<PaletteColor> additiveColors = new List<PaletteColor>();
 	private List<PaletteColor> subtractiveColors = new List<PaletteColor> ();
@@ -15,16 +15,27 @@ public class ColorAdder : NetworkBehaviour {
 
 	public UnityEvent colorChangeEvent;
 
-	// Use this for initialization
-	public override void OnStartClient() {
-		cachedColor = new PaletteColor (baseColorID);
+	void OnEnable() {
+		cachedColor = new PaletteColor(baseColorID);
 		NotifyColorChange ();
 	}
 
-	public override void OnStartServer() {
-		cachedColor = new PaletteColor (baseColorID);
+	public void SetBaseColorID(PaletteColorID id) {
+		baseColorID = id;
+		RecalculateCachedColor ();
 		NotifyColorChange ();
 	}
+
+	// Use this for initialization
+//	public override void OnStartClient() {
+//		cachedColor = new PaletteColor (baseColorID);
+//		NotifyColorChange ();
+//	}
+//
+//	public override void OnStartServer() {
+//		cachedColor = new PaletteColor (baseColorID);
+//		NotifyColorChange ();
+//	}
 
 	public PaletteColor ToPaletteColor() {
 		return cachedColor;

@@ -10,6 +10,7 @@ public class PlatformEditor : Editor {
 	PlatformGenerator gen;
 
 	int oldWidth;
+	PaletteColorID oldColorID;
 
 	void OnEnable() {
 		gen = ((PlatformGenerator)target);
@@ -23,21 +24,40 @@ public class PlatformEditor : Editor {
 		serializedObject.Update ();
 
 		// basic fields go here
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("width"));
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("blueprint"));
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("bc2d"));
+		EditorGUILayout.PropertyField (serializedObject.FindProperty ("width"));
+		EditorGUILayout.PropertyField (serializedObject.FindProperty ("initialColor"));
+		EditorGUILayout.PropertyField (serializedObject.FindProperty ("blueprint"));
+		EditorGUILayout.PropertyField (serializedObject.FindProperty ("bc2d"));
 
-		// get the width and generate the platform if it changes
-		int width = serializedObject.FindProperty ("width").intValue;
+		serializedObject.ApplyModifiedProperties ();
 
-		if (width != oldWidth) {
-			oldWidth = width;
+		if (!EditorUtility.IsPersistent (gen)) { // DO NOT DO IT IF IT IS A PREFAB
+			
+			// get the width and generate the platform if it changes
+			int width = serializedObject.FindProperty ("width").intValue;
 
-			if (!EditorUtility.IsPersistent (gen)) {
-				Undo.RecordObject (gen, "Regenerated platform"); // sets platform to dirty, so the scene must save the changes
+			if (width != oldWidth) {
+				oldWidth = width;
+
+				Undo.RecordObject (gen.gameObject, "Regenerated platform"); // sets platform to dirty, so the scene must save the changes
 				gen.Generate ();
 			}
+
+			// get the starting color of the platform and change it if it changes
+
 		}
+
+		PaletteColorID colorID = (PaletteColorID) (serializedObject.FindProperty ("initialColor").enumValueIndex);
+		if (colorID != oldColorID) {
+			Debug.Log (colorID);
+			Undo.RecordObject (gen.gameObject, "Recolored platform");
+
+			gen.GetComponent<ColorAdder> ().SetBaseColorID(colorID);
+			gen.GetComponent<Platform> ().UpdateColor ();
+
+			oldColorID = colorID;
+		}
+
 
 //		EditorGUILayout.PropertyField(serializedObject.FindProperty("networkManager"));
 //		EditorGUILayout.PropertyField(serializedObject.FindProperty("mode"));
