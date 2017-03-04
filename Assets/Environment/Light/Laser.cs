@@ -65,6 +65,7 @@ public class Laser : NetworkBehaviour {
 	}
 
 	public void SetLaserColor(PaletteColorID colorID) {
+		Debug.Log ("JGKFDPSJF");
 		if (hasAuthority) {
 			Debug.Log ("Set " + this + " to color " + new PaletteColor (colorID));
 
@@ -77,7 +78,7 @@ public class Laser : NetworkBehaviour {
 	}
 
 	public void SetLaserMode(LaserMode mode) {
-		if (isLocalPlayer) {
+		if (hasAuthority) {
 			if (this.mode == mode)
 				return;
 
@@ -132,7 +133,7 @@ public class Laser : NetworkBehaviour {
 			ColorAdder newAffectedObject = null;
 			try {
 				newAffectedObject = raycastHit.collider.GetComponent<ColorAdder> ();
-			} catch (NullReferenceException e) {
+			} catch (NullReferenceException) {
 				// It's fine, the new affected object is just null
 			}
 
@@ -216,7 +217,7 @@ public class Laser : NetworkBehaviour {
 
 		this.colorID = newColorID;
 
-		Debug.Log ("Set laser color to " + new PaletteColor(colorID));
+		Debug.Log ("Set laser " + netId + " color to " + new PaletteColor(colorID));
 		sr.color = new PaletteColor(colorID).ToColor();
 
 		// Do not hit own color

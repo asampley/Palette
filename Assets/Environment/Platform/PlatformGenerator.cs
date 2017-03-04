@@ -14,8 +14,6 @@ public class PlatformGenerator : MonoBehaviour {
 	public void Generate() {
 		if (width < 2) return;
 
-		GameObject platformBit;
-
 		// remove old bits
 		foreach (PlatformBit oldBit in GetComponentsInChildren<PlatformBit>()) {
 //			Debug.Log (oldBit);
@@ -23,7 +21,7 @@ public class PlatformGenerator : MonoBehaviour {
 		}
 
 		// left
-		platformBit = makeBit (blueprint.left, 0);
+		GameObject platformBit = makeBit (blueprint.left, 0);
 
 		// middle
 		for (int i = 1; i < width - 1; ++i) {

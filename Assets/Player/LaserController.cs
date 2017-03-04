@@ -10,7 +10,19 @@ public class LaserController : NetworkBehaviour {
 //	[SyncVar]
 //	private NetworkInstanceId laserObjID;
 
-	public Laser laser;
+	private Laser _laser;
+	public Laser laser {
+		get {
+			if (_laser == null) {
+				laser = GetComponent<Player> ().head.GetComponent<Laser> ();
+			}
+			return _laser; 
+		}
+		set {
+			_laser = value;
+			UpdateLaserColor ();
+		}
+	}
 
 	private bool isAddDown = false;
 	private bool isSubDown = false;
@@ -35,6 +47,10 @@ public class LaserController : NetworkBehaviour {
 //				return;
 //			}
 //		}
+
+		if (laser == null) {
+			return;
+		}
 
 		// make sure that the player has authority to modify the laser.
 		if (!laser.hasAuthority) {
@@ -109,14 +125,6 @@ public class LaserController : NetworkBehaviour {
 //	}
 
 	public void UpdateLaserColor() {
-//		if (laser == null) {
-//			laser = ClientScene.FindLocalObject (laserObjID).GetComponent<Laser>();
-//
-//			if (laser == null) {
-//				Debug.LogError ("No associated laser object");
-//				return;
-//			}
-//		}
 		// set the color to match the player
 		laser.SetLaserColor (this.GetComponent<Player> ().GetColorID());
 	}

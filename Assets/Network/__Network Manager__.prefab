@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OfflineScene: Main Menu
   m_OnlineScene: Test
   m_SpawnPrefabs:
-  - {fileID: 1398345980712940, guid: 822928afd2b0245c2b8827a7026d37ce, type: 2}
+  - {fileID: 1198119731784490, guid: 3f407f06054c641faabbd327a70bb6c9, type: 2}
   m_CustomConfig: 0
   m_MaxConnections: 4
   m_ConnectionConfig:

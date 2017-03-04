@@ -5,7 +5,20 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 public class Player : NetworkBehaviour {
-	public GameObject head;
+	public GameObject headPrefab;
+	public Transform headTransform;
+
+	[SyncVar (hook="OnHeadIDChange")]
+	private NetworkInstanceId headId;
+	private GameObject _head;
+	public GameObject head { 
+		get {
+			if (_head == null) {
+				_head = ClientScene.FindLocalObject (headId);
+			}
+			return _head;
+		}
+	}
 
 	[SyncVar (hook="OnColorChange")]
 	private PaletteColorID colorID;
@@ -28,11 +41,18 @@ public class Player : NetworkBehaviour {
 		InitGroundLayerMask ();
 		OnColorChange (colorID);
 		UpdateNumber (number);
+		OnHeadIDChange (headId);
 
 		// disable until a number is picked
 		if (number == -1) {
 			//this.gameObject.SetActive (false);
 			Activate (false);
+		}
+
+		try {
+			this.head.transform.SetParent (this.headTransform);
+		} catch (NullReferenceException) {
+
 		}
 	}
 
@@ -58,8 +78,20 @@ public class Player : NetworkBehaviour {
 	{
 		base.OnStartLocalPlayer ();
 
+		CmdSpawnHead();
+
 		GameObject.Find ("Main Camera").GetComponent<CameraFollow> ().player = this.gameObject;
 		SceneData.sceneObject.GetComponent<LocalPlayer> ().localPlayer = this.gameObject;
+	}
+
+	[Command]
+	private void CmdSpawnHead() {
+		GameObject headObj = Instantiate (headPrefab);
+		NetworkServer.SpawnWithClientAuthority (headObj, this.gameObject);
+
+		this.headId = headObj.GetComponent<NetworkIdentity> ().netId;
+
+//		Debug.Log (headObj.GetComponent<NetworkIdentity> ().clientAuthorityOwner);
 	}
 
 	public override void OnStartClient ()
@@ -124,6 +156,13 @@ public class Player : NetworkBehaviour {
 		if (!isLocalPlayer) {
 			UpdateNumber (number);
 		}
+	}
+
+	void OnHeadIDChange(NetworkInstanceId newID) {
+		this.headId = newID;
+
+		this.GetComponent<LaserController> ().laser = head.GetComponent<Laser> ();
+		this.head.transform.SetParent (this.headTransform);
 	}
 
 	/**
