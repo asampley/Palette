@@ -163,6 +163,7 @@ public class Player : NetworkBehaviour {
 
 		this.GetComponent<LaserController> ().laser = head.GetComponent<Laser> ();
 		this.head.transform.SetParent (this.headTransform);
+		this.head.transform.localPosition = Vector2.zero;
 	}
 
 	/**

@@ -26,11 +26,14 @@ public class PlayerAnimator : MonoBehaviour {
 		anim.SetFloat("Horizontal Speed", Mathf.Abs(rb2d.velocity.x));
 		anim.SetFloat ("Vertical Speed", Mathf.Abs(rb2d.velocity.y));
 
-		// flip player head based on rotation.
-		if (Mathf.Cos(Mathf.Deg2Rad * player.head.transform.rotation.eulerAngles.z) > 0) {
-			player.head.GetComponent<SpriteRenderer> ().flipY = false;
-		} else {
-			player.head.GetComponent<SpriteRenderer> ().flipY = true;
+		if (player.head != null) {
+			// flip player head based on rotation.
+			player.head.GetComponent<SpriteRenderer> ().flipY = Mathf.Cos (Mathf.Deg2Rad * player.head.transform.rotation.eulerAngles.z) < 0;
+			player.head.GetComponent<SpriteRenderer> ().flipX = !controller.facingRight;
+
+			if (player.isLocalPlayer) {
+				Debug.Log (controller.facingRight);
+			}
 		}
 	}
 }

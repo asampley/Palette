@@ -28,6 +28,8 @@ public class PlayerController : NetworkBehaviour {
 		coll = GetComponent<Collider2D> ();
 		player = GetComponent<Player> ();
 
+		UpdateFacingRight (facingRight);
+
     }
 	
 	// Update is called once per frame
@@ -61,8 +63,10 @@ public class PlayerController : NetworkBehaviour {
     }
 
 	public void SetFacingRight(bool facingRight) {
-		CmdSetFacingRight (facingRight);
-		UpdateFacingRight (facingRight);
+		if (hasAuthority) {
+			CmdSetFacingRight (facingRight);
+			UpdateFacingRight (facingRight);
+		}
 	}
 
 	[Command]
@@ -86,8 +90,6 @@ public class PlayerController : NetworkBehaviour {
 
 		// reverse player facing
 		transform.localScale = newScale;
-		// reverse head facing to keep laser facing constant
-		player.head.GetComponent<SpriteRenderer> ().flipX = !facingRight;
 
 		this.facingRight = facingRight;
 	}
