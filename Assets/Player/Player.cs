@@ -5,9 +5,10 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 public class Player : NetworkBehaviour {
+	public GameObject head;
+
 	[SyncVar (hook="OnColorChange")]
 	public PaletteColorID colorID;
-	public GameObject head;
 
 	[SyncVar (hook="OnNumberChange")]
 	private int number = -1;

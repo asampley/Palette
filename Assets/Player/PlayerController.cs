@@ -15,7 +15,7 @@ public class PlayerController : NetworkBehaviour {
     //used for jumping animations and flipping
     public bool grounded;
 	[SyncVar (hook="OnChangeFacingRight")]
-    public bool facingRight = true;
+    public bool facingRight = false;
 
     //private references
     private Rigidbody2D rb2d;
@@ -27,6 +27,7 @@ public class PlayerController : NetworkBehaviour {
         rb2d = GetComponent<Rigidbody2D>();
 		coll = GetComponent<Collider2D> ();
 		player = GetComponent<Player> ();
+
     }
 	
 	// Update is called once per frame
@@ -83,7 +84,11 @@ public class PlayerController : NetworkBehaviour {
 			newScale.x = Mathf.Abs (newScale.x);
 		}
 
+		// reverse player facing
 		transform.localScale = newScale;
+		// reverse head facing to keep laser facing constant
+		player.head.GetComponent<SpriteRenderer> ().flipX = !facingRight;
+
 		this.facingRight = facingRight;
 	}
 
