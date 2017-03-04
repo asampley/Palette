@@ -32,7 +32,7 @@ public class PlayerAnimator : MonoBehaviour {
 			player.head.GetComponent<SpriteRenderer> ().flipX = !controller.facingRight;
 
 			if (player.isLocalPlayer) {
-				Debug.Log (controller.facingRight);
+				Debug.Log ("Facing right: " + controller.facingRight + "\n" + (Mathf.Cos (Mathf.Deg2Rad * player.head.transform.rotation.eulerAngles.z) < 0));
 			}
 		}
 	}
