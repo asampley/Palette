@@ -28,21 +28,17 @@ public class Laser : NetworkBehaviour {
 	public Sprite laserAdd;
 	public Sprite laserSub;
 
-	public override void OnStartClient ()
+	public override void OnStartServer ()
 	{
-		base.OnStartClient ();
-		UpdateLaserColor (colorID);
-		UpdateLaserDir ();
-		UpdateLaserOn ();
-		UpdateLaserMode (mode);
+		SetLaserColor (initColor);
 	}
 
 	// Use this for initialization
 	void Start () {
 		InitLayers ();
-		SetLaserColor (initColor);
-		SetLaserOn (laserOn);
-		SetLaserMode (mode);
+		UpdateLaserColor (colorID);
+		UpdateLaserOn ();
+		UpdateLaserMode (mode);
 	}
 
 	void Update() {
@@ -69,7 +65,7 @@ public class Laser : NetworkBehaviour {
 	}
 
 	public void SetLaserColor(PaletteColorID colorID) {
-		if (isLocalPlayer) {
+		if (hasAuthority) {
 			Debug.Log ("Set " + this + " to color " + new PaletteColor (colorID));
 
 			if (this.colorID == colorID)
