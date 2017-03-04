@@ -6,6 +6,7 @@ using UnityEngine.Networking;
 [RequireComponent (typeof(ColorAdder))]
 public class Platform : NetworkBehaviour, PlayerColorListener {
 	private PaletteColorID currentColorID;
+	private PaletteColorID playerColorID;
 
 	public override void OnStartClient ()
 	{
@@ -17,12 +18,13 @@ public class Platform : NetworkBehaviour, PlayerColorListener {
 
 	public void UpdateColor(bool forceUpdate = false) {
 		PaletteColorID previousColorID = currentColorID;
+		PaletteColorID previousPlayerColorID = playerColorID;
 
-		PaletteColor color = GetComponent<ColorAdder> ().ToPaletteColor ();
-
+		PaletteColor color = GetComponent<ColorAdder> ().ToPaletteColor();
 		currentColorID = color.ToID ();
+		playerColorID = SceneData.sceneObject.GetComponent<PlayerColor> ().GetLocalPlayerColor ();
 
-		if (currentColorID == previousColorID && !forceUpdate) return;
+		if (currentColorID == previousColorID && playerColorID == previousPlayerColorID && !forceUpdate) return;
 		// only continue past this point if the color has changed, or if we are forced
 		//Debug.Log ("Set platform to " + color);
 
