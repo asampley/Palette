@@ -15,16 +15,16 @@ public class Platform : NetworkBehaviour, PlayerColorListener {
 		UpdateColor ();
 	}
 
-	public void UpdateColor() {
+	public void UpdateColor(bool forceUpdate = false) {
 		PaletteColorID previousColorID = currentColorID;
 
 		PaletteColor color = GetComponent<ColorAdder> ().ToPaletteColor ();
-		//Debug.Log ("Set platform to " + color);
 
 		currentColorID = color.ToID ();
 
-		if (currentColorID == previousColorID) return;
-		// only continue past this point if the color has changed
+		if (currentColorID == previousColorID && !forceUpdate) return;
+		// only continue past this point if the color has changed, or if we are forced
+		//Debug.Log ("Set platform to " + color);
 
 		this.gameObject.layer = color.ToLayer ();
 
@@ -36,7 +36,7 @@ public class Platform : NetworkBehaviour, PlayerColorListener {
 			rgbColor = color.ToColor ();
 		}
 
-		foreach (GameObject platformBit in this.GetComponent<PlatformGenerator>().GetPlatformBits()) {
+		foreach (PlatformBit platformBit in this.GetComponent<PlatformGenerator>().GetPlatformBits()) {
 			platformBit.GetComponent<SpriteRenderer> ().color = rgbColor;
 		}
 	}
