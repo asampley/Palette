@@ -24,6 +24,8 @@ GameObject:
   - component: {fileID: 61003144760746692}
   - component: {fileID: 114114812468600128}
   - component: {fileID: 114542778993694556}
+  - component: {fileID: 50953135827710124}
+  - component: {fileID: 114337612152425014}
   m_Layer: 14
   m_Name: Platform
   m_TagString: Untagged
@@ -44,6 +46,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50953135827710124
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1929891916013418}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!61 &61003144760746692
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -86,6 +108,20 @@ MonoBehaviour:
         m_CallState: 1
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &114337612152425014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1929891916013418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a6125d25e1746d48def546959f5a9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  start: {x: 0, y: 0}
+  end: {x: 0, y: 0}
+  speed: 0
 --- !u!114 &114542778993694556
 MonoBehaviour:
   m_ObjectHideFlags: 1
