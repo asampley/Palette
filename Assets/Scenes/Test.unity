@@ -4478,16 +4478,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114854220329449448, guid: b9db256457b114f90bc0e2530a134026,
-        type: 2}
-      propertyPath: playerSpawns.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114897994935784122, guid: b9db256457b114f90bc0e2530a134026,
-        type: 2}
-      propertyPath: levelPlayerColors.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4619088286227436, guid: b9db256457b114f90bc0e2530a134026, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4522,61 +4512,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114854220329449448, guid: b9db256457b114f90bc0e2530a134026,
         type: 2}
-      propertyPath: playerSpawns.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114854220329449448, guid: b9db256457b114f90bc0e2530a134026,
-        type: 2}
-      propertyPath: playerSpawns.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114854220329449448, guid: b9db256457b114f90bc0e2530a134026,
-        type: 2}
-      propertyPath: numPlayers
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114897994935784122, guid: b9db256457b114f90bc0e2530a134026,
-        type: 2}
-      propertyPath: levelPlayerColors.Array.data[1]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114854220329449448, guid: b9db256457b114f90bc0e2530a134026,
-        type: 2}
       propertyPath: playerSpawns.Array.data[0].spawn
       value: 
       objectReference: {fileID: 275954291}
-    - target: {fileID: 114854220329449448, guid: b9db256457b114f90bc0e2530a134026,
-        type: 2}
-      propertyPath: playerSpawns.Array.data[1].spawn
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114854220329449448, guid: b9db256457b114f90bc0e2530a134026,
-        type: 2}
-      propertyPath: playerSpawns.Array.data[0].colorID
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114854220329449448, guid: b9db256457b114f90bc0e2530a134026,
-        type: 2}
-      propertyPath: playerSpawns.Array.data[1].colorID
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4565244613814362, guid: b9db256457b114f90bc0e2530a134026, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4654022763563660, guid: b9db256457b114f90bc0e2530a134026, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4260567400432504, guid: b9db256457b114f90bc0e2530a134026, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 224201777127752386, guid: b9db256457b114f90bc0e2530a134026,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9db256457b114f90bc0e2530a134026, type: 2}
   m_IsPrefabParent: 0
@@ -5270,6 +5208,22 @@ SpriteRenderer:
   m_Color: {r: 0.5, g: 1, b: 0.5, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &2001400061 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1520840418493788, guid: b9db256457b114f90bc0e2530a134026,
+    type: 2}
+  m_PrefabInternal: {fileID: 1843022228}
+--- !u!114 &2001400063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2001400061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f141831432ba54284b75298b55e28d34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2001906353
 GameObject:
   m_ObjectHideFlags: 0

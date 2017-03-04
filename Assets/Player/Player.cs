@@ -35,6 +35,14 @@ public class Player : NetworkBehaviour {
 		}
 	}
 
+	public void Respawn() {
+		PlayerSpawn info = SceneData.sceneObject.GetComponent<PlayerSpawn> ();
+		if (isLocalPlayer) {
+			this.transform.position = info.GetPlayerSpawn (number).position;
+		}
+		info.SetPlayerSpawned (number, true);
+	}
+
 	public LayerMask GroundLayerMask() {
 		if (groundLayerMask == null) {
 			Player.InitGroundLayerMask ();
@@ -109,18 +117,16 @@ public class Player : NetworkBehaviour {
 	}
 
 	void UpdateNumber(int number) {
+		PlayerSpawn info = SceneData.sceneObject.GetComponent<PlayerSpawn> ();
+		info.SetPlayerSpawned (this.number, false);
+
 		if (number == -1) {
 			//this.gameObject.SetActive(false);
 			Activate (false);
 		} else {
 			this.gameObject.SetActive(true);
 			Activate (true);
-			PlayerSpawn info = SceneData.sceneObject.GetComponent<PlayerSpawn> ();
-			info.SetPlayerSpawned (number, false);
-			if (isLocalPlayer) {
-				this.transform.position = info.GetPlayerSpawn (number).position;
-			}
-			info.SetPlayerSpawned (number, true);
+			Respawn ();
 		}
 
 		Debug.Log ("Changed " + this.name + " to number " + number);
