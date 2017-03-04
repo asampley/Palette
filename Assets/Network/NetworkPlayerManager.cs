@@ -40,6 +40,7 @@ public class NetworkPlayerManager : NetworkManager {
 		//Debug.Log ("Created player with color " + playerColorID);
 
 		NetworkServer.AddPlayerForConnection (conn, player, playerControllerID);
+		player.GetComponent<Player> ().head.GetComponent<NetworkIdentity> ().AssignClientAuthority (conn);
 	}
 
 	public override void OnServerAddPlayer (NetworkConnection conn, short playerControllerId)

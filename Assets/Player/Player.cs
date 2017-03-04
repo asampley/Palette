@@ -8,7 +8,7 @@ public class Player : NetworkBehaviour {
 	public GameObject head;
 
 	[SyncVar (hook="OnColorChange")]
-	public PaletteColorID colorID;
+	private PaletteColorID colorID;
 
 	[SyncVar (hook="OnNumberChange")]
 	private int number = -1;
@@ -41,6 +41,9 @@ public class Player : NetworkBehaviour {
 		if (isLocalPlayer) {
 			this.transform.position = info.GetPlayerSpawn (number).position;
 		}
+		
+		this.SetColor(info.GetPlayerColorID (number));
+		this.GetComponent<Animator> ().runtimeAnimatorController = info.GetPlayerAnimatorController (number);
 		info.SetPlayerSpawned (number, true);
 	}
 
@@ -79,6 +82,10 @@ public class Player : NetworkBehaviour {
 		lControl.enabled = active;
 	}
 
+	public PaletteColorID GetColorID() {
+		return colorID;
+	}
+
 	public int GetNumber() {
 		return this.number;
 	}
@@ -89,7 +96,13 @@ public class Player : NetworkBehaviour {
 			Debug.Log ("Spawning player " + number);
 			CmdSetNumber (number);
 			UpdateNumber (number);
-			this.colorID = SceneData.sceneObject.GetComponent<PlayerSpawn> ().GetPlayerColorID (number);
+			UpdateColor (colorID);
+		}
+	}
+
+	public void SetColor(PaletteColorID colorID) {
+		if (isLocalPlayer) {
+			CmdSetColor (colorID);
 			UpdateColor (colorID);
 		}
 	}
@@ -97,9 +110,13 @@ public class Player : NetworkBehaviour {
 	[Command]
 	void CmdSetNumber(int number) {
 		this.number = number;
-		this.colorID = SceneData.sceneObject.GetComponent<PlayerSpawn> ().GetPlayerColorID (number);
-
+		this.SetColor(SceneData.sceneObject.GetComponent<PlayerSpawn> ().GetPlayerColorID (number));
 		UpdateNumber (number);
+	}
+
+	[Command]
+	void CmdSetColor(PaletteColorID colorID) {
+		this.colorID = colorID;
 		UpdateColor (colorID);
 	}
 
@@ -109,30 +126,30 @@ public class Player : NetworkBehaviour {
 		}
 	}
 
-
 	/**
 	 * Called when the variable colorID is changed.
 	 */
 	void OnColorChange(PaletteColorID colorID) {
-		UpdateColor (colorID);
+		if (!isLocalPlayer) {
+			UpdateColor (colorID);
+		}
 	}
 
 	void UpdateNumber(int number) {
 		PlayerSpawn info = SceneData.sceneObject.GetComponent<PlayerSpawn> ();
-		info.SetPlayerSpawned (this.number, false);
+
+		Debug.Log ("Changed " + this.name + " to number " + number);
+		this.number = number;
 
 		if (number == -1) {
 			//this.gameObject.SetActive(false);
 			Activate (false);
 		} else {
+			info.SetPlayerSpawned (this.number, false);
 			this.gameObject.SetActive(true);
 			Activate (true);
 			Respawn ();
 		}
-
-		Debug.Log ("Changed " + this.name + " to number " + number);
-
-		this.number = number;
 	}
 
 	void UpdateColor(PaletteColorID colorID) {

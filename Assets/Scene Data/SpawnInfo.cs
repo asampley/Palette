@@ -8,4 +8,5 @@ using UnityEngine.Serialization;
 public class SpawnInfo {
 	public Transform spawn;
 	public PaletteColorID colorID;
+	public RuntimeAnimatorController controller;
 }

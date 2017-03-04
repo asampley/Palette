@@ -432,7 +432,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4876362086555560, guid: 4804fc3d0f80845c8a5458ede54690f7, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114606190000882586, guid: 4804fc3d0f80845c8a5458ede54690f7,
         type: 2}
@@ -1304,7 +1304,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &305727002
 GameObject:
@@ -1672,7 +1672,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4064854431160446, guid: 36743a63301bd491ea7b0fc2b2a3a9c9, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1929891916013418, guid: 36743a63301bd491ea7b0fc2b2a3a9c9, type: 2}
       propertyPath: m_Name
@@ -2079,7 +2079,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4064854431160446, guid: 36743a63301bd491ea7b0fc2b2a3a9c9, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1929891916013418, guid: 36743a63301bd491ea7b0fc2b2a3a9c9, type: 2}
       propertyPath: m_Name
@@ -2706,7 +2706,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4064854431160446, guid: 36743a63301bd491ea7b0fc2b2a3a9c9, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1929891916013418, guid: 36743a63301bd491ea7b0fc2b2a3a9c9, type: 2}
       propertyPath: m_Name
@@ -3419,7 +3419,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4399818672118334, guid: 6e811754a71fb41dbb14e017323a8915, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 95192236064809396, guid: 6e811754a71fb41dbb14e017323a8915,
         type: 2}
@@ -3844,7 +3844,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4064854431160446, guid: 36743a63301bd491ea7b0fc2b2a3a9c9, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1929891916013418, guid: 36743a63301bd491ea7b0fc2b2a3a9c9, type: 2}
       propertyPath: m_Name
@@ -4508,11 +4508,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4619088286227436, guid: b9db256457b114f90bc0e2530a134026, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114854220329449448, guid: b9db256457b114f90bc0e2530a134026,
         type: 2}
       propertyPath: playerSpawns.Array.data[0].spawn
+      value: 
+      objectReference: {fileID: 275954291}
+    - target: {fileID: 114854220329449448, guid: b9db256457b114f90bc0e2530a134026,
+        type: 2}
+      propertyPath: playerSpawns.Array.data[1].spawn
       value: 
       objectReference: {fileID: 275954291}
     m_RemovedComponents: []
@@ -4631,7 +4636,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4064854431160446, guid: 36743a63301bd491ea7b0fc2b2a3a9c9, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1929891916013418, guid: 36743a63301bd491ea7b0fc2b2a3a9c9, type: 2}
       propertyPath: m_Name
@@ -4959,7 +4964,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4064854431160446, guid: 36743a63301bd491ea7b0fc2b2a3a9c9, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1929891916013418, guid: 36743a63301bd491ea7b0fc2b2a3a9c9, type: 2}
       propertyPath: m_Name
@@ -5494,7 +5499,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4064854431160446, guid: 36743a63301bd491ea7b0fc2b2a3a9c9, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1929891916013418, guid: 36743a63301bd491ea7b0fc2b2a3a9c9, type: 2}
       propertyPath: m_Name

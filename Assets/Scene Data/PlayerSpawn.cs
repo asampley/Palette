@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerSpawn : MonoBehaviour {
 	public int numPlayers { get { return playerSpawns.Length; } }
 
-	public bool[] playerSpawned;
+	private bool[] playerSpawned;
 
 	[SerializeField] private SpawnInfo[] playerSpawns;
 
@@ -15,10 +15,11 @@ public class PlayerSpawn : MonoBehaviour {
 	}
 
 	public void SetPlayerSpawned(int num, bool spawned) {
+		Debug.Log (playerSpawned.Length);
 		try {
 			playerSpawned[num] = true;
 		} catch (IndexOutOfRangeException e) {
-			Debug.LogError (e.ToString ());
+			Debug.LogError (num + " out of range of player spawns\n" + e.ToString ());
 		}
 	}
 
@@ -26,7 +27,7 @@ public class PlayerSpawn : MonoBehaviour {
 		try {
 			return playerSpawned[num];
 		} catch (IndexOutOfRangeException e) {
-			Debug.LogError (e.ToString ());
+			Debug.LogError (num + " out of range of player spawns\n" + e.ToString ());
 		}
 		return false;
 	}
@@ -37,5 +38,9 @@ public class PlayerSpawn : MonoBehaviour {
 
 	public PaletteColorID GetPlayerColorID(int x) {
 		return playerSpawns [x].colorID;
+	}
+
+	public RuntimeAnimatorController GetPlayerAnimatorController(int x) {
+		return playerSpawns[x].controller;
 	}
 }

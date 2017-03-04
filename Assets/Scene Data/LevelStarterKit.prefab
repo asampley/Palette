@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 222565931610828366}
   - component: {fileID: 114360377899497406}
   m_Layer: 0
-  m_Name: Image
+  m_Name: Color Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1672,10 +1672,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6129b81dff59d49ffacb7297253ed0f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpawned: 
   playerSpawns:
   - spawn: {fileID: 0}
     colorID: 1
+    controller: {fileID: 9100000, guid: 3efc8ca15a6ecf44595500ef7383bad4, type: 2}
+  - spawn: {fileID: 0}
+    colorID: 4
+    controller: {fileID: 9100000, guid: 3efc8ca15a6ecf44595500ef7383bad4, type: 2}
 --- !u!114 &114854923543010132
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1832,8 +1835,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 224919728545821920}
   - {fileID: 224964398604366696}
+  - {fileID: 224919728545821920}
   m_Father: {fileID: 4619088286227436}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1949,7 +1952,7 @@ RectTransform:
   - {fileID: 224868307565509984}
   - {fileID: 224246006585766334}
   m_Father: {fileID: 224201777127752386}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1967,7 +1970,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224201777127752386}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}

@@ -69,19 +69,25 @@ public class Laser : NetworkBehaviour {
 	}
 
 	public void SetLaserColor(PaletteColorID colorID) {
-		Debug.Log ("Set " + this + " to color " + new PaletteColor (colorID));
+		if (isLocalPlayer) {
+			Debug.Log ("Set " + this + " to color " + new PaletteColor (colorID));
 
-		if (this.colorID == colorID) return;
+			if (this.colorID == colorID)
+				return;
 
-		UpdateLaserColor (colorID);
-		CmdSetLaserColor (colorID);
+			UpdateLaserColor (colorID);
+			CmdSetLaserColor (colorID);
+		}
 	}
 
 	public void SetLaserMode(LaserMode mode) {
-		if (this.mode == mode) return;
+		if (isLocalPlayer) {
+			if (this.mode == mode)
+				return;
 
-		UpdateLaserMode (mode);
-		CmdSetLaserMode (mode);
+			UpdateLaserMode (mode);
+			CmdSetLaserMode (mode);
+		}
 	}
 
 	[Command]

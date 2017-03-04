@@ -365,20 +365,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 224964398604366696, guid: b9db256457b114f90bc0e2530a134026,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224919728545821920, guid: b9db256457b114f90bc0e2530a134026,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1256391553264980, guid: b9db256457b114f90bc0e2530a134026, type: 2}
-      propertyPath: m_Name
-      value: Color Wheel
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9db256457b114f90bc0e2530a134026, type: 2}
   m_IsPrefabParent: 0

@@ -118,7 +118,7 @@ public class LaserController : NetworkBehaviour {
 //			}
 //		}
 		// set the color to match the player
-		laser.SetLaserColor (this.GetComponent<Player> ().colorID);
+		laser.SetLaserColor (this.GetComponent<Player> ().GetColorID());
 	}
 
 	void rotate() {
