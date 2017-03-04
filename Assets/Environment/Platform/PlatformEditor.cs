@@ -50,7 +50,7 @@ public class PlatformEditor : Editor {
 		PaletteColorID colorID = (PaletteColorID) (serializedObject.FindProperty ("initialColor").enumValueIndex);
 		if (colorID != oldColorID) {
 			Debug.Log (colorID);
-			Undo.RecordObject (gen.gameObject, "Recolored platform");
+			Undo.RecordObject (gen.gameObject.GetComponent<ColorAdder>(), "Recolored platform");
 
 			gen.GetComponent<ColorAdder> ().SetBaseColorID(colorID);
 
