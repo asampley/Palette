@@ -12,6 +12,9 @@ public class PlayerController : NetworkBehaviour {
 	[SerializeField] private float yVel = 10f;
     [SerializeField] private float maxspeed = 10f;
 
+	private Rigidbody2D parentRb2d;
+	private Vector2 parentVel;
+
     //used for jumping animations and flipping
     public bool grounded;
 	[SyncVar (hook="OnChangeFacingRight")]
@@ -30,6 +33,8 @@ public class PlayerController : NetworkBehaviour {
 
 		UpdateFacingRight (facingRight);
 
+		parentVel = Vector2.zero;
+
     }
 	
 	// Update is called once per frame
@@ -44,8 +49,10 @@ public class PlayerController : NetworkBehaviour {
 
 		if (hit.collider != null) {
 			grounded = true;
+			parentRb2d = hit.collider.GetComponent<Rigidbody2D> ();
 		} else {
 			grounded = false;
+			parentRb2d = null;
 		}
 
 		// LOCAL PLAYER ONLY PAST HERE.
@@ -118,31 +125,37 @@ public class PlayerController : NetworkBehaviour {
         }
 
         //this should move the player based on what we input (vector2 is x axis)
-        if (grounded)
-        {
-            rb2d.AddForce((Vector2.right * xVel) * h);
-        }
-        else
-        {
-            rb2d.AddForce((Vector2.right * xVel / 2) * h);
-        }
+//        if (grounded)
+//        {
+//            rb2d.AddForce(0.01f * (Vector2.right * xVel) * h);
+//        }
+//        else
+//        {
+//            rb2d.AddForce(0.01f * (Vector2.right * xVel / 2f) * h);
+//        }
 
 
         //limits speed of player
-        if (rb2d.velocity.x > maxspeed)
-        {
-            rb2d.velocity = new Vector2(maxspeed, rb2d.velocity.y);
-        }
-        if (rb2d.velocity.x < -maxspeed)
-        {
-            rb2d.velocity = new Vector2(-maxspeed, rb2d.velocity.y);
-        }
+//        if (rb2d.velocity.x > maxspeed)
+//        {
+//            rb2d.velocity = new Vector2(maxspeed, rb2d.velocity.y);
+//        }
+//        if (rb2d.velocity.x < -maxspeed)
+//        {
+//            rb2d.velocity = new Vector2(-maxspeed, rb2d.velocity.y);
+//        }
+
 		float wXVel = Input.GetAxis("Horizontal") * xVel;
-		rb2d.velocity = new Vector2(wXVel, rb2d.velocity.y);
+		rb2d.velocity = new Vector2 (wXVel, rb2d.velocity.y);
 		
 		if (grounded && Input.GetAxis("Vertical") > 0) {
 			rb2d.velocity = new Vector2 (rb2d.velocity.x, yVel);
 			GetComponent<PlayerAudio>().jumpSource.Play ();
 		}
+
+		if (parentRb2d != null) {
+			parentVel = parentRb2d.velocity;
+		}
+		rb2d.velocity = rb2d.velocity + parentVel;
     }
 }
