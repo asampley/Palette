@@ -2786,6 +2786,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114463798739251654, guid: 66534955725184b7aa9b28fdc4f02176,
+        type: 2}
+      propertyPath: m_OnlineScene
+      value: Level 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 66534955725184b7aa9b28fdc4f02176, type: 2}
   m_IsPrefabParent: 0
