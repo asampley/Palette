@@ -15,6 +15,10 @@ public class Player : NetworkBehaviour {
 		get {
 			if (_head == null) {
 				_head = ClientScene.FindLocalObject (headId);
+
+				this.GetComponent<LaserController> ().laser = _head.GetComponent<Laser> ();
+				_head.transform.SetParent (this.headTransform);
+				_head.transform.localPosition = Vector2.zero;
 			}
 			return _head;
 		}
@@ -160,10 +164,7 @@ public class Player : NetworkBehaviour {
 
 	void OnHeadIDChange(NetworkInstanceId newID) {
 		this.headId = newID;
-
-		this.GetComponent<LaserController> ().laser = head.GetComponent<Laser> ();
-		this.head.transform.SetParent (this.headTransform);
-		this.head.transform.localPosition = Vector2.zero;
+		_head = null;
 	}
 
 	/**
