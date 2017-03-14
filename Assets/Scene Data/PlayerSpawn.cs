@@ -15,7 +15,6 @@ public class PlayerSpawn : MonoBehaviour {
 	}
 
 	public void SetPlayerSpawned(int num, bool spawned) {
-		Debug.Log (playerSpawned.Length);
 		try {
 			playerSpawned[num] = true;
 		} catch (IndexOutOfRangeException e) {

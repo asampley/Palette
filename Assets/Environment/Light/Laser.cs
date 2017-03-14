@@ -67,7 +67,6 @@ public class Laser : NetworkBehaviour {
 	}
 
 	public void SetLaserColor(PaletteColorID colorID) {
-		Debug.Log ("JGKFDPSJF");
 		if (hasAuthority) {
 			Debug.Log ("Set " + this + " to color " + new PaletteColor (colorID));
 
