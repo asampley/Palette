@@ -30,10 +30,6 @@ public class PlayerAnimator : MonoBehaviour {
 			// flip player head based on rotation.
 			player.head.GetComponent<SpriteRenderer> ().flipY = Mathf.Cos (Mathf.Deg2Rad * player.head.transform.rotation.eulerAngles.z) < 0;
 			player.head.GetComponent<SpriteRenderer> ().flipX = controller.facingRight;
-
-			if (player.isLocalPlayer) {
-				Debug.Log ("Facing right: " + controller.facingRight + "\n" + (Mathf.Cos (Mathf.Deg2Rad * player.head.transform.rotation.eulerAngles.z) < 0));
-			}
 		}
 	}
 }
