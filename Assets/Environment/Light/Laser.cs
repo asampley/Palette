@@ -13,6 +13,7 @@ public class Laser : NetworkBehaviour {
 	[SyncVar (hook="OnLaserToggle")]
 	private bool laserOn = true;
 
+	public LaserMode initMode;
 	[SyncVar (hook="OnLaserMode")]
 	private LaserMode mode;
 
@@ -31,6 +32,7 @@ public class Laser : NetworkBehaviour {
 	public override void OnStartServer ()
 	{
 		SetLaserColor (initColor);
+		SetLaserMode (initMode);
 	}
 
 	// Use this for initialization
