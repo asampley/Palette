@@ -7,6 +7,7 @@ using UnityEngine.Events;
 [ExecuteInEditMode]
 public class ColorAdder : MonoBehaviour {
 	[SerializeField] private PaletteColorID baseColorID;
+	[SerializeField] private bool lockColor;
 
 	private List<PaletteColor> additiveColors = new List<PaletteColor>();
 	private List<PaletteColor> subtractiveColors = new List<PaletteColor> ();
@@ -22,7 +23,6 @@ public class ColorAdder : MonoBehaviour {
 	public void SetBaseColorID(PaletteColorID id) {
 		baseColorID = id;
 		RecalculateCachedColor ();
-		NotifyColorChange ();
 	}
 
 	public PaletteColorID GetBaseColorID() {
@@ -47,40 +47,39 @@ public class ColorAdder : MonoBehaviour {
 	public void AddAdditiveColor(PaletteColor color) {
 		additiveColors.Add (color);
 		RecalculateCachedColor ();
-
-		NotifyColorChange ();
 	}
 
 	public void RemoveAdditiveColor(PaletteColor color) {
 		additiveColors.Remove (color);
 		cachedColor = new PaletteColor(baseColorID);
 		RecalculateCachedColor ();
-
-		NotifyColorChange ();
 	}
 
 	public void AddSubtractiveColor(PaletteColor color) {
 		subtractiveColors.Add (color);
 		RecalculateCachedColor ();
-
-		NotifyColorChange ();
 	}
 
 	public void RemoveSubtractiveColor(PaletteColor color) {
 		subtractiveColors.Remove (color);
 		cachedColor = new PaletteColor(baseColorID);
 		RecalculateCachedColor ();
-
-		NotifyColorChange ();
 	}
 
-	private void RecalculateCachedColor() {
+	private void RecalculateCachedColor(bool invokeChangeEvent = true) {
 		cachedColor = new PaletteColor(baseColorID);
-		foreach (PaletteColor c in additiveColors) {
-			cachedColor |= c;
-		}
-		foreach (PaletteColor c in subtractiveColors) {
-			cachedColor &= ~c;
+
+		if (!lockColor) {
+			foreach (PaletteColor c in additiveColors) {
+				cachedColor |= c;
+			}
+			foreach (PaletteColor c in subtractiveColors) {
+				cachedColor &= ~c;
+			}
+
+			if (invokeChangeEvent) {
+				NotifyColorChange ();
+			}
 		}
 	}
 
