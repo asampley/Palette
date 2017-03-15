@@ -130,7 +130,7 @@ public class LaserController : NetworkBehaviour {
 	}
 
 	void rotate() {
-		Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;	// subtract pos of player from mouse pos
+		Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - GetComponent<Player>().head.transform.position;	// subtract pos of player from mouse pos
 		difference.Normalize(); // Normalize the vector. this means that all the sum of vector will be equal to 1.
 
 		laser.rb2d.rotation = Mathf.Rad2Deg * Mathf.Atan2(difference.y, difference.x);
