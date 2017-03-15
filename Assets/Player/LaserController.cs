@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,10 +14,15 @@ public class LaserController : NetworkBehaviour {
 	private Laser _laser;
 	public Laser laser {
 		get {
-			if (_laser == null) {
-				laser = GetComponent<Player> ().head.GetComponent<Laser> ();
+			try {
+				if (_laser == null) {
+					laser = GetComponent<Player> ().head.GetComponent<Laser> ();
+					laser.SetLaserColor (this.GetComponent<Player> ().GetColorID());
+				}
+				return _laser;
+			} catch (NullReferenceException) {
+				return null;
 			}
-			return _laser; 
 		}
 		set {
 			_laser = value;
@@ -125,8 +131,10 @@ public class LaserController : NetworkBehaviour {
 //	}
 
 	public void UpdateLaserColor() {
-		// set the color to match the player
-		laser.SetLaserColor (this.GetComponent<Player> ().GetColorID());
+		if (laser != null) {
+			// set the color to match the player
+			laser.SetLaserColor (this.GetComponent<Player> ().GetColorID ());
+		}
 	}
 
 	void rotate() {

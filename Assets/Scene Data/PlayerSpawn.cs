@@ -48,6 +48,6 @@ public class PlayerSpawn : MonoBehaviour {
 	}
 
 	public Sprite GetPlayerHeadSprite(int x) {
-		return playerSpawns [x].headSprite;
+		return playerSpawns [x].headSprite; 	
 	}
 }
