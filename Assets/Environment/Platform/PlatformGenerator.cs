@@ -6,7 +6,6 @@ public class PlatformGenerator : MonoBehaviour {
 	[SerializeField] private PlatformBlueprint blueprint;
 	[SerializeField] private BoxCollider2D bc2d;
 	public int width;
-	[SerializeField] private PaletteColorID initialColor;
 
 	/// <summary>
 	/// You should only call this from the editor for now.

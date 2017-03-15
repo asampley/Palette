@@ -26,7 +26,6 @@ public class PlatformEditor : Editor {
 
 		// basic fields go here
 		EditorGUILayout.PropertyField (serializedObject.FindProperty ("width"));
-		EditorGUILayout.PropertyField (serializedObject.FindProperty ("initialColor"));
 		EditorGUILayout.PropertyField (serializedObject.FindProperty ("blueprint"));
 		EditorGUILayout.PropertyField (serializedObject.FindProperty ("bc2d"));
 
@@ -53,7 +52,7 @@ public class PlatformEditor : Editor {
 
 		}
 
-		PaletteColorID colorID = (PaletteColorID) (serializedObject.FindProperty ("initialColor").enumValueIndex);
+		PaletteColorID colorID = gen.GetComponent<ColorAdder>().GetBaseColorID();
 		if (colorID != oldColorID) {
 			Debug.Log (colorID);
 			Undo.RecordObject (gen.gameObject.GetComponent<ColorAdder>(), "Recolored platform");

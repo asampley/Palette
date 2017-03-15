@@ -6,7 +6,6 @@ using UnityEngine.Events;
 
 [ExecuteInEditMode]
 public class ColorAdder : MonoBehaviour {
-
 	[SerializeField] private PaletteColorID baseColorID;
 
 	private List<PaletteColor> additiveColors = new List<PaletteColor>();
@@ -24,6 +23,10 @@ public class ColorAdder : MonoBehaviour {
 		baseColorID = id;
 		RecalculateCachedColor ();
 		NotifyColorChange ();
+	}
+
+	public PaletteColorID GetBaseColorID() {
+		return baseColorID;
 	}
 
 	// Use this for initialization
