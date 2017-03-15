@@ -6,7 +6,6 @@ using UnityEngine.Networking;
 
 public class Player : NetworkBehaviour {
 	public GameObject headPrefab;
-	public Transform headTransform;
 
 	[SyncVar (hook="OnHeadIDChange")]
 	private NetworkInstanceId headId;
@@ -14,11 +13,17 @@ public class Player : NetworkBehaviour {
 	public GameObject head { 
 		get {
 			if (_head == null) {
+				PlayerSpawn info = SceneData.sceneObject.GetComponent<PlayerSpawn> ();
 				_head = ClientScene.FindLocalObject (headId);
 
+				if (_head == null) {
+					return null;
+				}
+
 				this.GetComponent<LaserController> ().laser = _head.GetComponent<Laser> ();
-				_head.transform.SetParent (this.headTransform);
-				_head.transform.localPosition = Vector2.zero;
+				_head.transform.SetParent (this.transform);
+				_head.transform.localPosition = info.GetPlayerHeadPosition (number);
+				_head.GetComponent<SpriteRenderer> ().sprite = info.GetPlayerHeadSprite (number);
 			}
 			return _head;
 		}
@@ -52,12 +57,6 @@ public class Player : NetworkBehaviour {
 			//this.gameObject.SetActive (false);
 			Activate (false);
 		}
-
-		try {
-			this.head.transform.SetParent (this.headTransform);
-		} catch (NullReferenceException) {
-
-		}
 	}
 
 	public void Respawn() {
@@ -67,7 +66,6 @@ public class Player : NetworkBehaviour {
 		}
 		
 		this.SetColor(info.GetPlayerColorID (number));
-		this.GetComponent<Animator> ().runtimeAnimatorController = info.GetPlayerAnimatorController (number);
 		info.SetPlayerSpawned (number, true);
 	}
 
@@ -90,6 +88,10 @@ public class Player : NetworkBehaviour {
 
 	[Command]
 	private void CmdSpawnHead() {
+		if (this.head != null) {
+			Destroy (this.head);
+			Debug.Log ("Destroying old player head");
+		}
 		GameObject headObj = Instantiate (headPrefab);
 		NetworkServer.SpawnWithClientAuthority (headObj, this.gameObject);
 
@@ -163,7 +165,10 @@ public class Player : NetworkBehaviour {
 	}
 
 	void OnHeadIDChange(NetworkInstanceId newID) {
-		this.headId = newID;
+		if (head != null && newID != this.headId) {
+			Destroy (head);
+			this.headId = newID;
+		}
 		_head = null;
 	}
 
@@ -189,6 +194,8 @@ public class Player : NetworkBehaviour {
 			info.SetPlayerSpawned (this.number, false);
 			this.gameObject.SetActive(true);
 			Activate (true);
+			this.GetComponent<Animator> ().runtimeAnimatorController = info.GetPlayerAnimatorController (number);
+			_head = null;
 			Respawn ();
 		}
 	}

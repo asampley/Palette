@@ -42,4 +42,12 @@ public class PlayerSpawn : MonoBehaviour {
 	public RuntimeAnimatorController GetPlayerAnimatorController(int x) {
 		return playerSpawns[x].controller;
 	}
+
+	public Vector2 GetPlayerHeadPosition(int x) {
+		return playerSpawns [x].headPos;
+	}
+
+	public Sprite GetPlayerHeadSprite(int x) {
+		return playerSpawns [x].headSprite;
+	}
 }

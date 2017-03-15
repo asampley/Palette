@@ -9,4 +9,6 @@ public class SpawnInfo {
 	public Transform spawn;
 	public PaletteColorID colorID;
 	public RuntimeAnimatorController controller;
+	public Vector2 headPos;
+	public Sprite headSprite;
 }
