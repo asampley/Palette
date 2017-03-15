@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 50953135827710124}
   - component: {fileID: 114337612152425014}
   - component: {fileID: 114082550812436044}
-  m_Layer: 14
+  m_Layer: 15
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5382ddde430c431b853324a0cbbf79d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseColorID: 0
+  baseColorID: 7
+  lockColor: 0
   colorChangeEvent:
     m_PersistentCalls:
       m_Calls:
@@ -125,7 +126,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 1
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
@@ -158,7 +159,6 @@ MonoBehaviour:
     type: 2}
   bc2d: {fileID: 61003144760746692}
   width: 0
-  initialColor: 0
 --- !u!114 &114639011430353456
 MonoBehaviour:
   m_ObjectHideFlags: 1
