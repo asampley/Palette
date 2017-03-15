@@ -7,4 +7,5 @@ public class PlatformBlueprint : MonoBehaviour {
 	public Sprite middle;
 	public Sprite right;
 	public float tileWidth;
+	public bool rot90;
 }

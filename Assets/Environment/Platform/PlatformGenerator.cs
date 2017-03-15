@@ -41,7 +41,11 @@ public class PlatformGenerator : MonoBehaviour {
 
 		platformBit.transform.SetParent (this.transform);
 		platformBit.transform.localPosition = new Vector2 (-(width * blueprint.tileWidth - 1) / 2f + index * blueprint.tileWidth, 0);
-		platformBit.transform.localRotation = new Quaternion ();
+		if (blueprint.rot90) {
+			platformBit.transform.localRotation = Quaternion.Euler (0, 0, 90);
+		} else {
+			platformBit.transform.localRotation = new Quaternion ();
+		}
 		platformBit.transform.localScale = Vector3.one;
 		
 		SpriteRenderer bitRenderer = platformBit.AddComponent<SpriteRenderer> ();
