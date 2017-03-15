@@ -10,6 +10,7 @@ public class PlatformEditor : Editor {
 	PlatformGenerator gen;
 
 	int oldWidth;
+	PlatformBlueprint oldBP;
 	PaletteColorID oldColorID;
 
 	void OnEnable() {
@@ -35,9 +36,14 @@ public class PlatformEditor : Editor {
 			
 			// get the width and generate the platform if it changes
 			int width = serializedObject.FindProperty ("width").intValue;
+			// get the blueprint and generate the platform if it changes
+			PlatformBlueprint bp = (PlatformBlueprint)serializedObject.FindProperty ("blueprint").objectReferenceValue;
 
-			if (width != oldWidth) {
+			if (width != oldWidth || bp != oldBP) {
 				oldWidth = width;
+				oldBP = bp;
+
+				Debug.Log ("Regenerated platform");
 
 				Undo.RecordObject (gen.gameObject, "Regenerated platform"); // sets platform to dirty, so the scene must save the changes
 				gen.GenerateEditor (gen);

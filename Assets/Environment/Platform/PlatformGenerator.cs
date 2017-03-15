@@ -43,13 +43,15 @@ public class PlatformGenerator : MonoBehaviour {
 		platformBit.transform.SetParent (this.transform);
 		platformBit.transform.localPosition = new Vector2 (-(width * blueprint.tileWidth - 1) / 2f + index * blueprint.tileWidth, 0);
 		platformBit.transform.localRotation = new Quaternion ();
-
+		platformBit.transform.localScale = Vector3.one;
 		
 		SpriteRenderer bitRenderer = platformBit.AddComponent<SpriteRenderer> ();
 		platformBit.AddComponent<PlatformBit> ();
 		bitRenderer.sprite = sprite;
 
 		platformBit.name = "Tile " + index;
+
+		platformBit.hideFlags |= HideFlags.NotEditable | HideFlags.HideInInspector;
 
 		return platformBit;
 	}

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
+[SelectionBase]
 [RequireComponent (typeof(ColorAdder))]
 public class Platform : NetworkBehaviour, PlayerColorListener {
 	private PaletteColorID currentColorID;
