@@ -11,7 +11,7 @@ public class PlatformGenerator : MonoBehaviour {
 	/// <summary>
 	/// You should only call this from the editor for now.
 	/// </summary>
-	public void Generate() {
+	public void GenerateEditor(PlatformGenerator target) {
 		if (width < 2) return;
 
 		// remove old bits
@@ -34,7 +34,7 @@ public class PlatformGenerator : MonoBehaviour {
 		// adjust box collider
 		bc2d.size = new Vector2 (width * blueprint.tileWidth, bc2d.size.y);
 
-		this.gameObject.GetComponent<Platform> ().UpdateColor (true);
+		target.GetComponent<Platform> ().UpdateColor (true);
 	}
 
 	private GameObject makeBit (Sprite sprite, int index) {

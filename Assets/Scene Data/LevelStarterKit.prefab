@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 114531562723334088}
   - component: {fileID: 114392460517288654}
   - component: {fileID: 114174227111979104}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LobbyButton Shine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 224094659704712410}
   - component: {fileID: 222749558329329936}
   - component: {fileID: 114597759085124476}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PlayerName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 224567352159535558}
   - component: {fileID: 222322992014525618}
   - component: {fileID: 114823052348382266}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PlayerName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 224964398604366696}
   - component: {fileID: 222565931610828366}
   - component: {fileID: 114360377899497406}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Color Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 223262087573117998}
   - component: {fileID: 114597127488097896}
   - component: {fileID: 114854923543010132}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 114784558535978550}
   - component: {fileID: 114853030438877448}
   - component: {fileID: 114631696230067238}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LobbyButton Sean
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -246,7 +246,7 @@ GameObject:
   - component: {fileID: 224571776074123228}
   - component: {fileID: 222212720788897462}
   - component: {fileID: 114725844293141986}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 222295234189751372}
   - component: {fileID: 114849916162750244}
   - component: {fileID: 114266135856978894}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Panel Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 224767764694152434}
   - component: {fileID: 222206097999671708}
   - component: {fileID: 114119888525429638}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -40,7 +40,7 @@ public class PlatformEditor : Editor {
 				oldWidth = width;
 
 				Undo.RecordObject (gen.gameObject, "Regenerated platform"); // sets platform to dirty, so the scene must save the changes
-				gen.Generate ();
+				gen.GenerateEditor (gen);
 			}
 
 			// get the starting color of the platform and change it if it changes
