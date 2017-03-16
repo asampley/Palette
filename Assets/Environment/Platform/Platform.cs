@@ -39,6 +39,8 @@ public class Platform : NetworkBehaviour, PlayerColorListener {
 			rgbColor = color.ToColor ();
 		}
 
+		GetComponent<PlatformAudio> ().Solo (color.ToID());
+
 		foreach (PlatformBit platformBit in this.GetComponent<PlatformGenerator>().GetPlatformBits()) {
 			platformBit.GetComponent<SpriteRenderer> ().color = rgbColor;
 		}
