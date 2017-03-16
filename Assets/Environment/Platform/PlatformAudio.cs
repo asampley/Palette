@@ -10,32 +10,38 @@ public class PlatformAudio : MonoBehaviour {
 	public AudioSource yellow;
 	public AudioSource cyan;
 
-	public void Solo(PaletteColorID colorID) {
+	public float volume;
+
+	public void Mute() {
 		red.volume = 0;
 		blue.volume = 0;
 		green.volume = 0;
 		magenta.volume = 0;
 		yellow.volume = 0;
 		cyan.volume = 0;
+	}
+
+	public void Solo(PaletteColorID colorID) {
+		Mute ();
 
 		switch (colorID) {
 		case PaletteColorID.RED:
-			red.volume = 1;
+			red.volume = volume;
 			break;
 		case PaletteColorID.BLUE:
-			blue.volume = 1;
+			blue.volume = volume;
 			break;
 		case PaletteColorID.GREEN:
-			green.volume = 1;
+			green.volume = volume;
 			break;
 		case PaletteColorID.CYAN:
-			cyan.volume = 1;
+			cyan.volume = volume;
 			break;
 		case PaletteColorID.MAGENTA:
-			magenta.volume = 1;
+			magenta.volume = volume;
 			break;
 		case PaletteColorID.YELLOW:
-			yellow.volume = 1;
+			yellow.volume = volume;
 			break;
 		}
 	}
