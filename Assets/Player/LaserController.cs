@@ -104,8 +104,11 @@ public class LaserController : NetworkBehaviour {
 	}
 
 	public void FixedUpdate() {
-		Debug.Log ("here");
+		if (!isLocalPlayer) return;
 		// Rotate the laser based on the mouse and player position.
+		
+		Debug.Log ("here");
+
 		rotate();
 	}
 
