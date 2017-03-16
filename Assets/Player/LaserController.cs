@@ -101,7 +101,10 @@ public class LaserController : NetworkBehaviour {
 		} else {
 			laser.SetLaserOn (false);
 		}
+	}
 
+	public void FixedUpdate() {
+		Debug.Log ("here");
 		// Rotate the laser based on the mouse and player position.
 		rotate();
 	}
@@ -142,6 +145,8 @@ public class LaserController : NetworkBehaviour {
 		difference.Normalize(); // Normalize the vector. this means that all the sum of vector will be equal to 1.
 
 		laser.rb2d.rotation = Mathf.Rad2Deg * Mathf.Atan2(difference.y, difference.x);
+		Debug.Log ("Angle: " + Mathf.Rad2Deg * Mathf.Atan2 (difference.y, difference.x));
+		Debug.Log ("RB2D Angle: " + laser.rb2d.rotation);
 	}
 
 }
