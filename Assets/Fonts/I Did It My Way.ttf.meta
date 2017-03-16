@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 20a7bb3bf0bea9c47a1af3248dc459a7
+timeCreated: 1489626517
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: I Did It My Way
+  fontNames:
+  - I Did It My Way
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

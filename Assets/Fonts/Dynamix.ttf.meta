@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: fccf08c545b97594b838571b5b1b5a59
+timeCreated: 1489626722
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Dynamix
+  fontNames:
+  - Dynamix
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
