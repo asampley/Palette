@@ -101,14 +101,8 @@ public class LaserController : NetworkBehaviour {
 		} else {
 			laser.SetLaserOn (false);
 		}
-	}
 
-	public void FixedUpdate() {
-		if (!isLocalPlayer) return;
 		// Rotate the laser based on the mouse and player position.
-		
-		Debug.Log ("here");
-
 		rotate();
 	}
 
@@ -145,11 +139,10 @@ public class LaserController : NetworkBehaviour {
 
 	void rotate() {
 		Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - GetComponent<Player>().head.transform.position;	// subtract pos of player from mouse pos
+		difference.z = 0;
 		difference.Normalize(); // Normalize the vector. this means that all the sum of vector will be equal to 1.
 
-		laser.rb2d.rotation = Mathf.Rad2Deg * Mathf.Atan2(difference.y, difference.x);
-		Debug.Log ("Angle: " + Mathf.Rad2Deg * Mathf.Atan2 (difference.y, difference.x));
-		Debug.Log ("RB2D Angle: " + laser.rb2d.rotation);
+		laser.rb2d.transform.rotation = Quaternion.Euler(new Vector3(difference.x, difference.y, Mathf.Rad2Deg * Mathf.Atan2(difference.y, difference.x)));
 	}
 
 }
