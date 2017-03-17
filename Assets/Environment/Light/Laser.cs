@@ -173,14 +173,14 @@ public class Laser : NetworkBehaviour {
 			float length = 1 * raycastHit.distance;
 			//Debug.Log (raycastHit.distance);
 			if (length == 0) {
-				length = 1000;
+				length = 500;
 			}
 
 			Vector3 newScale = sr.transform.localScale;
 			newScale.x = length; // IMPORTANT: assumes sprite unit size of 1 in x coords
 			sr.transform.localScale = newScale; // set length
 
-			sr.transform.position = laserStart + length / 2 * laserDir;
+			sr.transform.position = laserStart + length * laserDir / 2;
 		} else if (this.affectedObject != null) { // remove self from object when off
 			switch (mode) {
 				case LaserMode.ADD:

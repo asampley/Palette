@@ -42310,6 +42310,26 @@ Prefab:
       propertyPath: m_FontData.m_FontStyle
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 61019980451619528, guid: b9db256457b114f90bc0e2530a134026,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 75.16731
+      objectReference: {fileID: 0}
+    - target: {fileID: 61019980451619528, guid: b9db256457b114f90bc0e2530a134026,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 262.56247
+      objectReference: {fileID: 0}
+    - target: {fileID: 61019980451619528, guid: b9db256457b114f90bc0e2530a134026,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 6.8688126
+      objectReference: {fileID: 0}
+    - target: {fileID: 61019980451619528, guid: b9db256457b114f90bc0e2530a134026,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 56.99745
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9db256457b114f90bc0e2530a134026, type: 2}
   m_IsPrefabParent: 0
