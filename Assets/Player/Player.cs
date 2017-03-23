@@ -5,33 +5,34 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 public class Player : NetworkBehaviour {
-	public GameObject headPrefab;
-
-	[SyncVar (hook="OnHeadIDChange")]
-	private NetworkInstanceId headId;
-	private GameObject _head;
-	public GameObject head { 
-		get {
-			if (_head == null) {
-				PlayerSpawn info = SceneData.sceneObject.GetComponent<PlayerSpawn> ();
-				_head = ClientScene.FindLocalObject (headId);
-				Debug.Log ("Grabbed head with ID " + headId);
-
-				if (_head == null) {
-					return null;
-				}
-
-				this.GetComponent<LaserController> ().laser = _head.GetComponent<Laser> ();
-				_head.transform.SetParent (this.transform);
-				if (number != -1) {
-					_head.transform.localPosition = info.GetPlayerHeadPosition (number);
-					_head.GetComponent<SpriteRenderer> ().sprite = info.GetPlayerHeadSprite (number);
-				}
-				_head.GetComponent<SpriteRenderer> ().color = new PaletteColor(colorID).ToColor();
-			}
-			return _head;
-		}
-	}
+//	public GameObject headPrefab;
+//
+//	[SyncVar (hook="OnHeadIDChange")]
+//	private NetworkInstanceId headId;
+//	private GameObject _head;
+//	public GameObject head { 
+//		get {
+//			if (_head == null) {
+//				PlayerSpawn info = SceneData.sceneObject.GetComponent<PlayerSpawn> ();
+//				_head = ClientScene.FindLocalObject (headId);
+//				Debug.Log ("Grabbed head with ID " + headId);
+//
+//				if (_head == null) {
+//					return null;
+//				}
+//
+//				this.GetComponent<LaserController> ().laser = _head.GetComponent<Laser> ();
+//				_head.transform.SetParent (this.transform);
+//				if (number != -1) {
+//					_head.transform.localPosition = info.GetPlayerHeadPosition (number);
+//					_head.GetComponent<SpriteRenderer> ().sprite = info.GetPlayerHeadSprite (number);
+//				}
+//				_head.GetComponent<SpriteRenderer> ().color = new PaletteColor(colorID).ToColor();
+//			}
+//			return _head;
+//		}
+//	}
+	public GameObject head;
 
 	[SyncVar (hook="OnColorChange")]
 	private PaletteColorID colorID;
@@ -53,7 +54,7 @@ public class Player : NetworkBehaviour {
 	void Start () {
 		InitGroundLayerMask ();
 		UpdateNumber (number);
-		OnHeadIDChange (headId);
+//		OnHeadIDChange (headId);
 		OnColorChange (colorID);
 
 		// disable until a number is picked
@@ -84,26 +85,26 @@ public class Player : NetworkBehaviour {
 	{
 		base.OnStartLocalPlayer ();
 
-		CmdSpawnHead();
+//		CmdSpawnHead();
 
 		GameObject.Find ("Main Camera").GetComponent<CameraFollow> ().player = this.gameObject;
 		SceneData.sceneObject.GetComponent<LocalPlayer> ().localPlayer = this.gameObject;
 	}
 
-	[Command]
-	private void CmdSpawnHead() {
-//		if (this.head != null) {
-//			Destroy (this.head);
-//			Debug.Log ("Destroying old player head");
-//		}
-		GameObject headObj = Instantiate (headPrefab);
-		NetworkServer.SpawnWithClientAuthority (headObj, this.gameObject);
-
-		this.headId = headObj.GetComponent<NetworkIdentity> ().netId;
-		Debug.Log ("Created head with id " + headId);
-
-//		Debug.Log (headObj.GetComponent<NetworkIdentity> ().clientAuthorityOwner);
-	}
+//	[Command]
+//	private void CmdSpawnHead() {
+////		if (this.head != null) {
+////			Destroy (this.head);
+////			Debug.Log ("Destroying old player head");
+////		}
+//		GameObject headObj = Instantiate (headPrefab);
+//		NetworkServer.SpawnWithClientAuthority (headObj, this.gameObject);
+//
+//		this.headId = headObj.GetComponent<NetworkIdentity> ().netId;
+//		Debug.Log ("Created head with id " + headId);
+//
+////		Debug.Log (headObj.GetComponent<NetworkIdentity> ().clientAuthorityOwner);
+//	}
 
 	public override void OnStartClient ()
 	{
@@ -169,13 +170,13 @@ public class Player : NetworkBehaviour {
 		}
 	}
 
-	void OnHeadIDChange(NetworkInstanceId newID) {
-		if (head != null && newID != this.headId) {
-			Destroy (head);
-		}
-		this.headId = newID;
-		_head = null;
-	}
+//	void OnHeadIDChange(NetworkInstanceId newID) {
+//		if (head != null && newID != this.headId) {
+//			Destroy (head);
+//		}
+//		this.headId = newID;
+//		_head = null;
+//	}
 
 	/**
 	 * Called when the variable colorID is changed.
@@ -200,7 +201,11 @@ public class Player : NetworkBehaviour {
 			this.gameObject.SetActive(true);
 			Activate (true);
 			this.GetComponent<Animator> ().runtimeAnimatorController = info.GetPlayerAnimatorController (number);
-			_head = null;
+			if (isLocalPlayer) {
+				head.transform.localPosition = info.GetPlayerHeadPosition (number);
+			}
+			head.GetComponent<SpriteRenderer> ().sprite = info.GetPlayerHeadSprite (number);
+//			_head = null;
 			Respawn ();
 		}
 	}
@@ -213,11 +218,12 @@ public class Player : NetworkBehaviour {
 
 		this.GetComponent<SpriteRenderer> ().color = color.ToColor ();
 		Debug.Log("Set player " + this + " to have color " + color);
-		try {
-			head.GetComponent<SpriteRenderer> ().color = color.ToColor ();
-		} catch (NullReferenceException) {
-
-		}
+//		try {
+//			head.GetComponent<SpriteRenderer> ().color = color.ToColor ();
+//		} catch (NullReferenceException) {
+//
+//		}
+		head.GetComponent<SpriteRenderer> ().color = new PaletteColor(colorID).ToColor();
 
 		this.gameObject.layer = layer;
 		//Debug.Log("Set player " + this + " to be in layer " + layer + "(" + LayerMask.LayerToName(layer) + ")");

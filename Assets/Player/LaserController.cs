@@ -11,24 +11,26 @@ public class LaserController : NetworkBehaviour {
 //	[SyncVar]
 //	private NetworkInstanceId laserObjID;
 
-	private Laser _laser;
-	public Laser laser {
-		get {
-			try {
-				if (_laser == null) {
-					laser = GetComponent<Player> ().head.GetComponent<Laser> ();
-					laser.SetLaserColor (this.GetComponent<Player> ().GetColorID());
-				}
-				return _laser;
-			} catch (NullReferenceException) {
-				return null;
-			}
-		}
-		set {
-			_laser = value;
-			UpdateLaserColor ();
-		}
-	}
+//	private Laser _laser;
+//	public Laser laser {
+//		get {
+//			try {
+//				if (_laser == null) {
+//					laser = GetComponent<Player> ().head.GetComponent<Laser> ();
+//					laser.SetLaserColor (this.GetComponent<Player> ().GetColorID());
+//				}
+//				return _laser;
+//			} catch (NullReferenceException) {
+//				return null;
+//			}
+//		}
+//		set {
+//			_laser = value;
+//			UpdateLaserColor ();
+//		}
+//	}
+
+	public Laser laser;
 
 	private bool isAddDown = false;
 	private bool isSubDown = false;
