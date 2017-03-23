@@ -43555,6 +43555,21 @@ Prefab:
       propertyPath: m_Size.y
       value: 56.99745
       objectReference: {fileID: 0}
+    - target: {fileID: 20008740130511562, guid: b9db256457b114f90bc0e2530a134026,
+        type: 2}
+      propertyPath: orthographic size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114013877270685466, guid: b9db256457b114f90bc0e2530a134026,
+        type: 2}
+      propertyPath: smoothTimeY
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114013877270685466, guid: b9db256457b114f90bc0e2530a134026,
+        type: 2}
+      propertyPath: smoothTimeX
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9db256457b114f90bc0e2530a134026, type: 2}
   m_IsPrefabParent: 0
