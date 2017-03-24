@@ -873,6 +873,7 @@ MonoBehaviour:
     type: 2}
   bc2d: {fileID: 61003144760746692}
   width: 0
+  height: 0
 --- !u!114 &114639011430353456
 MonoBehaviour:
   m_ObjectHideFlags: 1
