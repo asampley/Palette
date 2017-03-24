@@ -54,7 +54,8 @@ public class PlatformGenerator : MonoBehaviour {
 		}
 
 		// adjust box collider
-		bc2d.size = new Vector2 (width * blueprint.tileWidth, bc2d.size.y);
+		bc2d.size = new Vector2 (width * blueprint.tileWidth, height * blueprint.tileWidth);
+		bc2d.offset = new Vector2 ((width * blueprint.tileWidth - 1) / 2f, -(height * blueprint.tileWidth - 1) / 2f);
 
 		target.GetComponent<Platform> ().UpdateColor (true);
 	}
@@ -63,7 +64,7 @@ public class PlatformGenerator : MonoBehaviour {
 		GameObject platformBit = new GameObject ();
 
 		platformBit.transform.SetParent (this.transform);
-		platformBit.transform.localPosition = new Vector2 (-(width * blueprint.tileWidth - 1) / 2f + x * blueprint.tileWidth, -(height * blueprint.tileWidth - 1) / 2f + y * blueprint.tileWidth);
+		platformBit.transform.localPosition = new Vector2 (x * blueprint.tileWidth, -y * blueprint.tileWidth);
 		if (blueprint.rot90) {
 			platformBit.transform.localRotation = Quaternion.Euler (0, 0, 90);
 		} else {
