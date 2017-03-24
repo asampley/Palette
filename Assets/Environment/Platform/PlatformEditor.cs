@@ -10,6 +10,7 @@ public class PlatformEditor : Editor {
 	PlatformGenerator gen;
 
 	int oldWidth;
+	int oldHeight;
 	PlatformBlueprint oldBP;
 	PaletteColorID oldColorID;
 
@@ -26,6 +27,7 @@ public class PlatformEditor : Editor {
 
 		// basic fields go here
 		EditorGUILayout.PropertyField (serializedObject.FindProperty ("width"));
+		EditorGUILayout.PropertyField (serializedObject.FindProperty ("height"));
 		EditorGUILayout.PropertyField (serializedObject.FindProperty ("blueprint"));
 		EditorGUILayout.PropertyField (serializedObject.FindProperty ("bc2d"));
 
@@ -35,11 +37,13 @@ public class PlatformEditor : Editor {
 			
 			// get the width and generate the platform if it changes
 			int width = serializedObject.FindProperty ("width").intValue;
+			int height = serializedObject.FindProperty ("height").intValue;
 			// get the blueprint and generate the platform if it changes
 			PlatformBlueprint bp = (PlatformBlueprint)serializedObject.FindProperty ("blueprint").objectReferenceValue;
 
-			if (width != oldWidth || bp != oldBP) {
+			if (width != oldWidth || height != oldHeight || bp != oldBP) {
 				oldWidth = width;
+				oldHeight = height;
 				oldBP = bp;
 
 				Debug.Log ("Regenerated platform");
