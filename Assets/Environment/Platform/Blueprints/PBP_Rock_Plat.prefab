@@ -51,5 +51,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f52cf744628e8464d88981218f9fd3d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: eb7eec7d164aa4a94950a06015980c99, type: 2}
+  material: {fileID: 2100000, guid: 68c2ab923edb541e38c92ffec020330e, type: 2}
   tileWidth: 1
