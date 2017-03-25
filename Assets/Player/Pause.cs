@@ -9,7 +9,6 @@ public class Pause : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		UI = this.gameObject.GetComponent<Canvas> ();
-		//player = GameObject.Find ("Player 0");
 	}
 	
 	// Update is called once per frame
@@ -23,7 +22,6 @@ public class Pause : MonoBehaviour {
 
 	public void TogglePauseMenu()
 	{
-		// not the optimal way but for the sake of readability
 		if (UI.enabled)
 		{
 			UI.enabled = false;
