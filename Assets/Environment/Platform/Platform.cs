@@ -8,6 +8,15 @@ using UnityEngine.Networking;
 public class Platform : NetworkBehaviour, PlayerColorListener {
 	private PaletteColorID currentColorID;
 	private PaletteColorID playerColorID;
+	private MaterialPropertyBlock _materialPB;
+	private MaterialPropertyBlock materialPB {
+		get {
+			if (_materialPB == null) {
+				_materialPB = new MaterialPropertyBlock ();
+			}
+			return _materialPB;
+		}
+	}
 
 	public override void OnStartClient ()
 	{
@@ -45,9 +54,9 @@ public class Platform : NetworkBehaviour, PlayerColorListener {
 			GetComponent<PlatformAudio> ().Mute ();
 		}
 
-		foreach (PlatformBit platformBit in this.GetComponent<PlatformGenerator>().GetPlatformBits()) {
-			platformBit.GetComponent<SpriteRenderer> ().color = rgbColor;
-		}
+		Renderer rend = GetComponent<Renderer> ();
+		materialPB.SetColor ("_Color", rgbColor);
+		rend.SetPropertyBlock (materialPB);
 	}
 
 	public void OnLocalPlayerColorChange() {

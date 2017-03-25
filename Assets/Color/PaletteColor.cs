@@ -33,6 +33,10 @@ public class PaletteColor {
 		return new PaletteColor (~col.color);
 	}
 
+	/// <summary>
+	/// Guaranteed to go from 0 to 7
+	/// </summary>
+	/// <returns>The int.</returns>
 	public int ToInt() {
 		return this.color;
 	}
@@ -128,6 +132,9 @@ public class PaletteColor {
 	}
 }
 
+/// <summary>
+/// Guaranteed to go from 0 to 7.
+/// </summary>
 public enum PaletteColorID {
 	BLACK = 0,
 	RED = 1,
