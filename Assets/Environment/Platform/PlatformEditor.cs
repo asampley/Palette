@@ -33,27 +33,24 @@ public class PlatformEditor : Editor {
 
 		serializedObject.ApplyModifiedProperties ();
 
-		if (!EditorUtility.IsPersistent (gen)) { // DO NOT DO IT IF IT IS A PREFAB
-			
-			// get the width and generate the platform if it changes
-			int width = serializedObject.FindProperty ("width").intValue;
-			int height = serializedObject.FindProperty ("height").intValue;
-			// get the blueprint and generate the platform if it changes
-			PlatformBlueprint bp = (PlatformBlueprint)serializedObject.FindProperty ("blueprint").objectReferenceValue;
+		// get the width and generate the platform if it changes
+		int width = serializedObject.FindProperty ("width").intValue;
+		int height = serializedObject.FindProperty ("height").intValue;
+		// get the blueprint and generate the platform if it changes
+		PlatformBlueprint bp = (PlatformBlueprint)serializedObject.FindProperty ("blueprint").objectReferenceValue;
 
-			if (width != oldWidth || height != oldHeight || bp != oldBP) {
-				oldWidth = width;
-				oldHeight = height;
-				oldBP = bp;
+		if (width != oldWidth || height != oldHeight || bp != oldBP) {
+			oldWidth = width;
+			oldHeight = height;
+			oldBP = bp;
 
-				Debug.Log ("Regenerated platform");
+			Debug.Log ("Regenerated platform");
 
-				Undo.RecordObject (gen.gameObject, "Regenerated platform"); // sets platform to dirty, so the scene must save the changes
+			Undo.RecordObject (gen.gameObject, "Regenerated platform"); // sets platform to dirty, so the scene must save the changes
+			gen.GetComponent<MeshRenderer> ().material = bp.material;
+			if (!EditorUtility.IsPersistent (gen)) {
 				gen.GenerateEditor (gen);
 			}
-
-			// get the starting color of the platform and change it if it changes
-
 		}
 
 		PaletteColorID colorID = gen.GetComponent<ColorAdder>().GetBaseColorID();

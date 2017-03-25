@@ -51,14 +51,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f52cf744628e8464d88981218f9fd3d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topLeft: {fileID: 21300000, guid: c7762d19b0bbd41fc9eb1177463cc0e9, type: 3}
-  topMiddle: {fileID: 21300000, guid: 8e2de2392d828444c99ae016c16e71ff, type: 3}
-  topRight: {fileID: 21300000, guid: 738e52d59050c49aca436e33f7a0da66, type: 3}
-  left: {fileID: 21300000, guid: c7762d19b0bbd41fc9eb1177463cc0e9, type: 3}
-  middle: {fileID: 21300000, guid: 8e2de2392d828444c99ae016c16e71ff, type: 3}
-  right: {fileID: 21300000, guid: 738e52d59050c49aca436e33f7a0da66, type: 3}
-  bottomLeft: {fileID: 21300000, guid: c7762d19b0bbd41fc9eb1177463cc0e9, type: 3}
-  bottomMiddle: {fileID: 21300000, guid: 8e2de2392d828444c99ae016c16e71ff, type: 3}
-  bottomRight: {fileID: 21300000, guid: 738e52d59050c49aca436e33f7a0da66, type: 3}
+  material: {fileID: 2100000, guid: 5eb3b66198b1749bc89582aa876b8cdb, type: 2}
   tileWidth: 1
-  rot90: 0
