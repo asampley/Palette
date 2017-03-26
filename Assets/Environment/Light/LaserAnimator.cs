@@ -7,13 +7,16 @@ using UnityEngine;
 public class LaserAnimator : MonoBehaviour {
 	private MaterialPropertyBlock mpb;
 
+	public Material addMaterial;
+	public Material subMaterial;
+
 	public int allTheVariablesThatMatterAreStatic;
 
 	private static bool dirtySprite = true;
 	private static int currentSprite = 0;
 	public static int numSprites = 8;
 
-	public const float animFPS = 30;
+	public const float animFPS = 16;
 	private static float timeSinceLastSpriteUpdate = 0;
 
 	private static Mesh _sharedMesh;
@@ -81,7 +84,7 @@ public class LaserAnimator : MonoBehaviour {
 //			Debug.Log ("Switched all lasers to sprite " + currentSprite);
 			for (int a = 0; a < uvs.Length; ++a) {
 //				Debug.Log (uvs [a]);
-				Debug.Log (mesh.vertices [a]);
+//				Debug.Log (mesh.vertices [a]);
 			}
 		}
 	}
@@ -89,12 +92,25 @@ public class LaserAnimator : MonoBehaviour {
 	public void SetLength(float length) {
 		mpb.SetFloat ("_MaxX", length);
 //		Debug.Log (length / (2 * GetComponent<Renderer>().bounds.size.x));
-		Debug.Log (mpb.GetFloat("_MaxX"));
+//		Debug.Log (mpb.GetFloat("_MaxX"));
 		GetComponent<Renderer> ().SetPropertyBlock (mpb);
 	}
 
 	public void SetVisible(bool visible) {
 		GetComponent<Renderer> ().enabled = visible;
+	}
+
+	public void SetMode(LaserMode mode) {
+		Renderer rend = GetComponent<Renderer> ();
+
+		switch (mode) {
+		case LaserMode.ADD:
+			rend.sharedMaterial = addMaterial;
+			break;
+		case LaserMode.SUBTRACT:
+			rend.sharedMaterial = subMaterial;
+			break;
+		}
 	}
 	
 	public void SetColor(PaletteColor color) {

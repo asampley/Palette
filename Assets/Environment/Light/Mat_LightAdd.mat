@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: LightMaterial
+  m_Name: Mat_LightAdd
   m_Shader: {fileID: 4800000, guid: 5f575e48c2c4541b2bc7e9d3c9344f63, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1

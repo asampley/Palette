@@ -244,6 +244,7 @@ public class Laser : NetworkBehaviour {
 
 		this.mode = mode;
 
+		anim.SetMode (mode);
 //		switch (mode) {
 //			case LaserMode.ADD:
 //				r.sprite = laserAdd;
