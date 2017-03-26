@@ -51,5 +51,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f52cf744628e8464d88981218f9fd3d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: eb7eec7d164aa4a94950a06015980c99, type: 2}
-  tileWidth: 1
+  material: {fileID: 2100000, guid: a61f08dd7712b4044b0b587394dc37a4, type: 2}
+  horizontalMargin: 0
+  verticalMargin: 0
