@@ -14,11 +14,13 @@ public class LaserAnimator : MonoBehaviour {
 
 	private static bool dirtySprite = true;
 	private static int currentSprite = 0;
-	public static int numSprites = 8;
+	public static int numSprites = 9;
 
 	public const float animFPS = 16;
 	private static float timeSinceLastSpriteUpdate = 0;
-
+	
+	private static float meshLength = 1000;
+	private static float meshWidth = 1;
 	private static Mesh _sharedMesh;
 	private static Mesh sharedMesh {
 		get {
@@ -28,10 +30,10 @@ public class LaserAnimator : MonoBehaviour {
 				Vector3[] vertices = new Vector3[4];
 				int[] triangles = new int[3 * 2 * vertices.Length];
 
-				vertices [0] = new Vector2 (0, -0.5f);
-				vertices [1] = new Vector2 (meshLength, -0.5f);
-				vertices [2] = new Vector2 (0, 0.5f);
-				vertices [3] = new Vector2 (meshLength, 0.5f);
+				vertices [0] = new Vector2 (0, -meshWidth / 2);
+				vertices [1] = new Vector2 (meshLength, -meshWidth / 2);
+				vertices [2] = new Vector2 (0, meshWidth / 2);
+				vertices [3] = new Vector2 (meshLength, meshWidth / 2);
 
 				triangles [0] = 2;
 				triangles [1] = 1;
@@ -46,7 +48,6 @@ public class LaserAnimator : MonoBehaviour {
 			return _sharedMesh;
 		}
 	}
-	private static float meshLength = 1000;
 
 	void Awake() {
 		mpb = new MaterialPropertyBlock ();
