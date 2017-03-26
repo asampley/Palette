@@ -1,4 +1,4 @@
-﻿Shader "Custom/PlatformShader" {
+﻿Shader "Custom/LightShader" {
 	Properties {
 		_MainTex ("Texture", 2D) = "white" {}
 	}
@@ -19,6 +19,7 @@
 			CGPROGRAM
 			#pragma vertex vert             
 			#pragma fragment frag
+        		#include "UnityCG.cginc"
 
 			struct vertInput {
 				float2 uv : TEXCOORD0;
@@ -27,22 +28,26 @@
 
 			struct vertOutput {
 				float2 uv : TEXCOORD0;
-				float4 relPos : V_POSITION;
+				float wposx : WORLD_X;
 				float4 pos : SV_POSITION;
 			};
 
+			float4 _MainTex_ST;
+
 			vertOutput vert(vertInput input) {
 				vertOutput o;
-				o.relPos = input.pos;
+				o.wposx = input.pos.x;
 				o.pos = mul(UNITY_MATRIX_MVP, input.pos);
-				o.uv = input.uv;
+            			o.uv = TRANSFORM_TEX (input.uv, _MainTex);
 				return o;
 			}
 
 			sampler2D _MainTex;
 			uniform float4 _Color;
+			uniform float _MaxX;
 
 			fixed4 frag(vertOutput output) : COLOR {
+				clip(_MaxX - output.wposx);
 				fixed4 c = tex2D (_MainTex, output.uv) * _Color;
 				return c; 
 			}

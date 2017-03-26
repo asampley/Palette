@@ -8,7 +8,7 @@ public enum LaserMode { ADD, SUBTRACT }
 
 public class Laser : NetworkBehaviour {
 	public Rigidbody2D rb2d;
-	public SpriteRenderer sr;
+	public LaserAnimator anim;
 
 	[SyncVar (hook="OnLaserToggle")]
 	private bool laserOn = true;
@@ -176,11 +176,12 @@ public class Laser : NetworkBehaviour {
 				length = 500;
 			}
 
-			Vector3 newScale = sr.transform.localScale;
-			newScale.x = length; // IMPORTANT: assumes sprite unit size of 1 in x coords
-			sr.transform.localScale = newScale; // set length
-
-			sr.transform.position = laserStart + length * laserDir / 2;
+//			Vector3 newScale = anim.transform.localScale;
+//			newScale.x = length; // IMPORTANT: assumes sprite unit size of 1 in x coords
+//			anim.transform.localScale = newScale; // set length
+//
+//			anim.transform.position = laserStart + length * laserDir / 2;
+			anim.SetLength (length);
 		} else if (this.affectedObject != null) { // remove self from object when off
 			switch (mode) {
 				case LaserMode.ADD:
@@ -198,7 +199,7 @@ public class Laser : NetworkBehaviour {
 	void UpdateLaserOn() {
 		Debug.Log ("Turned " + (laserOn ? "on" : "off") + " laser " + netId);
 
-		this.sr.enabled = laserOn;
+		this.anim.SetVisible (laserOn);
 
 		// Refresh laser calculations
 		UpdateLaserDir ();
@@ -219,7 +220,8 @@ public class Laser : NetworkBehaviour {
 		this.colorID = newColorID;
 
 		Debug.Log ("Set laser " + netId + " color to " + new PaletteColor(colorID));
-		sr.color = new PaletteColor(colorID).ToColor();
+		//r.color = new PaletteColor(colorID).ToColor();
+		anim.SetColor (new PaletteColor (colorID));
 
 		// Do not hit own color
 		layersToHit = layersColors ^ LayerMask.GetMask (new PaletteColor (colorID).ToLayerName ());
@@ -242,14 +244,14 @@ public class Laser : NetworkBehaviour {
 
 		this.mode = mode;
 
-		switch (mode) {
-			case LaserMode.ADD:
-				sr.sprite = laserAdd;
-				break;
-			case LaserMode.SUBTRACT:
-				sr.sprite = laserSub;
-				break;
-		}
+//		switch (mode) {
+//			case LaserMode.ADD:
+//				r.sprite = laserAdd;
+//				break;
+//			case LaserMode.SUBTRACT:
+//				r.sprite = laserSub;
+//				break;
+//		}
 	}
 
 	public void ToggleOn() {
