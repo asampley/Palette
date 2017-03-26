@@ -44,10 +44,38 @@ public class PlatformGenerator : MonoBehaviour {
 		for (int j = 0; j < height; ++j) {
 			for (int i = 0; i < width; ++i) {
 				int k = (j * width + i); // general index
-				vertices [4 * k]     = new Vector2 (i, -j);
-				vertices [4 * k + 1] = new Vector2 (i + 1, -j);
-				vertices [4 * k + 2] = new Vector2 (i, -(j + 1));
-				vertices [4 * k + 3] = new Vector2 (i + 1, -(j + 1));
+
+				float iStart;
+				float iEnd;
+				float jStart;
+				float jEnd;
+
+				if (i == 0) {
+					iStart = -blueprint.horizontalMargin;
+				} else {
+					iStart = i;
+				}
+				if (i == width - 1) {
+					iEnd = i + 1 + blueprint.horizontalMargin;
+				} else {
+					iEnd = i + 1;
+				}
+
+				if (j == 0) {
+					jStart = blueprint.verticalMargin;
+				} else {
+					jStart = -j;
+				}
+				if (j == height - 1) {
+					jEnd = -(j + 1 + blueprint.verticalMargin);
+				} else {
+					jEnd = -(j + 1);
+				}
+
+				vertices [4 * k]     = new Vector2 (iStart, jStart);
+				vertices [4 * k + 1] = new Vector2 (iEnd, jStart);
+				vertices [4 * k + 2] = new Vector2 (iStart, jEnd);
+				vertices [4 * k + 3] = new Vector2 (iEnd, jEnd);
 
 				float uStart;
 				float uEnd;
@@ -102,8 +130,8 @@ public class PlatformGenerator : MonoBehaviour {
 		GetComponent<MeshFilter> ().mesh = mesh;
 
 		// adjust box collider
-		bc2d.size = new Vector2 (width * blueprint.tileWidth, height * blueprint.tileWidth);
-		bc2d.offset = new Vector2 ((width * blueprint.tileWidth) / 2f, -(height * blueprint.tileWidth) / 2f);
+		bc2d.size = new Vector2 (width, height);
+		bc2d.offset = new Vector2 (width / 2f, -height / 2f);
 
 		// change color
 		target.GetComponent<Platform> ().UpdateColor (true);

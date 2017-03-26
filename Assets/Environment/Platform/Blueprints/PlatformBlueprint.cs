@@ -4,5 +4,12 @@ using UnityEngine;
 
 public class PlatformBlueprint : MonoBehaviour {
 	public Material material;
-	public float tileWidth = 1;
+
+	/*
+	 * Specify some extra margins to extend mesh outside of collider. May
+	 * cause some stretching of sprites, but is useful for glow effects
+	 * outside of the standard sprite shape.
+	 */
+	public float horizontalMargin = 0;
+	public float verticalMargin = 0;
 }
