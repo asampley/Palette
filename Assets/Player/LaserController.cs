@@ -36,6 +36,8 @@ public class LaserController : NetworkBehaviour {
 	private bool isSubDown = false;
 	private bool lockLaserOn = false;
 
+	private Vector3 laserDirection;
+
     // Use this for initialization
 	void Start () {
         
@@ -140,9 +142,21 @@ public class LaserController : NetworkBehaviour {
 	}
 
 	void rotate() {
-		Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - GetComponent<Player>().head.transform.position;	// subtract pos of player from mouse pos
+		Vector3 difference = Vector3.zero;
+		if (Input.GetJoystickNames ().Length == 0) {
+			difference = Camera.main.ScreenToWorldPoint (Input.mousePosition) - GetComponent<Player> ().head.transform.position;	// subtract pos of player from mouse pos
+		} else {
+			difference.x = Input.GetAxis ("Light Horizontal");
+			difference.y = -Input.GetAxis ("Light Vertical");
+			Debug.Log (difference);
+		}
+
 		difference.z = 0;
 		difference.Normalize(); // Normalize the vector. this means that all the sum of vector will be equal to 1.
+
+		if (Vector3.Distance(difference, Vector3.zero) < 0.2) {
+			return;
+		}
 
 		laser.rb2d.transform.rotation = Quaternion.Euler(new Vector3(difference.x, difference.y, Mathf.Rad2Deg * Mathf.Atan2(difference.y, difference.x)));
 	}
