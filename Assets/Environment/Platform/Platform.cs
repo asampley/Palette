@@ -48,10 +48,12 @@ public class Platform : NetworkBehaviour, PlayerColorListener {
 			rgbColor = color.ToColor ();
 		}
 
-		if (color.ToID () != GetComponent<ColorAdder> ().GetBaseColorID ()) {
-			GetComponent<PlatformAudio> ().Solo (color.ToID ());
-		} else {
-			GetComponent<PlatformAudio> ().Mute ();
+		if (GetComponent<PlatformAudio> () != null) {
+			if (color.ToID () != GetComponent<ColorAdder> ().GetBaseColorID ()) {
+				GetComponent<PlatformAudio> ().Solo (color.ToID ());
+			} else {
+				GetComponent<PlatformAudio> ().Mute ();
+			}
 		}
 
 		Renderer rend = GetComponent<Renderer> ();
