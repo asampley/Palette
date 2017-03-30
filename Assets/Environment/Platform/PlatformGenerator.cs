@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -133,8 +134,17 @@ public class PlatformGenerator : MonoBehaviour {
 		bc2d.size = new Vector2 (width, height);
 		bc2d.offset = new Vector2 (width / 2f, -height / 2f);
 
-		// change color
-		target.GetComponent<Platform> ().UpdateColor (true);
+		if (target.GetComponent<Platform> () == null) {
+			Debug.LogWarning ("No platform script attached to target. Reverting to manual setting of mesh properties");
+
+			MaterialPropertyBlock materialPB = new MaterialPropertyBlock ();
+			Renderer rend = GetComponent<Renderer> ();
+			materialPB.SetColor ("_Color", GetComponent<ColorAdder>().ToPaletteColor().ToColor());
+			rend.SetPropertyBlock (materialPB);
+		} else {
+			// change color
+			target.GetComponent<Platform> ().UpdateColor (true);
+		}
 
 		Debug.Log ("Generated platform in " + (Time.realtimeSinceStartup - startTime) + "s");
 	}
