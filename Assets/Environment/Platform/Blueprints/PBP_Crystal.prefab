@@ -52,4 +52,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 5eb3b66198b1749bc89582aa876b8cdb, type: 2}
-  tileWidth: 1
+  horizontalMargin: 0.3
+  verticalMargin: 0.3
