@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114102941149856950}
   - component: {fileID: 114076137190423168}
   - component: {fileID: 114664451933273384}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: ColorChanger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,13 +40,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1375185516015788}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -8, y: -2, z: 0.3125}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 148, y: 13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23121194029461362
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -96,9 +96,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 1.5, y: -1.5}
+  m_Offset: {x: 0.5, y: -1.5}
   serializedVersion: 2
-  m_Size: {x: 3, y: 3}
+  m_Size: {x: 1, y: 3}
 --- !u!114 &114076137190423168
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -124,7 +124,7 @@ MonoBehaviour:
   blueprint: {fileID: 114824856478239774, guid: fe0e9bb5628bb4128b27cd1feaab57f1,
     type: 2}
   bc2d: {fileID: 61775350968811440}
-  width: 3
+  width: 1
   height: 3
 --- !u!114 &114277189491536900
 MonoBehaviour:
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5382ddde430c431b853324a0cbbf79d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseColorID: 2
+  baseColorID: 4
   lockColor: 1
   colorChangeEvent:
     m_PersistentCalls:
