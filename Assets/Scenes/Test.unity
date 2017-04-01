@@ -133,7 +133,7 @@ Prefab:
     - target: {fileID: 114606190000882586, guid: 4804fc3d0f80845c8a5458ede54690f7,
         type: 2}
       propertyPath: nextSceneName
-      value: Level 1
+      value: Level 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4804fc3d0f80845c8a5458ede54690f7, type: 2}
@@ -292,7 +292,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &424761487
 Prefab:
