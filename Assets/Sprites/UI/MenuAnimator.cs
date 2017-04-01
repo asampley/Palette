@@ -5,7 +5,7 @@ using UnityEngine;
 public class MenuAnimator : MonoBehaviour {
 
     public List<GameObject> uiElements;
-    public List<Directions> uiDirections;
+    public List<Direction> uiDirections;
 
     private List<RectTransform> uiStartLocs;
 
@@ -13,7 +13,24 @@ public class MenuAnimator : MonoBehaviour {
 	void Start () {
         for (int i = 0; i < uiElements.Count; ++i)
         {
-
+            Direction dir = uiDirections[i];
+            switch (dir)
+            {
+                case Direction.N:
+                    // MoveElementVertically(uiElements[i], 1);
+                    break;
+                case Direction.E:
+                    // MoveElementHorizontally(uiElements[i], 1);
+                    break;
+                case Direction.S:
+                    // MoveElementVertically(uiElements[i], -1);
+                    break;
+                case Direction.W:
+                    // MoveElementHorizontally(uiElements[i], -1);
+                    break;
+                default:
+                    break;
+            }
         }
 	}
 	
@@ -21,9 +38,19 @@ public class MenuAnimator : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    void MoveElementVertically(GameObject el, int dir)
+    {
+
+    }
+
+    void MoveElementHorizontally(GameObject el, int dir)
+    {
+
+    }
 }
 
-public enum Directions
+public enum Direction
 {
     N, E, S, W
 }
