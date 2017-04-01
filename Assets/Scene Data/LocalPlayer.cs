@@ -4,13 +4,22 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 public class LocalPlayer : MonoBehaviour {
-	public GameObject localPlayer { get; set; }
+	public Player localPlayer { get; set; }
+	private Dictionary<int, Player> players;
 
-	public void SetNumber(int number) {
-		localPlayer.GetComponent<Player>().SetNumber (number);
+	void Start() {
+		players = new Dictionary<int, Player>();
 	}
 
-	public int GetNumber() {
-		return localPlayer.GetComponent<Player> ().GetNumber ();
+	public void SetPlayer(int i, Player o) {
+		players[i] = o;
+	}
+
+	public Player GetPlayer(int i) {
+		return players [i];
+	}
+
+	public void SetLocalPlayerNum(int i) {
+		localPlayer.SetNumber (i);
 	}
 }
