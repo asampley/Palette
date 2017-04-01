@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 9cfb0e5f21065434cbbaf1a7062e9fca
-timeCreated: 1486068328
+timeCreated: 1490820999
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -103,7 +103,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 592
-        width: 980
+        width: 881
         height: 582
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -114,9 +114,9 @@ TextureImporter:
       name: badger-jump-fallDown_1
       rect:
         serializedVersion: 2
-        x: 985
+        x: 886
         y: 592
-        width: 980
+        width: 881
         height: 582
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -127,9 +127,9 @@ TextureImporter:
       name: badger-jump-fallDown_2
       rect:
         serializedVersion: 2
-        x: 1970
+        x: 1772
         y: 592
-        width: 980
+        width: 881
         height: 582
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -140,9 +140,9 @@ TextureImporter:
       name: badger-jump-fallDown_3
       rect:
         serializedVersion: 2
-        x: 2955
+        x: 2658
         y: 592
-        width: 980
+        width: 881
         height: 582
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -153,9 +153,9 @@ TextureImporter:
       name: badger-jump-fallDown_4
       rect:
         serializedVersion: 2
-        x: 3940
+        x: 3544
         y: 592
-        width: 980
+        width: 881
         height: 582
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -166,9 +166,9 @@ TextureImporter:
       name: badger-jump-fallDown_5
       rect:
         serializedVersion: 2
-        x: 4925
+        x: 4430
         y: 592
-        width: 980
+        width: 881
         height: 582
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -181,7 +181,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 5
-        width: 980
+        width: 881
         height: 582
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -192,9 +192,9 @@ TextureImporter:
       name: badger-jump-fallDown_7
       rect:
         serializedVersion: 2
-        x: 985
+        x: 886
         y: 5
-        width: 980
+        width: 881
         height: 582
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -205,9 +205,9 @@ TextureImporter:
       name: badger-jump-fallDown_8
       rect:
         serializedVersion: 2
-        x: 1970
+        x: 1772
         y: 5
-        width: 980
+        width: 881
         height: 582
       alignment: 0
       pivot: {x: 0, y: 0}

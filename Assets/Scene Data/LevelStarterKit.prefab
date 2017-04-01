@@ -867,7 +867,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114489582964787174}
-        m_MethodName: SetNumber
+        m_MethodName: SetLocalPlayerNum
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1081,7 +1081,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114489582964787174}
-        m_MethodName: SetNumber
+        m_MethodName: SetLocalPlayerNum
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: a142e3ab61b16be4e826c6f1d2c387c3
-timeCreated: 1486882639
+timeCreated: 1490820907
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -151,7 +151,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 3956
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -162,9 +162,9 @@ TextureImporter:
       name: badger-idle_1
       rect:
         serializedVersion: 2
-        x: 865
+        x: 763
         y: 3956
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -175,9 +175,9 @@ TextureImporter:
       name: badger-idle_2
       rect:
         serializedVersion: 2
-        x: 1730
+        x: 1526
         y: 3956
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -188,9 +188,9 @@ TextureImporter:
       name: badger-idle_3
       rect:
         serializedVersion: 2
-        x: 2595
+        x: 2289
         y: 3956
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -201,9 +201,9 @@ TextureImporter:
       name: badger-idle_4
       rect:
         serializedVersion: 2
-        x: 3460
+        x: 3052
         y: 3956
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -214,9 +214,9 @@ TextureImporter:
       name: badger-idle_5
       rect:
         serializedVersion: 2
-        x: 4325
+        x: 3815
         y: 3956
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -229,7 +229,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 3517
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -240,9 +240,9 @@ TextureImporter:
       name: badger-idle_7
       rect:
         serializedVersion: 2
-        x: 865
+        x: 763
         y: 3517
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -253,9 +253,9 @@ TextureImporter:
       name: badger-idle_8
       rect:
         serializedVersion: 2
-        x: 1730
+        x: 1526
         y: 3517
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -266,9 +266,9 @@ TextureImporter:
       name: badger-idle_9
       rect:
         serializedVersion: 2
-        x: 2595
+        x: 2289
         y: 3517
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -279,9 +279,9 @@ TextureImporter:
       name: badger-idle_10
       rect:
         serializedVersion: 2
-        x: 3460
+        x: 3052
         y: 3517
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -292,9 +292,9 @@ TextureImporter:
       name: badger-idle_11
       rect:
         serializedVersion: 2
-        x: 4325
+        x: 3815
         y: 3517
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -307,7 +307,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 3078
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -318,9 +318,9 @@ TextureImporter:
       name: badger-idle_13
       rect:
         serializedVersion: 2
-        x: 865
+        x: 763
         y: 3078
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -331,9 +331,9 @@ TextureImporter:
       name: badger-idle_14
       rect:
         serializedVersion: 2
-        x: 1730
+        x: 1526
         y: 3078
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -344,9 +344,9 @@ TextureImporter:
       name: badger-idle_15
       rect:
         serializedVersion: 2
-        x: 2595
+        x: 2289
         y: 3078
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -357,9 +357,9 @@ TextureImporter:
       name: badger-idle_16
       rect:
         serializedVersion: 2
-        x: 3460
+        x: 3052
         y: 3078
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -370,9 +370,9 @@ TextureImporter:
       name: badger-idle_17
       rect:
         serializedVersion: 2
-        x: 4325
+        x: 3815
         y: 3078
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -385,7 +385,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 2639
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -396,9 +396,9 @@ TextureImporter:
       name: badger-idle_19
       rect:
         serializedVersion: 2
-        x: 865
+        x: 763
         y: 2639
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -409,9 +409,9 @@ TextureImporter:
       name: badger-idle_20
       rect:
         serializedVersion: 2
-        x: 1730
+        x: 1526
         y: 2639
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -422,9 +422,9 @@ TextureImporter:
       name: badger-idle_21
       rect:
         serializedVersion: 2
-        x: 2595
+        x: 2289
         y: 2639
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -435,9 +435,9 @@ TextureImporter:
       name: badger-idle_22
       rect:
         serializedVersion: 2
-        x: 3460
+        x: 3052
         y: 2639
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -448,9 +448,9 @@ TextureImporter:
       name: badger-idle_23
       rect:
         serializedVersion: 2
-        x: 4325
+        x: 3815
         y: 2639
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -463,7 +463,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 2200
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -474,9 +474,9 @@ TextureImporter:
       name: badger-idle_25
       rect:
         serializedVersion: 2
-        x: 865
+        x: 763
         y: 2200
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -487,9 +487,9 @@ TextureImporter:
       name: badger-idle_26
       rect:
         serializedVersion: 2
-        x: 1730
+        x: 1526
         y: 2200
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -500,9 +500,9 @@ TextureImporter:
       name: badger-idle_27
       rect:
         serializedVersion: 2
-        x: 2595
+        x: 2289
         y: 2200
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -513,9 +513,9 @@ TextureImporter:
       name: badger-idle_28
       rect:
         serializedVersion: 2
-        x: 3460
+        x: 3052
         y: 2200
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -526,9 +526,9 @@ TextureImporter:
       name: badger-idle_29
       rect:
         serializedVersion: 2
-        x: 4325
+        x: 3815
         y: 2200
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -541,7 +541,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 1761
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -552,9 +552,9 @@ TextureImporter:
       name: badger-idle_31
       rect:
         serializedVersion: 2
-        x: 865
+        x: 763
         y: 1761
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -565,9 +565,9 @@ TextureImporter:
       name: badger-idle_32
       rect:
         serializedVersion: 2
-        x: 1730
+        x: 1526
         y: 1761
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -578,9 +578,9 @@ TextureImporter:
       name: badger-idle_33
       rect:
         serializedVersion: 2
-        x: 2595
+        x: 2289
         y: 1761
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -591,9 +591,9 @@ TextureImporter:
       name: badger-idle_34
       rect:
         serializedVersion: 2
-        x: 3460
+        x: 3052
         y: 1761
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -604,9 +604,9 @@ TextureImporter:
       name: badger-idle_35
       rect:
         serializedVersion: 2
-        x: 4325
+        x: 3815
         y: 1761
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -619,7 +619,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 1322
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -630,9 +630,9 @@ TextureImporter:
       name: badger-idle_37
       rect:
         serializedVersion: 2
-        x: 865
+        x: 763
         y: 1322
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -643,9 +643,9 @@ TextureImporter:
       name: badger-idle_38
       rect:
         serializedVersion: 2
-        x: 1730
+        x: 1526
         y: 1322
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -656,9 +656,9 @@ TextureImporter:
       name: badger-idle_39
       rect:
         serializedVersion: 2
-        x: 2595
+        x: 2289
         y: 1322
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -669,9 +669,9 @@ TextureImporter:
       name: badger-idle_40
       rect:
         serializedVersion: 2
-        x: 3460
+        x: 3052
         y: 1322
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -682,9 +682,9 @@ TextureImporter:
       name: badger-idle_41
       rect:
         serializedVersion: 2
-        x: 4325
+        x: 3815
         y: 1322
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -697,7 +697,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 883
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -708,9 +708,9 @@ TextureImporter:
       name: badger-idle_43
       rect:
         serializedVersion: 2
-        x: 865
+        x: 763
         y: 883
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -721,9 +721,9 @@ TextureImporter:
       name: badger-idle_44
       rect:
         serializedVersion: 2
-        x: 1730
+        x: 1526
         y: 883
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -734,9 +734,9 @@ TextureImporter:
       name: badger-idle_45
       rect:
         serializedVersion: 2
-        x: 2595
+        x: 2289
         y: 883
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -747,9 +747,9 @@ TextureImporter:
       name: badger-idle_46
       rect:
         serializedVersion: 2
-        x: 3460
+        x: 3052
         y: 883
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -760,9 +760,9 @@ TextureImporter:
       name: badger-idle_47
       rect:
         serializedVersion: 2
-        x: 4325
+        x: 3815
         y: 883
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -775,7 +775,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 444
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -786,9 +786,9 @@ TextureImporter:
       name: badger-idle_49
       rect:
         serializedVersion: 2
-        x: 865
+        x: 763
         y: 444
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -799,9 +799,9 @@ TextureImporter:
       name: badger-idle_50
       rect:
         serializedVersion: 2
-        x: 1730
+        x: 1526
         y: 444
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -812,9 +812,9 @@ TextureImporter:
       name: badger-idle_51
       rect:
         serializedVersion: 2
-        x: 2595
+        x: 2289
         y: 444
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -825,9 +825,9 @@ TextureImporter:
       name: badger-idle_52
       rect:
         serializedVersion: 2
-        x: 3460
+        x: 3052
         y: 444
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -838,9 +838,9 @@ TextureImporter:
       name: badger-idle_53
       rect:
         serializedVersion: 2
-        x: 4325
+        x: 3815
         y: 444
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -853,7 +853,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 5
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -864,9 +864,9 @@ TextureImporter:
       name: badger-idle_55
       rect:
         serializedVersion: 2
-        x: 865
+        x: 763
         y: 5
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -877,9 +877,9 @@ TextureImporter:
       name: badger-idle_56
       rect:
         serializedVersion: 2
-        x: 1730
+        x: 1526
         y: 5
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -890,9 +890,9 @@ TextureImporter:
       name: badger-idle_57
       rect:
         serializedVersion: 2
-        x: 2595
+        x: 2289
         y: 5
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -903,9 +903,9 @@ TextureImporter:
       name: badger-idle_58
       rect:
         serializedVersion: 2
-        x: 3460
+        x: 3052
         y: 5
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -916,9 +916,9 @@ TextureImporter:
       name: badger-idle_59
       rect:
         serializedVersion: 2
-        x: 4325
+        x: 3815
         y: 5
-        width: 860
+        width: 758
         height: 434
       alignment: 0
       pivot: {x: 0, y: 0}

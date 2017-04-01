@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 2e04ca4ba0fe72449ab5862c2b5fbd51
-timeCreated: 1488179446
+timeCreated: 1490820972
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -97,10 +97,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 5
-        width: 995
+        width: 902
         height: 614
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -108,12 +108,12 @@ TextureImporter:
       name: badger-jump_1
       rect:
         serializedVersion: 2
-        x: 1000
+        x: 907
         y: 5
-        width: 995
+        width: 902
         height: 614
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -121,12 +121,12 @@ TextureImporter:
       name: badger-jump_2
       rect:
         serializedVersion: 2
-        x: 2000
+        x: 1814
         y: 5
-        width: 995
+        width: 902
         height: 614
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -134,12 +134,12 @@ TextureImporter:
       name: badger-jump_3
       rect:
         serializedVersion: 2
-        x: 3000
+        x: 2721
         y: 5
-        width: 995
+        width: 902
         height: 614
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -147,12 +147,12 @@ TextureImporter:
       name: badger-jump_4
       rect:
         serializedVersion: 2
-        x: 4000
+        x: 3628
         y: 5
-        width: 995
+        width: 902
         height: 614
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -160,12 +160,12 @@ TextureImporter:
       name: badger-jump_5
       rect:
         serializedVersion: 2
-        x: 5000
+        x: 4535
         y: 5
-        width: 995
+        width: 902
         height: 614
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
