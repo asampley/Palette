@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Net;
+using System.Net.Sockets;
+using System.Linq;
 
 public class MenuAnimator : MonoBehaviour {
 
@@ -23,7 +25,7 @@ public class MenuAnimator : MonoBehaviour {
             startPoints.Add(thing.transform.position);
         }
 
-        TestGetIP();
+		Debug.Log (GetIP ());
 	}
 	
 	// decelerate as approaching target
@@ -48,11 +50,24 @@ public class MenuAnimator : MonoBehaviour {
         }
     }
 
-    public void TestGetIP()
+	// try and update location of where to start because the camera is always moving. Always. Moving.
+	// Sampley, how do make bettr?
+	void OnDisable() {
+		try {
+			startPoints.Clear();
+			for (int i = 0; i < uiElements.Count; ++i)
+			{
+				startPoints.Add(uiElements[i].transform.position);
+			}
+		} catch (Exception e)
+		{
+			// do nothing
+		}
+	}
+
+	// Want to have IP shown on pause menu. Probably move this code elsewhere.
+    public string GetIP()
     {
-        string strHostName = Dns.GetHostName();
-        IPHostEntry ipEntry = Dns.GetHostEntry(strHostName);
-        IPAddress[] addr = ipEntry.AddressList;
-        Debug.Log(addr[addr.Length - 1].ToString());
+		return Network.player.ipAddress;
     }
 }
