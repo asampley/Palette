@@ -35,7 +35,7 @@ public class MenuAnimator : MonoBehaviour {
         }
     }
 
-    public void ResetAnimation()
+    void OnEnable()
     {
         try {
             for (int i = 0; i < uiElements.Count; ++i)
