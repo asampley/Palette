@@ -8,8 +8,10 @@ public class MenuAnimator : MonoBehaviour {
     public List<GameObject> uiElements;
     public List<GameObject> uiTargets;
     private List<Vector3> startPoints;
-
+    
     public float resistance = 15;
+    public Boolean isPause = false;
+
     private float speed;
 
     private Vector3 pos;
@@ -47,7 +49,8 @@ public class MenuAnimator : MonoBehaviour {
         }
     }
 
-	// Want to have IP shown on pause menu. Probably move this code elsewhere.
+
+    // Want to have IP shown on pause menu. Probably move this code elsewhere.
     public string GetIP()
     {
 		return Network.player.ipAddress;
