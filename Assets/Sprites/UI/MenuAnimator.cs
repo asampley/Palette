@@ -23,8 +23,6 @@ public class MenuAnimator : MonoBehaviour {
         {
             startPoints.Add(thing.transform.localPosition);
         }
-
-		Debug.Log (GetIP ());
 	}
 	
 	// decelerate as approaching target
@@ -47,12 +45,5 @@ public class MenuAnimator : MonoBehaviour {
         {
             // do nothing
         }
-    }
-
-
-    // Want to have IP shown on pause menu. Probably move this code elsewhere.
-    public string GetIP()
-    {
-		return Network.player.ipAddress;
     }
 }
