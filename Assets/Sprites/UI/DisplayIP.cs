@@ -10,11 +10,6 @@ public class DisplayIP : MonoBehaviour {
         gameObject.GetComponent<Text>().text = "My IP: " + GetIP();
         
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     // Want to have IP shown on pause menu
     public string GetIP()
