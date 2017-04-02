@@ -2,9 +2,6 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Net;
-using System.Net.Sockets;
-using System.Linq;
 
 public class MenuAnimator : MonoBehaviour {
 
