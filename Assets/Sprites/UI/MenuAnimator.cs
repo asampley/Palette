@@ -22,7 +22,7 @@ public class MenuAnimator : MonoBehaviour {
         startPoints = new List<Vector3>();
         foreach (GameObject thing in uiElements)
         {
-            startPoints.Add(thing.transform.position);
+            startPoints.Add(thing.transform.localPosition);
         }
 
 		Debug.Log (GetIP ());
@@ -32,8 +32,8 @@ public class MenuAnimator : MonoBehaviour {
 	void Update () {
         for (int i = 0; i < uiElements.Count; ++i)
         {
-            speed = Vector3.Distance(uiElements[i].transform.position, uiTargets[i].transform.position)/resistance;
-            uiElements[i].transform.position = Vector3.MoveTowards(uiElements[i].transform.position, uiTargets[i].transform.position, speed);
+            speed = Vector3.Distance(uiElements[i].transform.localPosition, uiTargets[i].transform.localPosition)/resistance;
+            uiElements[i].transform.localPosition = Vector3.MoveTowards(uiElements[i].transform.localPosition, uiTargets[i].transform.localPosition, speed);
         }
     }
 
@@ -42,28 +42,13 @@ public class MenuAnimator : MonoBehaviour {
         try {
             for (int i = 0; i < uiElements.Count; ++i)
             {
-                uiElements[i].transform.position = startPoints[i];
+                uiElements[i].transform.localPosition = startPoints[i];
             }
         } catch (Exception e)
         {
             // do nothing
         }
     }
-
-	// try and update location of where to start because the camera is always moving. Always. Moving.
-	// Sampley, how do make bettr?
-	void OnDisable() {
-		try {
-			startPoints.Clear();
-			for (int i = 0; i < uiElements.Count; ++i)
-			{
-				startPoints.Add(uiElements[i].transform.position);
-			}
-		} catch (Exception e)
-		{
-			// do nothing
-		}
-	}
 
 	// Want to have IP shown on pause menu. Probably move this code elsewhere.
     public string GetIP()

@@ -4,12 +4,8 @@ using UnityEngine;
 
 public class Pause : MonoBehaviour {
 
-	private Canvas UI;
+	public GameObject PauseScreen;
 
-	// Use this for initialization
-	void Start () {
-		UI = this.gameObject.GetComponent<Canvas> ();
-	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -22,17 +18,17 @@ public class Pause : MonoBehaviour {
 
 	public void TogglePauseMenu()
 	{
-		if (UI.enabled)
+		if (PauseScreen.activeSelf)
 		{
-			UI.enabled = false;
-			Time.timeScale = 1.0f;
+			PauseScreen.SetActive(false);
+			//Time.timeScale = 1.0f;
 		}
 		else
 		{
-			UI.enabled = true;
-			Time.timeScale = 0f;
+			PauseScreen.SetActive(true);
+			//Time.timeScale = 0f;
 		}
 
-		Debug.Log("TimeScale: " + Time.timeScale);
+		//Debug.Log("TimeScale: " + Time.timeScale);
 	}
 }
