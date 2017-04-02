@@ -6,6 +6,7 @@ using UnityEngine.Networking;
 
 public class Player : NetworkBehaviour {
 	public Transform spawn { get; set; }
+	public PaletteColorID spawnColor { get; set; }
 
 	public GameObject head;
 
@@ -43,7 +44,7 @@ public class Player : NetworkBehaviour {
 			this.transform.position = spawn.position;
 		}
 
-		this.SetColor(info.GetPlayerColorID (number));
+		this.SetColor(spawnColor);
 		info.SetPlayerSpawned (number, true);
 
 		Debug.Log ("Spawned player " + number);
@@ -156,6 +157,7 @@ public class Player : NetworkBehaviour {
 			Activate (true);
 			this.GetComponent<Animator> ().runtimeAnimatorController = info.GetPlayerAnimatorController (number);
 			this.spawn = info.GetPlayerSpawn (number);
+			this.spawnColor = info.GetPlayerColorID (number);
 			if (isLocalPlayer) {
 				head.transform.localPosition = info.GetPlayerHeadPosition (number);
 			}
