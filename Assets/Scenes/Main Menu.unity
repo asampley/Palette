@@ -1862,7 +1862,7 @@ MonoBehaviour:
   - {fileID: 1166843346}
   - {fileID: 1068534779}
   - {fileID: 343880019}
-  resistance: 15
+  resistance: 10
   isPause: 0
 --- !u!1 &1082997307
 GameObject:
@@ -2019,7 +2019,7 @@ MonoBehaviour:
   - {fileID: 1992546538}
   uiTargets:
   - {fileID: 2076987979}
-  resistance: 15
+  resistance: 10
   isPause: 0
 --- !u!1 &1291275766
 GameObject:
@@ -3098,7 +3098,7 @@ MonoBehaviour:
   uiTargets:
   - {fileID: 1633113092}
   - {fileID: 1291275766}
-  resistance: 15
+  resistance: 10
   isPause: 0
 --- !u!1001 &1949633133
 Prefab:
@@ -3477,7 +3477,7 @@ MonoBehaviour:
   uiTargets:
   - {fileID: 1794571794}
   - {fileID: 1325108005}
-  resistance: 10
+  resistance: 15
   isPause: 0
 --- !u!1 &2055347436
 GameObject:

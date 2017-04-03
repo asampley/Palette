@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Pause : MonoBehaviour {
 
-	public GameObject PauseScreen;
-
+	public GameObject pauseScreen;
+    private Player player;
 	
 	// Update is called once per frame
 	void Update () {
@@ -13,23 +13,24 @@ public class Pause : MonoBehaviour {
 		if (Input.GetKeyDown( KeyCode.P ))
 		{
 			TogglePauseMenu ();	
-			Debug.Log ("Pressed P");
+			Debug.Log ("Pressed Pause");
 		}
 	}
 
 	public void TogglePauseMenu()
 	{
-		if (PauseScreen.activeSelf)
+        player = SceneData.sceneObject.GetComponent<LocalPlayer>().localPlayer;
+        if (pauseScreen.activeSelf)
 		{
-			PauseScreen.SetActive(false);
-			//Time.timeScale = 1.0f;
-		}
+			pauseScreen.SetActive(false);
+            player.GetComponent<PlayerController>().enabled = true;
+            player.GetComponent<LaserController>().enabled = true;
+        }
 		else
 		{
-			PauseScreen.SetActive(true);
-			//Time.timeScale = 0f;
-		}
-
-		//Debug.Log("TimeScale: " + Time.timeScale);
+			pauseScreen.SetActive(true);
+            player.GetComponent<PlayerController>().enabled = false;
+            player.GetComponent<LaserController>().enabled = false;
+        }
 	}
 }
