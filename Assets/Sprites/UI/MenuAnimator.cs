@@ -8,6 +8,9 @@ public class MenuAnimator : MonoBehaviour {
     public List<GameObject> uiElements;
     public List<GameObject> uiTargets;
     private List<Vector3> startPoints;
+
+	public GameObject logo;
+	public GameObject logoTarget;
     
     public float resistance = 15;
     public Boolean isPause = false;
@@ -32,7 +35,12 @@ public class MenuAnimator : MonoBehaviour {
             speed = Vector3.Distance(uiElements[i].transform.localPosition, uiTargets[i].transform.localPosition)/resistance*20;
             uiElements[i].transform.localPosition = Vector3.MoveTowards(uiElements[i].transform.localPosition, uiTargets[i].transform.localPosition, speed*Time.deltaTime);
         }
+		if (logo != null) {
+			speed = Vector3.Distance (logo.transform.localPosition, logoTarget.transform.localPosition) / resistance * 20;
+			logo.transform.localPosition = Vector3.MoveTowards (logo.transform.localPosition, logoTarget.transform.localPosition, speed * Time.deltaTime);
+		}
     }
+
 
     void OnEnable()
     {
