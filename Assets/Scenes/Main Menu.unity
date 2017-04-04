@@ -1138,7 +1138,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_AnchoredPosition: {x: 0, y: -6}
   m_SizeDelta: {x: -20, y: -13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &718847193
@@ -1975,7 +1975,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1145648632}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 271.99988, y: 62, z: 0}
+  m_LocalPosition: {x: 261, y: 182, z: 0}
   m_LocalScale: {x: 1.0000798, y: 1.0000798, z: 1.0000798}
   m_Children: []
   m_Father: {fileID: 1254458172}
@@ -3432,7 +3432,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 271.99982, y: 65}
+  m_AnchoredPosition: {x: 271.99982, y: 61}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1931667043
@@ -3589,7 +3589,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.3, y: 0.1}
   m_AnchorMax: {x: 0.7, y: 0.3}
-  m_AnchoredPosition: {x: -831, y: 0}
+  m_AnchoredPosition: {x: -831, y: -42}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1992546540
@@ -3907,8 +3907,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.1, y: 0.3}
   m_AnchorMax: {x: 0.9, y: 0.9}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 42, y: -50}
+  m_SizeDelta: {x: -21, y: -98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2055347438
 MonoBehaviour:
@@ -3930,7 +3930,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 7dac366eab59be842a83fe963e62c698, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -3982,7 +3982,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2076987979}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -459, y: -213, z: -3022.6895}
+  m_LocalPosition: {x: -459, y: -255, z: -3022.6895}
   m_LocalScale: {x: 33.585438, y: 33.585438, z: 33.585438}
   m_Children: []
   m_Father: {fileID: 1254458172}
