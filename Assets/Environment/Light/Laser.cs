@@ -134,25 +134,20 @@ public class Laser : NetworkBehaviour {
 			ColorAdder newAffectedObject = null;
 			try {
 				newAffectedObject = raycastHit.collider.GetComponent<ColorAdder> ();
-			} catch (NullReferenceException) {
-				// It's fine, the new affected object is just null
+			} catch (NullReferenceException e) {
+				if (raycastHit.collider == null) {
+					// It's fine, the new affected object is just null
+				} else {
+					throw e;
+				}
 			}
 
 			if (this.affectedObject == newAffectedObject) { // if new and old are the same, do nothing
 
-			} else {
-				if (this.affectedObject != null) { // if they are different, and old is an object, subtract
-					switch (mode) {
-						case LaserMode.ADD:
-							this.affectedObject.RemoveAdditiveColor (new PaletteColor (colorID));
-							break;
-						case LaserMode.SUBTRACT:
-							this.affectedObject.RemoveSubtractiveColor (new PaletteColor (colorID));
-							break;
-					}
-				}
+			} else { // if they are different, and the new is an object, remove from old, add to new
+				this.UnaffectObject ();
 
-				if (newAffectedObject != null) { // if they are different, and the new is an object, add
+				if (newAffectedObject != null) { 
 					switch (mode) {
 						case LaserMode.ADD:
 							newAffectedObject.AddAdditiveColor (new PaletteColor (colorID));
@@ -182,17 +177,8 @@ public class Laser : NetworkBehaviour {
 //
 //			anim.transform.position = laserStart + length * laserDir / 2;
 			anim.SetLength (length);
-		} else if (this.affectedObject != null) { // remove self from object when off
-			switch (mode) {
-				case LaserMode.ADD:
-					this.affectedObject.RemoveAdditiveColor (new PaletteColor (colorID));
-					break;
-				case LaserMode.SUBTRACT:
-					this.affectedObject.RemoveSubtractiveColor (new PaletteColor (colorID));
-					break;
-			}
-
-			this.affectedObject = null;
+		} else { // remove self from object when off
+			this.UnaffectObject ();
 		}
 	}
 
@@ -206,16 +192,7 @@ public class Laser : NetworkBehaviour {
 	}
 
 	void UpdateLaserColor(PaletteColorID newColorID) {
-		if (this.affectedObject != null) {
-			switch (this.mode) {
-				case LaserMode.ADD:
-					this.affectedObject.RemoveAdditiveColor (new PaletteColor (colorID));
-					break;
-				case LaserMode.SUBTRACT:
-					this.affectedObject.RemoveSubtractiveColor (new PaletteColor (colorID));
-					break;
-			}
-		}
+		this.UnaffectObject ();
 
 		this.colorID = newColorID;
 
@@ -245,14 +222,6 @@ public class Laser : NetworkBehaviour {
 		this.mode = mode;
 
 		anim.SetMode (mode);
-//		switch (mode) {
-//			case LaserMode.ADD:
-//				r.sprite = laserAdd;
-//				break;
-//			case LaserMode.SUBTRACT:
-//				r.sprite = laserSub;
-//				break;
-//		}
 	}
 
 	public void ToggleOn() {
@@ -268,5 +237,24 @@ public class Laser : NetworkBehaviour {
 				this.SetLaserMode (LaserMode.ADD);
 				break;
 		}
+	}
+
+	private void UnaffectObject() {
+		if (this.affectedObject != null) {
+			switch (this.mode) {
+				case LaserMode.ADD:
+					this.affectedObject.RemoveAdditiveColor (new PaletteColor (colorID));
+					break;
+				case LaserMode.SUBTRACT:
+					this.affectedObject.RemoveSubtractiveColor (new PaletteColor (colorID));
+					break;
+			}
+
+			this.affectedObject = null;
+		}
+	}
+
+	void OnDestroy() {
+		UnaffectObject ();
 	}
 }
