@@ -853,7 +853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   smoothTimeY: 0.05
   smoothTimeX: 0.05
-  minSizeY: 15
+  minSizeY: 10
   padding: 1
   player: {fileID: 0}
   bounds: 0
