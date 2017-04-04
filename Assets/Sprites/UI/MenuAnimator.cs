@@ -29,8 +29,8 @@ public class MenuAnimator : MonoBehaviour {
 	void Update () {
         for (int i = 0; i < uiElements.Count; ++i)
         {
-            speed = Vector3.Distance(uiElements[i].transform.localPosition, uiTargets[i].transform.localPosition)/resistance;
-            uiElements[i].transform.localPosition = Vector3.MoveTowards(uiElements[i].transform.localPosition, uiTargets[i].transform.localPosition, speed);
+            speed = Vector3.Distance(uiElements[i].transform.localPosition, uiTargets[i].transform.localPosition)/resistance*20;
+            uiElements[i].transform.localPosition = Vector3.MoveTowards(uiElements[i].transform.localPosition, uiTargets[i].transform.localPosition, speed*Time.deltaTime);
         }
     }
 
