@@ -12,7 +12,14 @@ public class LocalPlayer : MonoBehaviour {
 	}
 
 	public void SetPlayer(int i, Player o) {
-		players[i] = o;
+        if (o != null)
+        {
+            players[i] = o;
+        } else
+        {
+            players.Remove(i);
+        }
+       
 	}
 
 	public Player GetPlayer(int i) {
