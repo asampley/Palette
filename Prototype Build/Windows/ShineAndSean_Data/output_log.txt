@@ -17,1919 +17,5028 @@ Platform assembly: C:\Users\450 General Use\Documents\git\Palette\Prototype Buil
 Loading C:\Users\450 General Use\Documents\git\Palette\Prototype Build\Windows\ShineAndSean_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\450 General Use\Documents\git\Palette\Prototype Build\Windows\ShineAndSean_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading C:\Users\450 General Use\Documents\git\Palette\Prototype Build\Windows\ShineAndSean_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.028 seconds
+- Completed reload, in  0.050 seconds
 Platform assembly: C:\Users\450 General Use\Documents\git\Palette\Prototype Build\Windows\ShineAndSean_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\450 General Use\Documents\git\Palette\Prototype Build\Windows\ShineAndSean_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.406723 ms
+UnloadTime: 2.615836 ms
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at CameraFollow.FixedUpdate () [0x00000] in <filename unknown>:0 
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Staring client connection to 172.28.85.237
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnloadTime: 4.171568 ms
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2748.
+Total: 2.812547 ms (FindLiveObjects: 0.190297 ms CreateObjectMapping: 0.076546 ms MarkObjects: 1.146058 ms  DeleteObjects: 1.391520 ms)
+
+Set laser 15 color to Blue
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Turned on laser 15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set laser 29 color to Red
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Turned on laser 29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Changed Player(Clone) to number 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Spawned player 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set player Player(Clone) (Player) to have color Red
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set laser 44 color to Red
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Turned off laser 44
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Changed Player(Clone) to number -1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set laser 45 color to Black
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Turned on laser 45
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Spawning player 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Changed Player(Clone) to number 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set player Player(Clone) (Player) to have color Blue
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set Player(Clone) (Laser) to color Blue
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set laser 45 color to Blue
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Spawned player 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set player Player(Clone) (Player) to have color Blue
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set Player(Clone) (Laser) to color Blue
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Turned off laser 45
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2554 -> priority: 1 
-  Thread -> id: 1928 -> priority: 1 
+  Thread -> id: 17d8 -> priority: 1 
+  Thread -> id: 2740 -> priority: 1 
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Destruction
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
