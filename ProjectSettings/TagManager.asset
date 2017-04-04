@@ -43,6 +43,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Head
-    uniqueID: 1729367555
+  - name: Player
+    uniqueID: 2060184829
     locked: 0
