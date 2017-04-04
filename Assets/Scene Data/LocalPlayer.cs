@@ -5,7 +5,7 @@ using UnityEngine.Networking;
 
 public class LocalPlayer : MonoBehaviour {
 	public Player localPlayer { get; set; }
-	private Dictionary<int, Player> players;
+    private Dictionary<int, Player> players;
 
 	void Start() {
 		players = new Dictionary<int, Player>();
@@ -22,4 +22,9 @@ public class LocalPlayer : MonoBehaviour {
 	public void SetLocalPlayerNum(int i) {
 		localPlayer.SetNumber (i);
 	}
+
+    public Dictionary<int, Player> GetPlayers()
+    {
+        return players;
+    }
 }
