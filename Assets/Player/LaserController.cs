@@ -156,10 +156,11 @@ public class LaserController : NetworkBehaviour {
 		Vector3 difference = Vector3.zero;
 		if (Input.GetJoystickNames ().Length == 0) {
 			// subtract pos of player from mouse pos
-			float lastAngle = Mathf.Deg2Rad * laser.rb2d.transform.rotation.eulerAngles.z;
-			//difference = Camera.main.ScreenToWorldPoint (Input.mousePosition) - GetComponent<Player> ().head.transform.position;
-			difference.x = Mathf.Cos(lastAngle) + 0.4f * Input.GetAxis ("Mouse X"); // this doesn't work
-			difference.y = Mathf.Sin(lastAngle) + 0.4f * Input.GetAxis ("Mouse Y");
+			difference = Camera.main.ScreenToWorldPoint (Input.mousePosition) - GetComponent<Player> ().head.transform.position;
+			
+//			float lastAngle = Mathf.Deg2Rad * laser.rb2d.transform.rotation.eulerAngles.z;
+//			difference.x = Mathf.Cos(lastAngle) + 0.4f * Input.GetAxis ("Mouse X"); // this doesn't work
+//			difference.y = Mathf.Sin(lastAngle) + 0.4f * Input.GetAxis ("Mouse Y");
 		} else {
 			difference.x = Input.GetAxis ("Light Horizontal");
 			difference.y = -Input.GetAxis ("Light Vertical");

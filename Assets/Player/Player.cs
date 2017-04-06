@@ -83,6 +83,9 @@ public class Player : NetworkBehaviour {
 		LaserController lControl = GetComponent<LaserController> ();
 		control.enabled = active;
 		lControl.enabled = active;
+
+//		Cursor.lockState = active ? CursorLockMode.Confined : CursorLockMode.None;
+//		Cursor.visible = active;
 	}
 
 	public PaletteColorID GetColorID() {
