@@ -851,11 +851,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99124d4fefdf69845b348634fdd16de4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smoothTimeY: 0.05
-  smoothTimeX: 0.05
+  smoothTimeY: 0.2
+  smoothTimeX: 0.2
   minSizeY: 10
-  padding: 1
+  padding: 2
   player: {fileID: 0}
+  dynamicCam: 1
   bounds: 0
   minCameraPos: {x: 0, y: 0, z: 0}
   maxCameraPos: {x: 0, y: 0, z: 0}
