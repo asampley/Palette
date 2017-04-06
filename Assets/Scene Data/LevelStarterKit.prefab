@@ -499,6 +499,7 @@ GameObject:
   - component: {fileID: 114897994935784122}
   - component: {fileID: 114854220329449448}
   - component: {fileID: 114489582964787174}
+  - component: {fileID: 114281688722125906}
   m_Layer: 0
   m_Name: __Scene Data__
   m_TagString: Scene Data
@@ -1107,6 +1108,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parallaxFactor: 0.3
   globalZ: 10
+--- !u!114 &114281688722125906
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1821901963758548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99046f17a7a384ed4b316b56c685e468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicOn: 1
+  backtrack: {fileID: 1852248201391724}
 --- !u!114 &114360377899497406
 MonoBehaviour:
   m_ObjectHideFlags: 1

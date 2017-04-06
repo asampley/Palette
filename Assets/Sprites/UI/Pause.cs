@@ -50,6 +50,15 @@ public class Pause : MonoBehaviour {
 
 	public void ToggleMusic() {
 		// toggle the music
-		// TODO
+		Music music = SceneData.sceneObject.GetComponent<Music> ();
+		if (music.musicOn) {
+			music.musicOn = false;
+			music.backtrack.GetComponentInChildren<AudioSource> ().mute = true;
+
+		} else {
+			music.musicOn = true;
+			music.backtrack.GetComponentInChildren<AudioSource> ().mute = false;
+		}
+
 	}
 }

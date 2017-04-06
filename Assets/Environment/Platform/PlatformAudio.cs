@@ -23,26 +23,28 @@ public class PlatformAudio : MonoBehaviour {
 
 	public void Solo(PaletteColorID colorID) {
 		Mute ();
-
-		switch (colorID) {
-		case PaletteColorID.RED:
-			red.volume = volume;
-			break;
-		case PaletteColorID.BLUE:
-			blue.volume = volume;
-			break;
-		case PaletteColorID.GREEN:
-			green.volume = volume;
-			break;
-		case PaletteColorID.CYAN:
-			cyan.volume = volume;
-			break;
-		case PaletteColorID.MAGENTA:
-			magenta.volume = volume;
-			break;
-		case PaletteColorID.YELLOW:
-			yellow.volume = volume;
-			break;
+		if (SceneData.sceneObject.GetComponent<Music> ().musicOn) {
+			
+			switch (colorID) {
+			case PaletteColorID.RED:
+				red.volume = volume;
+				break;
+			case PaletteColorID.BLUE:
+				blue.volume = volume;
+				break;
+			case PaletteColorID.GREEN:
+				green.volume = volume;
+				break;
+			case PaletteColorID.CYAN:
+				cyan.volume = volume;
+				break;
+			case PaletteColorID.MAGENTA:
+				magenta.volume = volume;
+				break;
+			case PaletteColorID.YELLOW:
+				yellow.volume = volume;
+				break;
+			}
 		}
 	}
 }
