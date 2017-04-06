@@ -111,7 +111,8 @@ public class LaserController : NetworkBehaviour {
 		// If mouse is moved
 		float deadzone = 0.05f;
 		if ((Input.GetAxis("Mouse X") > deadzone) || (Input.GetAxis("Mouse X") < -deadzone) 
-			|| (Input.GetAxis("Mouse Y") > deadzone) || (Input.GetAxis("Mouse Y") < -deadzone)) {
+			|| (Input.GetAxis("Mouse Y") > deadzone) || (Input.GetAxis("Mouse Y") < -deadzone)
+			|| (Input.GetAxis("Horizontal") != 0)) {
 			// Rotate the laser based on the mouse and player position.
 			rotate();
 		}
