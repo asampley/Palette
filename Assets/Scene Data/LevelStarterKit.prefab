@@ -193,6 +193,7 @@ GameObject:
   - component: {fileID: 222494671019709318}
   - component: {fileID: 114121816502183354}
   - component: {fileID: 114103079469923482}
+  - component: {fileID: 114501701174961860}
   m_Layer: 5
   m_Name: Button Quit To Menu
   m_TagString: Untagged
@@ -788,9 +789,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 75.16731, y: 6.8688126}
+  m_Offset: {x: 145.40225, y: 6.8688126}
   serializedVersion: 2
-  m_Size: {x: 262.56247, y: 56.99745}
+  m_Size: {x: 308.63867, y: 56.99745}
 --- !u!81 &81429634672262000
 AudioListener:
   m_ObjectHideFlags: 1
@@ -947,6 +948,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 114461464595888990}
         m_MethodName: GotoMainScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114501701174961860}
+        m_MethodName: AttemptConnection
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1366,6 +1378,29 @@ MonoBehaviour:
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
+--- !u!114 &114501701174961860
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1350051204274832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e153898a6b604acab454375b60e8ac5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 3
+  ipSource: {fileID: 0}
+  onSuccess:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onFailure:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!114 &114516603366390038
 MonoBehaviour:
   m_ObjectHideFlags: 1

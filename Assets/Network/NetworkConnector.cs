@@ -8,7 +8,7 @@ using UnityEngine.Events;
 public class NetworkConnector : MonoBehaviour {
 	private NetworkPlayerManager networkManager;
 
-	public enum Mode { HOST, CLIENT, SERVER };
+	public enum Mode { HOST, CLIENT, SERVER, DISCONNECT };
 	public Mode mode;
 
 	public InputField ipSource;
@@ -52,6 +52,10 @@ public class NetworkConnector : MonoBehaviour {
 		case Mode.SERVER:
 			success = networkManager.StartServer ();
 			Debug.Log ("Staring dedicated server");
+			break;
+		case Mode.DISCONNECT:
+			networkManager.StopClient ();
+			networkManager.StopServer ();
 			break;
 		}
 

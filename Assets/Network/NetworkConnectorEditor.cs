@@ -13,7 +13,7 @@ public class NetworkConnectorEditor : Editor {
 	public override void OnInspectorGUI ()
 	{
 		serializedObject.Update ();
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("networkManager"));
+		//EditorGUILayout.PropertyField(serializedObject.FindProperty("networkManager"));
 		EditorGUILayout.PropertyField(serializedObject.FindProperty("mode"));
 		if ((NetworkConnector.Mode)(serializedObject.FindProperty ("mode").enumValueIndex) == NetworkConnector.Mode.CLIENT) {
 			EditorGUILayout.PropertyField (serializedObject.FindProperty ("ipSource"));
