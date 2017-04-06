@@ -33,4 +33,23 @@ public class Pause : MonoBehaviour {
             player.GetComponent<LaserController>().enabled = false;
         }
 	}
+
+	public void GotoMainScreen() {
+		// go to the main screen
+		Application.LoadLevel("Main Menu");
+		// need to disconnect.
+		//NetworkPlayerManager networkManager = NetworkPlayerManager.sceneObject.GetComponent<NetworkPlayerManager>();
+		//networkManager.StopServer();
+
+	}
+
+	public void QuitToDesktop() {
+		// quit application
+		Application.Quit();
+	}
+
+	public void ToggleMusic() {
+		// toggle the music
+		// TODO
+	}
 }
