@@ -93,6 +93,8 @@ public class LaserController : NetworkBehaviour {
 			isSubDown = false;
 		}
 
+		//Code for action on mouse moving
+		//print("Mouse moved left");
 		// change laser if needs changing
 		if (isAddDown) {
 			laser.SetLaserOn (true);
@@ -106,8 +108,13 @@ public class LaserController : NetworkBehaviour {
 			laser.SetLaserOn (false);
 		}
 
-		// Rotate the laser based on the mouse and player position.
-		rotate();
+		// If mouse is moved
+		if ((Input.GetAxis("Mouse X") != 0) || (Input.GetAxis("Mouse Y") != 0)) {
+			// Rotate the laser based on the mouse and player position.
+			rotate();
+		}
+
+
 	}
 
 	/**
@@ -144,7 +151,10 @@ public class LaserController : NetworkBehaviour {
 	void rotate() {
 		Vector3 difference = Vector3.zero;
 		if (Input.GetJoystickNames ().Length == 0) {
-			difference = Camera.main.ScreenToWorldPoint (Input.mousePosition) - GetComponent<Player> ().head.transform.position;	// subtract pos of player from mouse pos
+			// subtract pos of player from mouse pos
+			difference = Camera.main.ScreenToWorldPoint (Input.mousePosition) - GetComponent<Player> ().head.transform.position;
+			//difference.x = Input.GetAxis ("Mouse X"); // this doesn't work
+			//difference.y = -Input.GetAxis ("Mouse Y");
 		} else {
 			difference.x = Input.GetAxis ("Light Horizontal");
 			difference.y = -Input.GetAxis ("Light Vertical");
