@@ -38,8 +38,6 @@ public class Pause : MonoBehaviour {
 		// go to the main screen
 		Application.LoadLevel("Main Menu");
 		// need to disconnect.
-		//NetworkPlayerManager networkManager = NetworkPlayerManager.sceneObject.GetComponent<NetworkPlayerManager>();
-		//networkManager.StopServer();
 
 	}
 
