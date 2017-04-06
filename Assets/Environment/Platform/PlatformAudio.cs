@@ -9,6 +9,7 @@ public class PlatformAudio : MonoBehaviour {
 	public AudioSource magenta;
 	public AudioSource yellow;
 	public AudioSource cyan;
+	public AudioSource white;
 
 	public float volume;
 
@@ -19,6 +20,7 @@ public class PlatformAudio : MonoBehaviour {
 		magenta.volume = 0;
 		yellow.volume = 0;
 		cyan.volume = 0;
+		white.volume = 0;
 	}
 
 	public void Solo(PaletteColorID colorID) {
@@ -43,6 +45,9 @@ public class PlatformAudio : MonoBehaviour {
 				break;
 			case PaletteColorID.YELLOW:
 				yellow.volume = volume;
+				break;
+			case PaletteColorID.WHITE:
+				white.volume = volume;
 				break;
 			}
 		}
