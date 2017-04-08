@@ -9,12 +9,6 @@ public class Parallax : MonoBehaviour {
 	public float globalZ = 0;
 
 	void Update() {
-        // Scale background to camera first so no ugly outside border seen vertically.
-        float camSizeScale = 2 * (0.1f * GameObject.FindObjectOfType<Camera> ().orthographicSize);
-        Vector3 scale = new Vector3(camSizeScale, camSizeScale, 1);
-        GetComponent<Transform>().localScale = scale;
-
-        // Now do the parallax.
         Vector3 localPos = transform.localPosition;
 		Vector3 center = Vector3.zero;
 		center.x = -GetComponent<SpriteRenderer> ().bounds.size.x / 6;
