@@ -17,6 +17,7 @@ public class PlayerController : NetworkBehaviour {
 
     //used for jumping animations and flipping
     public bool grounded;
+    public bool walking;
 	[SyncVar (hook="OnChangeFacingRight")]
     public bool facingRight = false;
 
@@ -116,6 +117,8 @@ public class PlayerController : NetworkBehaviour {
 
         //takes left and right arrows or a and d as input 1 for right and -1 for left
         float h = Input.GetAxis("Horizontal");
+        
+
 
         //fake friction/easing x speed of player
 
@@ -146,6 +149,14 @@ public class PlayerController : NetworkBehaviour {
 //        }
 
 		float wXVel = Input.GetAxis("Horizontal") * xVel;
+        if (wXVel >= 0.1)
+        {
+            walking = true;
+        }
+        else
+        {
+            walking = false;
+        }
 		rb2d.velocity = new Vector2 (wXVel, rb2d.velocity.y);
 		
 		if (grounded && Input.GetAxis("Vertical") > 0) {

@@ -23,6 +23,7 @@ public class PlayerAnimator : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		anim.SetBool("Grounded", controller.grounded);
+        anim.SetBool("Walking", controller.walking);
 		anim.SetFloat("Horizontal Speed", Mathf.Abs(rb2d.velocity.x));
 		anim.SetFloat ("Vertical Speed", Mathf.Abs(rb2d.velocity.y));
 
