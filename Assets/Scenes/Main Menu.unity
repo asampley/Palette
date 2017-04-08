@@ -3253,7 +3253,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1799648251}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30, y: 13, z: 20}
+  m_LocalPosition: {x: -30, y: 52, z: 20}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1738178469}
@@ -3921,6 +3921,9 @@ MonoBehaviour:
     Move right with D or the right arrow.
 
     Jump with W or the up arrow.
+
+
+    Open the Pause Menu with P
 
 
     Shine your laser to add color to platforms using the left mouse button, or subtract
