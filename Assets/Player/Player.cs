@@ -60,8 +60,6 @@ public class Player : NetworkBehaviour {
 	public override void OnStartLocalPlayer ()
 	{
 		base.OnStartLocalPlayer ();
-
-		GameObject.Find ("Main Camera").GetComponent<CameraFollow> ().player = this.gameObject;
 		SceneData.sceneObject.GetComponent<LocalPlayer> ().localPlayer = this;
 	}
 
