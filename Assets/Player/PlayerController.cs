@@ -13,11 +13,10 @@ public class PlayerController : NetworkBehaviour {
     [SerializeField] private float maxspeed = 10f;
 
 	private Rigidbody2D parentRb2d;
-	private Vector2 parentVel;
+	public Vector2 parentVel { get; private set; }
 
     //used for jumping animations and flipping
     public bool grounded;
-    public bool walking;
 	[SyncVar (hook="OnChangeFacingRight")]
     public bool facingRight = false;
 
