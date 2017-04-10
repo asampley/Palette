@@ -150,14 +150,14 @@ public class PlayerController : NetworkBehaviour {
 
 		float wXVel = Input.GetAxis("Horizontal") * xVel;
 		rb2d.velocity = new Vector2 (wXVel, rb2d.velocity.y);
-        if (wXVel >= 0.1 || wXVel<=-0.1)
+        /*if (wXVel >= 0.1 || wXVel<=-0.1)
         {
             walking = true;
         }
         else
         {
             walking = false;
-        }
+        }*/
 
         if (grounded && Input.GetAxis("Vertical") > 0) {
 			rb2d.velocity = new Vector2 (rb2d.velocity.x, yVel);
