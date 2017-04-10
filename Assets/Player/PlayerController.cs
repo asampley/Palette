@@ -166,9 +166,8 @@ public class PlayerController : NetworkBehaviour {
 		if (parentRb2d != null) {
 			parentVel = parentRb2d.velocity;
 		}
-		if (parentRb2d == null) {
-			parentVel = new Vector2(parentVel.x, 0);
-		}
+
+		parentVel = new Vector2(parentVel.x, 0);
 
 		rb2d.velocity = rb2d.velocity + parentVel;
     }
