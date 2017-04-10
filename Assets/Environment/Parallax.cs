@@ -11,7 +11,11 @@ public class Parallax : MonoBehaviour {
 	void Update() {
         Vector3 localPos = transform.localPosition;
 		Vector3 center = Vector3.zero;
-		center.x = -GetComponent<SpriteRenderer> ().bounds.size.x / 6;
+        // If paralaxFactor is 0 then it is the static background that should be centered.
+        if(parallaxFactor.Equals(0f))
+            center.x = -GetComponent<SpriteRenderer>().bounds.size.x / 2;
+        else
+		    center.x = -GetComponent<SpriteRenderer> ().bounds.size.x / 6;
 		center.y = GetComponent<SpriteRenderer> ().bounds.size.y / 2;
 		localPos.x = center.x - Mod(parallaxFactor * transform.parent.position.x, GetComponent<SpriteRenderer> ().bounds.size.x / 3);
 		localPos.y = center.y;
