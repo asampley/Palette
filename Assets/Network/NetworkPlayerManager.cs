@@ -50,4 +50,13 @@ public class NetworkPlayerManager : NetworkManager {
 	public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerID, NetworkReader extraMessage) {
 		this.SpawnPlayer (conn, playerControllerID);
 	}
+    
+    public override void OnServerError(NetworkConnection conn, int errorCode)
+    {
+        print(conn.lastError + " Error Code " + errorCode);
+    }
+    public override void OnClientError(NetworkConnection conn, int errorCode)
+    {
+        print(conn.lastError + " Error Code " + errorCode);
+    }
 }
