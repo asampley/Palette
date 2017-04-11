@@ -28,6 +28,13 @@ public class Player : NetworkBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		if (isLocalPlayer) {
+			SceneData.sceneObject.GetComponent<LocalPlayer> ().localPlayer = this;
+			Debug.Log ("Created local player: " + this.gameObject);
+		} else {
+			Debug.Log ("Created non-local player: " + this.gameObject);
+		}
+
 		InitGroundLayerMask ();
 		UpdateNumber (number);
 		OnColorChange (colorID);
@@ -55,19 +62,6 @@ public class Player : NetworkBehaviour {
 			Player.InitGroundLayerMask ();
 		}
 		return groundLayerMask ^ LayerMask.GetMask(new PaletteColor(this.colorID).ToLayerName());
-	}
-
-	public override void OnStartLocalPlayer ()
-	{
-		base.OnStartLocalPlayer ();
-		SceneData.sceneObject.GetComponent<LocalPlayer> ().localPlayer = this;
-	}
-
-	public override void OnStartClient ()
-	{
-		base.OnStartClient ();
-
-		// TODO: add all players to the main camera for more fancy movement.
 	}
 
 	public void Activate(bool active) {

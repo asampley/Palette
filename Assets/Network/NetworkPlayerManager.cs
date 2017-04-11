@@ -42,21 +42,28 @@ public class NetworkPlayerManager : NetworkManager {
 		NetworkServer.AddPlayerForConnection (conn, player, playerControllerID);
 	}
 
-	public override void OnServerAddPlayer (NetworkConnection conn, short playerControllerId)
+	public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerId, NetworkReader extraMessageReader)
 	{
-		this.SpawnPlayer(conn, playerControllerId);
+		this.SpawnPlayer (conn, playerControllerId);
 	}
 
-	public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerID, NetworkReader extraMessage) {
-		this.SpawnPlayer (conn, playerControllerID);
+	public override void OnClientSceneChanged (NetworkConnection conn)
+	{
+		base.OnClientSceneChanged (conn);
+
+		if (SceneData.sceneObject != null) {
+			ClientScene.AddPlayer (0);
+		}
 	}
     
     public override void OnServerError(NetworkConnection conn, int errorCode)
     {
+		base.OnServerError (conn, errorCode);
         print(conn.lastError + " Error Code " + errorCode);
     }
     public override void OnClientError(NetworkConnection conn, int errorCode)
-    {
+	{
+		base.OnServerError (conn, errorCode);
         print(conn.lastError + " Error Code " + errorCode);
     }
 }

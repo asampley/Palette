@@ -22,9 +22,11 @@ public class VideoController : MonoBehaviour {
 	IEnumerator JumpToNextSceneAfterMovie() {
 		yield return new WaitWhile (() => movie.isPlaying);
 
-		if (Network.isServer) {
+		if (NetworkPlayerManager.singleton != null && NetworkPlayerManager.singleton.isNetworkActive) {
+			Debug.Log ("Switching network scene");
 			NetworkPlayerManager.singleton.ServerChangeScene (nextSceneName);
 		} else {
+			Debug.Log ("Switching local scene");
 			SceneManager.LoadScene (nextSceneName);
 		}
 	}
