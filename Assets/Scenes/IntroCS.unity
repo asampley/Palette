@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpOnMovieFinish: 1
-  nextSceneName: Main Menu
+  nextSceneName: Level 1
 --- !u!131 &4606389
 GUITexture:
   m_ObjectHideFlags: 0
@@ -200,7 +200,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 4606382}
   m_Enabled: 1
-  m_Texture: {fileID: 15200000, guid: c8d8e6a6d65b74009a43c4c20d53ea4d, type: 3}
+  m_Texture: {fileID: 15200000, guid: 7ec3a1cad9f2a45fe8d13676c2780262, type: 3}
   m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_PixelInset:
     serializedVersion: 2

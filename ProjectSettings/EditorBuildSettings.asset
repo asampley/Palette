@@ -17,3 +17,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Winner.unity
   - enabled: 1
     path: Assets/Scenes/Level 2.unity
+  - enabled: 1
+    path: Assets/Scenes/IntroCS.unity
+  - enabled: 1
+    path: Assets/Scenes/OutroCS.unity
