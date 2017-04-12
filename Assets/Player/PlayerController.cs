@@ -158,7 +158,7 @@ public class PlayerController : NetworkBehaviour {
             walking = false;
         }*/
 
-        if (grounded && Input.GetAxis("Vertical") > 0) {
+        if (grounded && (Input.GetAxis("Vertical") > 0 || Input.GetButtonDown("Jump") )) {
 			rb2d.velocity = new Vector2 (rb2d.velocity.x, yVel);
 			GetComponent<PlayerAudio>().jumpSource.Play ();
 		}
