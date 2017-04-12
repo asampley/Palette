@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -48,12 +49,16 @@ public class Platform : NetworkBehaviour, PlayerColorListener {
 			rgbColor = color.ToColor ();
 		}
 
-		if (GetComponent<PlatformAudio> () != null) {
-			if (color.ToID () != GetComponent<ColorAdder> ().GetBaseColorID ()) {
-				GetComponent<PlatformAudio> ().Solo (color.ToID ());
-			} else {
-				GetComponent<PlatformAudio> ().Fade ();
+		try { // try catches errors in editor mode
+			if (GetComponent<PlatformAudio> () != null) {
+				if (color.ToID () != GetComponent<ColorAdder> ().GetBaseColorID ()) {
+					GetComponent<PlatformAudio> ().Solo (color.ToID ());
+				} else {
+					GetComponent<PlatformAudio> ().Fade ();
+				}
 			}
+		} catch (NullReferenceException) {
+
 		}
 
 		Renderer rend = GetComponent<Renderer> ();
