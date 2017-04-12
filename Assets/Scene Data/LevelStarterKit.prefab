@@ -1817,6 +1817,7 @@ MonoBehaviour:
   toggleColorWheelOn: {fileID: 21300000, guid: 53759808f6d5bc34f8d2c5b68155b76a, type: 3}
   toggleColorWheelOff: {fileID: 21300000, guid: 0cb39eaf36528b441bb9ecbf94462804,
     type: 3}
+  inGameColorWheel: 0
 --- !u!114 &114471271095559674
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -11,14 +11,9 @@ public class Pause : MonoBehaviour
     public Sprite toggleMusicOff;
     public Sprite toggleColorWheelOn;
     public Sprite toggleColorWheelOff;
+    public bool inGameColorWheel;
     private Player player;
-    private bool inGameColorWheel;
-
-    private void Start()
-    {
-        inGameColorWheel = true;
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
