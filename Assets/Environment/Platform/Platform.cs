@@ -52,7 +52,7 @@ public class Platform : NetworkBehaviour, PlayerColorListener {
 			if (color.ToID () != GetComponent<ColorAdder> ().GetBaseColorID ()) {
 				GetComponent<PlatformAudio> ().Solo (color.ToID ());
 			} else {
-				GetComponent<PlatformAudio> ().Mute ();
+				GetComponent<PlatformAudio> ().Fade ();
 			}
 		}
 
