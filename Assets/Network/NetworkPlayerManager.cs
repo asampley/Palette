@@ -47,28 +47,28 @@ public class NetworkPlayerManager : NetworkManager {
 		this.SpawnPlayer (conn, playerControllerId);
 	}
 
-	public override void OnServerConnect(NetworkConnection conn) {
-		base.OnServerConnect (conn);
-		
-		if (SceneData.sceneObject != null) {
-			this.SpawnPlayer (conn, 0);
-		}
-	}
+//	public override void OnServerConnect(NetworkConnection conn) {
+//		base.OnServerConnect (conn);
+//		
+//		if (SceneData.sceneObject != null) {
+//			this.SpawnPlayer (conn, 0);
+//		}
+//	}
 
-	public override void OnServerReady(NetworkConnection conn) {
-		base.OnServerReady (conn);
-	}
-
-	public override void OnServerSceneChanged (string sceneName)
-	{
-		base.OnServerSceneChanged (sceneName);
-		
-		if (SceneData.sceneObject != null) {
-			foreach (NetworkConnection conn in NetworkServer.connections) {
-				this.SpawnPlayer (conn, 0);
-			}
-		}
-	}
+//	public override void OnServerReady(NetworkConnection conn) {
+//		base.OnServerReady (conn);
+//	}
+//
+//	public override void OnServerSceneChanged (string sceneName)
+//	{
+//		base.OnServerSceneChanged (sceneName);
+//		
+//		if (SceneData.sceneObject != null) {
+//			foreach (NetworkConnection conn in NetworkServer.connections) {
+//				this.SpawnPlayer (conn, 0);
+//			}
+//		}
+//	}
     
     public override void OnServerError(NetworkConnection conn, int errorCode)
     {
