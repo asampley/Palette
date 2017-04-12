@@ -23,17 +23,32 @@ public class VideoController : MonoBehaviour {
 
 	IEnumerator DoAfterMovie() {
 		yield return new WaitWhile (() => movie.isPlaying);
-		
-		onFinish.Invoke ();
 
 		if (jumpOnMovieFinish) {
-			if (NetworkPlayerManager.singleton != null && NetworkPlayerManager.singleton.isNetworkActive) {
-				Debug.Log ("Switching network scene");
-				NetworkPlayerManager.singleton.ServerChangeScene (nextSceneName);
-			} else {
-				Debug.Log ("Switching local scene");
-				SceneManager.LoadScene (nextSceneName);
-			}
+            GoToNewScene();
 		}
 	}
+
+    void GoToNewScene()
+    {
+        onFinish.Invoke();
+        if (NetworkPlayerManager.singleton != null && NetworkPlayerManager.singleton.isNetworkActive)
+        {
+            Debug.Log("Switching network scene");
+            NetworkPlayerManager.singleton.ServerChangeScene(nextSceneName);
+        }
+        else {
+            Debug.Log("Switching local scene");
+            SceneManager.LoadScene(nextSceneName);
+        }
+    }
+
+    void Update ()
+    {
+        if (Input.GetKeyUp(KeyCode.Return))
+        {
+            Debug.Log("hit enter");
+            GoToNewScene();
+        }
+    }
 }
