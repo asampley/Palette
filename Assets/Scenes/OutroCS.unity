@@ -210,7 +210,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   jumpOnMovieFinish: 1
-  nextSceneName: Main Menu
+  nextSceneName: Credits
 --- !u!131 &4606389
 GUITexture:
   m_ObjectHideFlags: 0

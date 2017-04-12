@@ -947,6 +947,7 @@ MonoBehaviour:
   cyan: {fileID: 82711847083626702}
   white: {fileID: 82849954358159238}
   volume: 1
+  fadeTime: 1.5
 --- !u!114 &114082550812436044
 MonoBehaviour:
   m_ObjectHideFlags: 1
