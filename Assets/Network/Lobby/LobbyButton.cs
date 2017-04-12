@@ -12,15 +12,11 @@ public class LobbyButton : MonoBehaviour {
 	}
     private void Update()
     {
-        Dictionary<int, Player> allPlayers = SceneData.sceneObject.GetComponent<LocalPlayer>().GetPlayers();
-        foreach (KeyValuePair<int, Player> player in allPlayers)
-        {
-            if (player.Key == playerNum)
+            if (SceneData.sceneObject.GetComponent<PlayerSpawn>().GetPlayerSpawned(playerNum))
             {
                 this.GetComponent<Button>().enabled = false;
                 this.GetComponent<Image>().color = new Color(0.4f, 0.4f, 0.4f);
             }
-        } 
         
     }
 }
