@@ -50,7 +50,7 @@ public class Platform : NetworkBehaviour, PlayerColorListener {
 		}
 
 		try { // try catches errors in editor mode
-			if (GetComponent<PlatformAudio> () != null) {
+			if (currentColorID != previousColorID && GetComponent<PlatformAudio> () != null) {
 				if (color.ToID () != GetComponent<ColorAdder> ().GetBaseColorID ()) {
 					GetComponent<PlatformAudio> ().Solo (color.ToID ());
 				} else {
