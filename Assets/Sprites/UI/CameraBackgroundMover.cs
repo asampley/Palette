@@ -2,17 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent (typeof(Rigidbody2D))]
 public class CameraBackgroundMover : MonoBehaviour {
 
-    public float speed;
+    public Vector2 vel;
 
 	// Use this for initialization
 	void Start () {
-        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(speed, 0);
-    }
-	
-	// Update is called once per frame
-	void Update () {
-        
+        gameObject.GetComponent<Rigidbody2D>().velocity = vel;
     }
 }

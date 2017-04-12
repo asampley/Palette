@@ -13,7 +13,7 @@ EditorBuildSettings:
     path: Assets/Scenes/TestLv1&2.unity
   - enabled: 1
     path: Assets/Scenes/Level 1.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Winner.unity
   - enabled: 1
     path: Assets/Scenes/Level 2.unity
@@ -21,3 +21,5 @@ EditorBuildSettings:
     path: Assets/Scenes/IntroCS.unity
   - enabled: 1
     path: Assets/Scenes/OutroCS.unity
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
