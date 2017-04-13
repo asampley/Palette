@@ -16,6 +16,9 @@ public class LobbyButton : MonoBehaviour {
             {
                 this.GetComponent<Button>().enabled = false;
                 this.GetComponent<Image>().color = new Color(0.4f, 0.4f, 0.4f);
+            } else {
+                this.GetComponent<Button>().enabled = true;
+                this.GetComponent<Image>().color = new PaletteColor(SceneData.sceneObject.GetComponent<PlayerSpawn> ().GetPlayerColorID (playerNum)).ToColor();
             }
         
     }
