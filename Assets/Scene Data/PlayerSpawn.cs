@@ -12,6 +12,10 @@ public class PlayerSpawn : MonoBehaviour {
 
 	void Start() {
 		playerSpawned = new bool[playerSpawns.Length];
+
+		for (int i = 0; i < playerSpawned.Length; ++i) {
+			playerSpawned[i] = false;
+		}
 	}
 
 	public void SetPlayerSpawned(int num, bool spawned) {
